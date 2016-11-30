@@ -6,19 +6,24 @@
     width: 100%;
     clear: both;
     top: 0;
+    background-color: black;
+}
+
+li a{
+    color: white;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
     margin-top: 6%;
-    position: fixed;
+    position: static;
     overflow-y: scroll;
     height: 680px;
     margin-bottom: 10%;
+    margin-right: 8%;
 }
 
 .col-sm-12.text-left{
-    overflow-y: scroll;
     height: inherit;
     margin-left: auto;
     margin-right: auto;
