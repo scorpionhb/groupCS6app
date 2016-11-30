@@ -4,18 +4,26 @@
     border-radius: 0;
     position: fixed;
     width: 100%;
+    clear: both;
+    top: 0;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
-
+    margin-top: 6%;
+    position: fixed;
+    overflow-y: scroll;
+    height: 680px;
+    margin-bottom: 10%;
 }
 
 .col-sm-12.text-left{
-    margin-top: 3%;
     overflow-y: scroll;
-    height: 790px;
-    margin-bottom: 3%;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* Set gray background color and 100% height */
@@ -32,10 +40,9 @@ footer {
     color: white;
     padding: 15px;
     position: fixed;
-    right: 0;
     bottom: 0;
-    left: 0;
 }
+
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -45,13 +52,14 @@ footer {
     }
     .row.content {
         position: fixed;
+        overflow-y: scroll;
     }
     .col-sm-12.text-left{
         height:auto;
         overflow-y: scroll;
-        height: 820px;
-        margin-top: 14%;
-        margin-bottom: 18%;
+        height: 650px;
+        margin-top: 13%;
+        margin-bottom: 13%;
     }
 
 
