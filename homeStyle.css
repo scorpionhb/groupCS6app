@@ -56,16 +56,19 @@ footer {
         padding: 15px;
     }
     .row.content {
-        position: fixed;
+        position: static;
         overflow-y: scroll;
-    }
-    .col-sm-12.text-left{
-        height:auto;
-        overflow-y: scroll;
-        height: 650px;
         margin-top: 13%;
         margin-bottom: 13%;
     }
+    .col-sm-12.text-left{
+        height:auto;
+        height: 650px;
 
+    }
+
+    .navbar-toggle span {
+        background-color: white;
+    }
 
 }
