@@ -24,7 +24,7 @@
                 });
 
                 var allowedBounds = new google.maps.LatLngBounds(
-                    new google.maps.LatLng(-83.780861, 179.284397),
+                    new google.maps.LatLng(-81.780861, 179.284397),
                     new google.maps.LatLng(77.566551, 176.322804)
                 );
                 var lastValidCenter = map.getCenter();
