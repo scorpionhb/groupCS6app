@@ -18,7 +18,7 @@
                 center: new google.maps.LatLng(47.6145, -122.3418),
                 zoom: 13,
                 minZoom: 5,
-                maxZoom: 15,
+                maxZoom: 20,
                 mapTypeId: 'roadmap'
                 });
             }
