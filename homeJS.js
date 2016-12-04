@@ -28,6 +28,8 @@ function logIn() {
         button.style.marginLeft = "15px";
 
         logoutButton.appendChild(button);
+        logoutButton.addEventListener("mousedown", logOut);
+        button.id = "loginFields";
 
         // add welcome sign
         var helloSign = document.createElement("ul"),
@@ -40,8 +42,33 @@ function logIn() {
         helloSign.style.paddingTop = "15px";
 
         element.appendChild(helloSign);
+        helloSign.id = "loginFields1";
 
 
-        //  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+
+
     }
+}
+
+function logOut(){
+
+         document.getElementById("loginFields").remove();
+    document.getElementById("loginFields1").remove();
+
+/*<ul id="loginFields" class="nav navbar-nav navbar-right">
+        <li ><form id="signin" class="navbar-form navbar-right" role="form">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+        </div></form>
+        </li>
+        <li onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li onclick="logOut()"><a href="#">Register</a></li>
+        </ul>*/
 }
