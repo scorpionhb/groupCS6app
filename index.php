@@ -37,10 +37,10 @@
                     <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
                     <li><a href="#">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
-                    <li><a href="#">Register</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#">Register</a></li>
                 </ul>
             </div>
         </div>
