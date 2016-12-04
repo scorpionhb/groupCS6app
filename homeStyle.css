@@ -1,3 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -60px;
+}
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     margin-bottom: 0;
@@ -45,27 +56,56 @@ footer {
     clear: both;
 }
 
+footer,
+.push {
+    height: 80px;
+}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    #wrapper {
+        min-height: 100%;
+
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        margin-bottom: -60px;
+    }
     .sidenav {
         height: auto;
         padding: 15px;
     }
     .row.content {
-        position: static;
-
+        float: none;
         margin-top: 13%;
         margin-bottom: 13%;
     }
     .col-sm-12.text-left{
-        height:auto;
-        height: 650px;
+        height: inherit;
+
+
 
     }
 
     .navbar-toggle span {
         background-color: white;
+    }
+
+    footer{
+        background-color: #555;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        clear: both;
+    }
+
+    footer,
+    .push {
+        height: 80px;
     }
 
 }
