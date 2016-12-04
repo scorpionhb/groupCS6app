@@ -74,6 +74,12 @@ footer,
 }
 
 
+#regButton{
+    color: #2dbb4d;
+}
+
+
+
 @media screen and (max-width: 991px){
     .navbar-toggle span {
         background-color: white;
