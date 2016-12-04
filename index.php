@@ -39,7 +39,7 @@
                     <li><a href="#">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li><form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
