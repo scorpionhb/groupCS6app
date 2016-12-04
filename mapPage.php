@@ -39,7 +39,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Clubs and Societies</a></li>
+                        <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
                         <li><a href="#">Health and Well-being</a></li>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Register</a></li>
