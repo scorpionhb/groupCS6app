@@ -13,5 +13,6 @@
     define('DB_PASSWORD', 'f2fdd194');
     define('DB_DATABASE', 'cs6app_db');
 
+
     $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 ?>
