@@ -51,7 +51,7 @@
                             </div></form>
                     </li>
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a id="regButton" href="#">Register</a></li>
                 </ul>
             </div>
         </div>
