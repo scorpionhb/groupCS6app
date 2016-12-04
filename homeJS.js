@@ -1,7 +1,7 @@
 /**
  * Created by azifchyy on 4.12.2016 г..
  */
-
+//log in button
 function logIn() {
     var i = 0;
 
@@ -29,6 +29,7 @@ function logIn() {
 
         logoutButton.appendChild(button);
         logoutButton.addEventListener("mousedown", logOut);
+
         button.id = "loginFields";
 
         // add welcome sign
@@ -45,30 +46,19 @@ function logIn() {
         helloSign.id = "loginFields1";
 
 
-
+    refresh();
 
 
     }
 }
-
+//if logout kick user from platform
 function logOut(){
 
-         document.getElementById("loginFields").remove();
-    document.getElementById("loginFields1").remove();
+        location.reload();
 
-/*<ul id="loginFields" class="nav navbar-nav navbar-right">
-        <li ><form id="signin" class="navbar-form navbar-right" role="form">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
-        </div>
+}
+//kick user after 10 minutes in website
+function refresh() {
 
-        <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-        </div></form>
-        </li>
-        <li onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li onclick="logOut()"><a href="#">Register</a></li>
-        </ul>*/
+    setTimeout(function(){ location.reload(); }, 60000*10);
 }
