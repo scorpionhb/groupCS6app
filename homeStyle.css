@@ -17,7 +17,7 @@ li a{
 .row.content {
     margin-top: 6%;
     position: static;
-    overflow-y: scroll;
+
     height: 680px;
     margin-bottom: 10%;
     margin-right: 8%;
