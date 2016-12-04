@@ -10,10 +10,8 @@
         <link rel="stylesheet" type="text/css" href="homeStyle.css">
         <link rel="stylesheet" type="text/css" href="mapStyle.css">
         <script src="homeJS.js"></script>
-        <script src="mapJS.js"</script>
-        <script
-            
-        </script>
+        <script src="mapJS.js"></script>
+
     </head>
 <body onload ="load()">
     
