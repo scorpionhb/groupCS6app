@@ -36,6 +36,7 @@ function logIn() {
         var helloSign = document.createElement("ul"),
             hiText = document.createTextNode("HELLO JOHN!");
         helloSign.appendChild(hiText);
+        helloSign.style.color = "white";
 
         var element = document.getElementById("myNavbar");
 
@@ -60,5 +61,5 @@ function logOut(){
 //kick user after 10 minutes in website
 function refresh() {
 
-    setTimeout(function(){ location.reload(); }, 4000);
+    setTimeout(function(){ location.reload(); }, 60000*10);
 }
