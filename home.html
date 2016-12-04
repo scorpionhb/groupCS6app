@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <script src="homeJS.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -40,7 +41,7 @@
                         <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
                     </div></form>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 <li><a href="#">Register</a></li>
             </ul>
         </div>
@@ -119,35 +120,6 @@
 <footer class="container-fluid text-center">
     <p>Footer Text</p>
 </footer>
-
-
-<script>
-
-
-
-
-
-
-
-
-    var i = 0;
-
-   if(i == 0) {
-
-       document.getElementById("loginFields").remove();
-
-       var helloSing = document.createElement("ul"),
-               hiText = document.createTextNode("HELLO JOHN!");
-       helloSing.appendChild(hiText);
-      var element =  document.getElementById("myNavbar");
-
-
-
-       helloSing.className = "nav navbar-nav navbar-right";
-   element.appendChild(helloSing);
-    }
-
-</script>
 
 </body>
 </html>
