@@ -1,6 +1,8 @@
 /**
  * Created by Sanctuum on 04-Dec-16.
  */
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMI5iwxHNqNnZSvbVJkE656xZoKPpfBfc "
+type="text/JavaScript">
 function load(){
     var map = new google.maps.Map(document.getElementById("map"),{
         center: new google.maps.LatLng(47.6145, -122.3418),

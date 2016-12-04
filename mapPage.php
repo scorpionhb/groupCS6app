@@ -12,8 +12,7 @@
         <script src="homeJS.js"></script>
         <script src="mapJS.js"</script>
         <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMI5iwxHNqNnZSvbVJkE656xZoKPpfBfc "
-                type="text/JavaScript">
+            
         </script>
     </head>
 <body onload ="load()">
