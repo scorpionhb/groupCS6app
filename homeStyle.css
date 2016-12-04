@@ -17,7 +17,7 @@ html, body {
     width: 100%;
     clear: both;
     top: 0;
-    background-color: black;
+    background-color: red;
     padding: 10px;
 }
 
@@ -77,6 +77,8 @@ footer,
 #regButton{
     color: #2dbb4d;
 }
+
+
 
 
 
