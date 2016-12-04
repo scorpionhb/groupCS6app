@@ -25,7 +25,7 @@
         </script>
     </head>
 <body onload ="load()">
-    <div id = "map" style="width: 500px; height: 300px"></div>
+    
     
     <div id="wrapper">
 
@@ -52,9 +52,9 @@
                 </div>
             </div>
         </nav>
-
-
-
+        <div style="clear: both"></div>
+        <div id = "map" style="width: 500px; height: 300px"></div>
+        
 
         <div class="push"></div>
 
