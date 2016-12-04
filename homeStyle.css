@@ -16,12 +16,9 @@ li a{
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
     margin-top: 6%;
-    position: static;
-
-    height: 680px;
-    margin-bottom: 10%;
     margin-right: 8%;
     padding-bottom: 5%;
+    float: none;
 }
 
 .col-sm-12.text-left{
@@ -46,7 +43,6 @@ footer {
     color: white;
     padding: 15px;
     clear: both;
-
 }
 
 
