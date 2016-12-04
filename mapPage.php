@@ -57,18 +57,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".../Logo.png">Logo</a>
+                    <img class="navbar-brand" src="LOGO1.png"/>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
                         <li><a href="#">Health and Well-being</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Map</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a id="regButton" href="#">Register</a></li>
                     </ul>
                 </div>
             </div>
