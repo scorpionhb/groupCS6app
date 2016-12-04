@@ -67,6 +67,15 @@ footer,
     height: 50px;
 }
 
+/* login fields  */
+.input-group{
+    width: 130px;
+    margin-right: 3px;
+}
+
+
+
+
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
 
