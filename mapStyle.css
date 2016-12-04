@@ -1,5 +1,13 @@
 #mapControls{
-    background-color: #555555;
-    width: 50px;
-    height: 200px;
+    background-color: #AEAEAE;
+    width: 435px;
+    height: 980px;
+    position: absolute;
+    margin-top: -3%;
+}
+#map{
+    width: 1584px;
+    height: 838px;
+    margin: 8% 10% 5% 23%;
+    position: relative;
 }
