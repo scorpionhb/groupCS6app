@@ -36,7 +36,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Clubs and Societies</a></li>
                     <li><a href="#">Health and Well-being</a></li>
-                    <li><a href="#">Map</a></li>
+                    <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                     <li><a href="#">Register</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
