@@ -54,6 +54,7 @@
             </div>
         </nav>
         <div style="clear: both"></div>
+        <div id="mapControls"></div>
         <div id = "map" style="width: 1430px; height: 750px; margin: 10% 10% 10% 22%;"></div>
         
 
