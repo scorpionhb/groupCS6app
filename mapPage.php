@@ -64,17 +64,3 @@
     </footer>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Map Page</title>
-    
-</head>
-<body>
-
-
-
-
-</body>
-</html>
