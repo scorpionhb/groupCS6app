@@ -60,5 +60,5 @@ function logOut(){
 //kick user after 10 minutes in website
 function refresh() {
 
-    setTimeout(function(){ location.reload(); }, 60000*10);
+    setTimeout(function(){ location.reload(); }, 3000);
 }
