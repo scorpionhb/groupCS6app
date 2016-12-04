@@ -1,5 +1,8 @@
 #map {
-    position: static;
-    margin-top: 20%;
-    border: none;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: 22%;
+    margin-bottom: 10%;
+    margin-right: 10%;
 }

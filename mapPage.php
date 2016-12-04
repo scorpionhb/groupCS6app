@@ -54,7 +54,7 @@
             </div>
         </nav>
         <div style="clear: both"></div>
-        <div id = "map" style="width: 500px; height: 300px"></div>
+        <div id = "map" style="width: 1430px; height: 750px"></div>
         
 
         <div class="push"></div>
