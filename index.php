@@ -19,7 +19,9 @@
     <link rel="stylesheet" type="text/css" href="homeStyle.css">
 </head>
 <body>
+
 <div id="wrapper">
+
     <nav class="navbar navbar-fixed-top navbar-absolute navbar-transparent big">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -28,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href=".../Logo.png">Logo</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
