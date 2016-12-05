@@ -36,8 +36,12 @@
 @media screen and (max-width: 1010px){
     #mapControls {
         width: 23%;
-        height: 775px;
+        height: 838px;
         margin-top: 7%;
+    }
+
+    #map{
+        margin: 16% 10% 1% 24%;
     }
 
     .checkboxes{
