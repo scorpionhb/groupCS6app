@@ -52,7 +52,7 @@
                             </div></form>
                     </li>
                     <li  onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a id="regButton" href="#">Register</a></li>
+                    <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
         </div>
