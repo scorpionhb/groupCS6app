@@ -3,8 +3,8 @@
  */
 function load(){
     var map = new google.maps.Map(document.getElementById("map"),{
-        center: new google.maps.LatLng(47.6145, -122.3418),
-        zoom: 12,
+        center: new google.maps.LatLng(57.060955, -2.134886),
+        zoom: 2,
         minZoom: 5,
         maxZoom: 20,
         mapTypeId: 'roadmap'
