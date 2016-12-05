@@ -67,6 +67,7 @@
                 <label class="checkboxes"><input type="checkbox" value="Geo Data"><b>Geo Data</b></label><br>
                 <label class="checkboxes"><input type="checkbox" value="Landmarks"><b>Landmarks</b></label><br>
             </div>
+            <p id="test">Testvai Tova</p>
         </div>
         <div id = "map"></div>
         
