@@ -16,6 +16,7 @@ html, body {
     width: 100%;
     clear: both;
     top: 0;
+    /*background-color: #008AC9;*/
     background-color: black;
     padding: 10px;
 }
