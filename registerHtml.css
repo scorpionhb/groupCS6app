@@ -1,0 +1,206 @@
+form {
+    border: 3px solid #f1f1f1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*New */
+body {
+    padding-top: 10px;
+}
+
+
+#wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -60px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    clear: both;
+    top: 0;
+    background-color: black;
+    padding: 10px;
+
+}
+
+li a{
+    color: white;
+}
+
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    width: 100%;
+    color: white;
+    padding-top: 15px;
+    clear: both;
+}
+
+footer,
+.push {
+    height: 80px;
+}
+
+.navbar-brand{
+    width: auto;
+    height: 50px;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password],input[type=tel],input[type=email]{
+    width:50%;
+    padding: 12px 20px;
+    margin: 0.5% 50% 0.5% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Footer */
+
+
+/*Form */
+
+.dropDownForm{
+    width:50%;
+    padding: 12px 10px;
+    margin: 0.5% 50% 0.5% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input.checkboxTerms{
+    margin: 0.5% 0% 0.5% 25%;
+}
+
+input.checkboxNKPAG{
+    margin: 0.5% 0% 0.5% 25%;
+}
+
+label.username, label.password, label.repeatPassword, label.telephone, label.email,label.chooseUser{
+    margin: 0.5% 10% 0.5% 25%;
+}
+
+.adminValidation{
+    margin: 0.5% 5% 0.5% 10%;
+}
+
+/* Set a style for all buttons */
+button{
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input.registerbtn {
+    background-color: #2b8aaf;
+    padding: 14px;
+    margin: 0.5% 1% 0.5% 25.40%;
+    width: 24%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: 24%;
+    padding: 14px;
+    background-color: #f44336;
+}
+
+
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+.containerCancel{
+    width:50%;
+    margin: 0.5% 50% 0.5% 25%;
+    padding: 0.5%;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 767px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    #wrapper {
+        min-height: 100%;
+
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        margin-bottom: -60px;
+    }
+
+
+    .navbar-toggle span {
+        background-color: white;
+    }
+
+    footer{
+        background-color: #555;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        clear: both;
+        margin-top: 15%;
+    }
+
+    footer,
+    .push {
+        height: 80px;
+    }
+
+    input.checkboxTerms{
+        margin: 0.5% 0% 0.5% 25%;
+    }
+
+    input.checkboxNKPAG{
+        margin: 0.5% 0% 0.5% 25%;
+    }
+
+    .cancelbtn {
+        width: 24%;
+        padding: 14px;
+        background-color: #f44336;
+    }
+    .adminValidation{
+        margin: 0.5% 5% 0.5% 25%;
+    }
+
+}
