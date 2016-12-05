@@ -4,7 +4,7 @@
 function load(){
     var map = new google.maps.Map(document.getElementById("map"),{
         center: new google.maps.LatLng(57.060955, -2.134886),
-        zoom: 2,
+        zoom: 0.5,
         minZoom: 5,
         maxZoom: 20,
         mapTypeId: 'roadmap'
