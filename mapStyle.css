@@ -36,6 +36,9 @@
 @media screen and (max-width: 991px){
     .filter {
         margin-left: 5%;
+        width: 23%;
+        height: 775px;
+        margin-top: 7%;
     }
 
     .checkboxes{
