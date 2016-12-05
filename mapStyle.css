@@ -1,15 +1,15 @@
 #mapControls{
     background-color: #AEAEAE;
-    width: 435px;
-    height: 980px;
+    width: 23%;
+    height: 121.5%;
     position: absolute;
-    margin-top: -3%;
+    margin-top: -2%;
 }
 
 #map{
     width: 75%;
     height: 838px;
-    margin: 8% 10% 5% 24%;
+    margin: 8% 10% 0% 24%;
     position: relative;
 }
 
