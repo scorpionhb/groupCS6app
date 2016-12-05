@@ -16,6 +16,7 @@
             type="text/JavaScript">
         </script>
     </head>
+
 <body onload ="load()">
     
     
@@ -57,7 +58,14 @@
             </div>
         </nav>
         <div style="clear: both"></div>
-        <div id="mapControls"></div>
+        <div id="mapControls">
+            <label class="checkboxes"><input type="checkbox" value="Clubs"><b>Clubs</b></label><br>
+            <label class="checkboxes"><input type="checkbox" value="Areas"><b>Areas</b></label><br>
+            <label class="checkboxes"><input type="checkbox" value="Viewpoints"><b>Viewpoints</b></label><br>
+            <label class="checkboxes"><input type="checkbox" value="Routes"><b>Routes</b></label><br>
+            <label class="checkboxes"><input type="checkbox" value="Geo Data"><b>Geo Data</b></label><br>
+            <label class="checkboxes"><input type="checkbox" value="Landmarks"><b>Landmarks</b></label><br>
+        </div>
         <div id = "map"></div>
         
 
