@@ -26,8 +26,7 @@ function load(){
         // not valid anymore => return to last valid position
         map.panTo(lastValidCenter);
     });
-    
-    map.gestureHandling(auto)
+
 }
 
 function geoLocation() {
