@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 7.12.2016 г.
+ * Time: 0:50
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +34,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
-                    <li><a href="#">Health and Well-being</a></li>
+                    <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
 
 
@@ -57,15 +65,15 @@
 
 
                     <li ><form id="signin" class="navbar-form navbar-right" role="form">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
-                        </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
+                            </div>
 
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                        </div></form>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                            </div></form>
                     </li>
 
                     <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -84,7 +92,7 @@
         <div class="row content">
 
             <div class="col-sm-7 text-center">
-            <h1>News</h1>
+                <h1>News</h1>
             </div>
 
             <div class="col-sm-5 text-center">

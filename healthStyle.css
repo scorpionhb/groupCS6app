@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -60px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    clear: both;
+    top: 0;
+    /*background-color: #008AC9;*/
+    background-color: black;
+    padding: 10px;
+}
+
+li a{
+    color: white;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    float: none;
+}
+
+.col-sm-12.text-left{
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    clear: both;
+    margin-top: 2%;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    clear: both;
+}
+
+footer,
+.push {
+    height: 80px;
+}
+
+.navbar-brand{
+    width: auto;
+    height: 50px;
+}
+
+/* login fields  */
+.input-group{
+    width: 130px;
+    margin-right: 3px;
+}
+
+
+#regButton{
+    color: #2dbb4d;
+}
+
+
+.textCont img{
+    float: left;
+    margin-right: 15px;
+    border: 1px solid black;
+    max-height: 50%;
+    max-width: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 1180px){
+    .navbar-toggle span {
+        background-color: white;
+    }
+
+    .row.content {
+        margin-top: 13%;
+    }
+
+
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    #wrapper {
+        min-height: 100%;
+
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        margin-bottom: -60px;
+    }
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        float: none;
+        margin-top: 12%;
+        margin-bottom: 13%;
+    }
+    .col-sm-12.text-left{
+        height: inherit;
+        margin-top: 15%;
+    }
+
+    .navbar-toggle span {
+        background-color: white;
+    }
+
+    footer{
+        background-color: #555;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        clear: both;
+    }
+
+    footer,
+    .push {
+        height: 80px;
+    }
+
+
+
+}
