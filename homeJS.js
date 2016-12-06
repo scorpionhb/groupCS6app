@@ -135,7 +135,6 @@ function startTimer(duration) {
 
 $(document).ready(function () {
     $("#demo").zabuto_calendar();
-});
 
 
 var now = new Date();
@@ -162,6 +161,7 @@ var settings = {
 
 
 
+});
 
 
 
