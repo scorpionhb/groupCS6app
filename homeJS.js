@@ -130,21 +130,34 @@ function startTimer(duration) {
 
 
 
-
+var eventData = [
+    {"date":"2016-12-01","badge":false,"title":"Example 1"},
+    {"date":"2016-12-12","badge":true,"title":"Example 2"}
+];
 ////////////testttttttttttt
 
 $(document).ready(function () {
-    $("#demo").zabuto_calendar();
+    $("#demo").zabuto_calendar({
+        cell_border: true,
+        today: true,
+        show_days: false,
+        weekstartson: 0,
+        nav_icon: {
+            prev: '<i class="fa fa-chevron-circle-left"></i>',
+            next: '<i class="fa fa-chevron-circle-right"></i>'
+        },
+        ajax:{
+            url: "event.json",
+            modal: true,
+        }
+    });
 
-    var eventData = [
-        {"date":"2016-12-01","badge":false,"title":"Example 1"},
-        {"date":"2016-12-12","badge":true,"title":"Example 2"}
-];
+
 var now = new Date();
 var year = now.getFullYear();
 var month = now.getMonth() + 1;
-var settings = {
-    language: false,
+var calSettings = {
+  /*  language: false,
     year: year,
     month: month,
     show_previous: true,
@@ -158,15 +171,9 @@ var settings = {
     ajax: false, // object: url: string, modal: boolean,
     legend: false, // object array, [{type: string, label: string, classname: string}]
     action: false, // function
-    action_nav: false,
-    cell_border: true,
-    today: true,
-    show_days: false,
-    weekstartson: 0,
-    nav_icon: {
-        prev: '<i class="fa fa-chevron-circle-left"></i>',
-        next: '<i class="fa fa-chevron-circle-right"></i>'
-    }// function
+    action_nav: false,*/
+// function
+
 };
 
 
