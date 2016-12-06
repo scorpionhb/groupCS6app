@@ -155,7 +155,15 @@ var settings = {
     ajax: false, // object: url: string, modal: boolean,
     legend: false, // object array, [{type: string, label: string, classname: string}]
     action: false, // function
-    action_nav: false // function
+    action_nav: false,
+    cell_border: true,
+    today: true,
+    show_days: false,
+    weekstartson: 0,
+    nav_icon: {
+        prev: '<i class="fa fa-chevron-circle-left"></i>',
+        next: '<i class="fa fa-chevron-circle-right"></i>'
+    }// function
 };
 
 
