@@ -136,7 +136,10 @@ function startTimer(duration) {
 $(document).ready(function () {
     $("#demo").zabuto_calendar();
 
-
+    var eventData = [
+        {"date":"2016-12-01","badge":false,"title":"Example 1"},
+        {"date":"2016-12-12","badge":true,"title":"Example 2"}
+];
 var now = new Date();
 var year = now.getFullYear();
 var month = now.getMonth() + 1;
@@ -151,7 +154,7 @@ var settings = {
     show_days: true,
     weekstartson: 1,
     nav_icon: false, // object: prev: string, next: string
-    data: false,
+    data: eventData,
     ajax: false, // object: url: string, modal: boolean,
     legend: false, // object array, [{type: string, label: string, classname: string}]
     action: false, // function
