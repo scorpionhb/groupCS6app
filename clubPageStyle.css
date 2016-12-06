@@ -1,0 +1,196 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -60px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    clear: both;
+    top: 0;
+    /*background-color: #008AC9;*/
+    background-color: black;
+    padding: 10px;
+}
+
+li a{
+    color: white;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    float: none;
+}
+
+.col-sm-3.text-left{
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    clear: both;
+    margin-top: 2%;
+    /*border: 1px solid black;     only for testing  */
+}
+
+
+/* test for different layout
+.col-sm-9.text-center{
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+*/
+
+.col-sm-9.text-left{
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2%;
+    /*border: 1px solid black;     only for testing  */
+}
+
+
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    clear: both;
+}
+
+footer,
+.push {
+    height: 80px;
+}
+
+.navbar-brand{
+    width: auto;
+    height: 50px;
+}
+
+/* login fields  */
+.input-group{
+    width: 130px;
+    margin-right: 3px;
+}
+
+
+#regButton{
+    color: #2dbb4d;
+}
+
+.button{
+    display: block;
+    margin-top: 10%;
+    font-size: x-large;
+}
+
+.button:hover{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+/* medium sized screens: a few adjustments in the margins of the content */
+@media screen and (max-width: 1180px){
+    .navbar-toggle span {
+        background-color: white;
+    }
+
+    .row.content {
+        margin-top: 13%;
+    }
+
+
+}
+
+
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    #wrapper {
+        min-height: 100%;
+
+        /* Equal to height of footer */
+        /* But also accounting for potential margin-bottom of last child */
+        margin-bottom: -60px;
+    }
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        float: none;
+        margin-top: 30%;
+        margin-bottom: 13%;
+    }
+
+
+    .navbar-toggle span {
+        background-color: white;
+    }
+
+    footer{
+        background-color: #555;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        clear: both;
+    }
+
+    footer,
+    .push {
+        height: 80px;
+    }
+
+
+    .img-responsive{
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .button{
+        display: block;
+        margin-top: 2%;
+        font-size: large;
+    }
+
+
+}
