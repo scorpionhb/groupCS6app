@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="clubPageStyle.css">
     <script src="homeJS.js"></script>
 
-    <script src="zabuto_calendar.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="zabuto_calendar.min.css">
+    <script src="../zabuto_calendar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../zabuto_calendar.min.css">
 
 </head>
 <body>
