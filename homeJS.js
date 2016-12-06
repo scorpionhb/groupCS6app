@@ -147,7 +147,7 @@ $(document).ready(function () {
             next: '<i class="fa fa-chevron-circle-right"></i>'
         },
         ajax:{
-            url: "event.json",
+            url: "event.txt",
             //modal: true,
         }
     });
