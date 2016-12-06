@@ -148,7 +148,7 @@ $(document).ready(function () {
         },
         ajax:{
             url: "event.json",
-            modal: true,
+            //modal: true,
         }
     });
 
