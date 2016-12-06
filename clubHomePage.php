@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ACER
+ * Date: 06/12/2016
+ * Time: 22:25
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,15 +59,15 @@
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li ><form id="signin" class="navbar-form navbar-right" role="form">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
-                        </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
+                            </div>
 
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                        </div></form>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                            </div></form>
                     </li>
 
                     <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -77,7 +86,7 @@
                 <div class="textCont">
                     <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png" alt="">
                     <a class="button" href="#">Home</a>
-                    <a class="button" href="#">Photos</a>
+                    <a class="button" href="http://cs6testapp.azurewebsites.net/clubHomePage.php">Photos</a>
                     <a class="button" href="#">About</a>
                 </div>
             </div>
@@ -92,11 +101,11 @@
                 <div class="textCont">
                     <h2>Event one</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
                 </div>
 
@@ -215,3 +224,4 @@
 
 </body>
 </html>
+

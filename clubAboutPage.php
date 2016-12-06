@@ -85,7 +85,7 @@
                 <div class="textCont">
                     <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png" alt="">
                     <a class="button" href="#">Home</a>
-                    <a class="button" href="#">Photos</a>
+                    <a class="button" href="http://cs6testapp.azurewebsites.net/clubHomePage.php">Photos</a>
                     <a class="button" href="http://cs6testapp.azurewebsites.net/clubAboutPage.php">About</a>
                 </div>
             </div>

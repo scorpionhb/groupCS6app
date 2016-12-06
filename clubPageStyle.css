@@ -68,6 +68,22 @@ li a{
 
 
 
+.colTitle{
+    margin-left: 2%;
+}
+
+.photos{
+    margin-left: 2%;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.thumbnail{
+    margin-top: 20px;
+}
+
+
+
 /* Set gray background color and 100% height */
 .sidenav {
     padding-top: 20px;
