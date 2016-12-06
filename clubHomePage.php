@@ -150,6 +150,24 @@
             </div>
 
 
+
+            <div class="col-sm-2 text-left calendar">
+
+                <div class="textCont">
+                    <h2>Calendar</h2>
+                </div>
+
+
+
+                <span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 18px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+                    <div id="demo"></div></span>
+
+
+
+            </div>
+
+
+
             <div class="col-sm-2 text-left colTitle">
                 <div class="textCont">
                     <h2>Photos</h2>
@@ -206,20 +224,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-2 text-left calendar">
 
-                <div class="textCont">
-                    <h2>Calendar</h2>
-                </div>
-
-
-
-                <span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 18px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">
-                    <div id="demo"></div></span>
-
-
-
-            </div>
 
 
 
