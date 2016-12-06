@@ -28,7 +28,7 @@ function logIn() {
         button.style.marginLeft = "15px";
 
         logoutButton.appendChild(button);
-        logoutButton.addEventListener("mousedown", logOut);
+        span.addEventListener("mousedown", logOut);
 
         button.id = "loginFields";
 
@@ -46,20 +46,69 @@ function logIn() {
         element.appendChild(helloSign);
         helloSign.id = "loginFields1";
 
-
-    refresh();
-
-
+     // var  display = document.querySelector('#test');
+        startTimer(600);
     }
-}
+};
+
 //if logout kick user from platform
 function logOut(){
+   location.reload();
+};
 
-        location.reload();
+function timeout(){
+    bootbox.confirm({
+        title: "Session ending?",
+        id: "probvai",
+        message: "Do you want to activate the Deathstar now? This cannot be undone.",
+        buttons: {
+            cancel: {
+                label: '<i class="fa fa-check"></i> Logout' ,
 
+            },
+            confirm: {
+                label: '<i class="fa fa-times"></i> Reset timer',
+
+            },
+
+        },
+        callback: function (result) {
+            if(result){
+                alertify.set('notifier','position', 'top-right');
+                alertify.success("Timer resseted for 10 minutes");
+                timer = 600;
+            }else{
+                location.reload();
+            }
+        }
+    });
+
+
+};
+var timer, minutes, seconds;
+function startTimer(duration) {
+    timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      //  display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+                location.reload();
+        }else if(timer == 60 ){
+            timeout();
+
+
+        }
+    }, 1000);
 }
-//kick user after 10 minutes in website
-function refresh() {
 
-    setTimeout(function(){ location.reload(); }, 60000*10);
-}
+ function logginTimeout() {
+    var fiveMinutes = 60 * 10,
+        display = document.querySelector('#test');
+    startTimer(fiveMinutes, display);
+};
