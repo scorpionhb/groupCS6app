@@ -18,6 +18,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="clubPageStyle.css">
     <script src="homeJS.js"></script>
+
+    <script src="zabuto_calendar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="zabuto_calendar.min.css">
+
 </head>
 <body>
 <div id="wrapper">
@@ -201,6 +205,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-2 text-left">
+                <div>
+
+                    <span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 18px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+                        <div id="demo"></div></span>
+
+                    <?php
+
+
+                    ?>
+
+                </div>
+            </div>
+
 
 
 
