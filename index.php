@@ -122,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                         $username = $_POST["username"];
                         $password = $_POST["password"];
 
+
                         function checkLogin($username, $password, $db)
                         {
                             $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
