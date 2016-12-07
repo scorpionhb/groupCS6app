@@ -164,6 +164,3 @@ if(isset($_POST['submit'])){
 
 
 
-<?PHP
-echo $output;
-?>/
