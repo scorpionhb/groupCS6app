@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                                 <input id="password" type="password" class="form-control" name="password"
                                        value="" placeholder="Password">
                             </div>
-                    <li><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
+                    <li onclick="logIn()"><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
                     </form>
 
                     </li>
@@ -123,12 +123,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                         $password = $_POST["password"];
 
 
+
+
                         function checkLogin($username, $password, $db)
                         {
                             $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
                                 return true;
+                                $test = $("#loginFields1").val("Hello ");
                             }
                             return false;
                         }
