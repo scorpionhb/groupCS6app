@@ -146,7 +146,7 @@ $(document).ready(function () {
         data: eventData,
         legend: false, // object array, [{type: string, label: string, classname: string}]
         action: false, // function
-        action_nav: false,
+        action_nav: true,
         cell_border: true,
         today: true,
         show_days: false,
@@ -157,7 +157,7 @@ $(document).ready(function () {
         },
         ajax:{
             url: "event.txt",
-            //modal: true,
+            modal: true,
         }
     });
 
