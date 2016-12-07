@@ -34,7 +34,7 @@ function logIn() {
 
         // add welcome sign
         var helloSign = document.createElement("ul"),
-            hiText = document.getElementById("username").value;
+            hiText = document.getElementById("username").toString();
         helloSign.appendChild(hiText);
         helloSign.style.color = "white";
 
