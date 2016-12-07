@@ -59,17 +59,6 @@
             <label class="telephone"><b>Phone Number:</b></label>
             <input  type="tel"  placeholder="telephone:" name="tel">
 
-            <label class="chooseUser"><b>Type of user:</b></label>
-
-            <select class="dropDownForm" name="userChooser">
-                <option value="choose">Choose:</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
-
-            <input class="checkboxNKPAG" type="checkbox" checked="checked"> Choose if you want to be NKPAG
-            <label class="adminValidation"><b>*Requires validation from site admin</b></label>
             <br><input class="checkboxTerms" type="checkbox" checked="checked"> I agree with terms and conditions</br>
 
             <input class="registerbtn" type="submit" value="Register">
