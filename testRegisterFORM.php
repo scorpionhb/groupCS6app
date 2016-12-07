@@ -125,9 +125,9 @@ if(isset($_POST['submit'])){
     <div class="container-fluid text-center">
         <div class="row content">
 
-            <div class="col-sm-3 text-left aaa"></div>
+            <div class="col-sm-3 text-left"></div>
 
-                <div class="col-sm-6 text-center aaa">
+                <div class="col-sm-6 text-center ">
                     <h2>New user registration form:</h2>
                     <form method="post" onsubmit="return myFunction()">
                         <table>
@@ -175,7 +175,7 @@ if(isset($_POST['submit'])){
                     ?>/
 
                 </div>
-            <div class="col-sm-3 aaa"></div>
+            <div class="col-sm-3"></div>
         </div>
     </div>
 
