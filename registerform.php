@@ -79,7 +79,7 @@ if(isset($_POST['submit'])){
 
         <div class="container">
             <label class="username"><b>Enter Username:</b></label>
-            <input  type="text" placeholder="enter username:" name="uesername" required>
+            <input  type="text" placeholder="enter username:" name="username" required>
 
             <label class="password"><b>Enter Password:</b></label>
             <input id="password1" type="password" placeholder="enter password:" name="password" required>
