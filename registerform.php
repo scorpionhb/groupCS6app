@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
         </div>
     </nav>
 
-    <form action="action_page.php" onsubmit="return myFunction()" method="post">
+    <form action="http://cs6testapp.azurewebsites.net/" onsubmit="return myFunction()" method="post">
 
 
         <div class="container">
