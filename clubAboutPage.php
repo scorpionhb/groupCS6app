@@ -60,7 +60,7 @@
                     <li ><form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
                             </div>
 
                             <div class="input-group">
@@ -129,7 +129,7 @@
 
 
 <div class="push"></div>
-</div>
+
 
 
 <footer class="container-fluid text-center">
