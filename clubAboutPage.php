@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
-                    <li><a href="#">Health and Well-being</a></li>
+                    <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
 
@@ -85,7 +85,7 @@
                 <div class="textCont">
                     <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png" alt="">
                     <a class="button" href="http://cs6testapp.azurewebsites.net/clubHomePage.php">Home</a>
-                    <a class="button" href="#">Photos</a>
+                    <a class="button" href="http://cs6testapp.azurewebsites.net/clubPhotosPage.php">Photos</a>
                     <a class="button" href="http://cs6testapp.azurewebsites.net/clubAboutPage.php">About</a>
                 </div>
             </div>
