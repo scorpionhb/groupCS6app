@@ -111,6 +111,8 @@ if(isset($_POST['submit'])){
         </div>
     </nav>
 
+    <div class="container-fluid text-center">
+        <div class="row content">
 
 
 <form method="post">
@@ -139,6 +141,11 @@ if(isset($_POST['submit'])){
 
     <input type="submit" name="submit" value="Register"/>
 </form>
+
+            </div>
+        </div>
+
+
 
 <?PHP
 echo $output;
