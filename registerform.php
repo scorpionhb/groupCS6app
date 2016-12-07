@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <form action="registerform.php"  method="post">
+    <form  method="post">
 
 
         <div class="container">
