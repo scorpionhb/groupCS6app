@@ -101,6 +101,9 @@
                 <div class="textCont">
                     <h2>About</h2>
                     <hr>
+                    <h3>Genre</h3>
+                    <p>Fun</p>
+                    <hr>
                     <h3>Description</h3>
                     <p>СкандаУ са готини, ама ние повече!</p>
                     <p>Търси го като къртица в тъмното.</p>
