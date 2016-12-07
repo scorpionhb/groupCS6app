@@ -33,10 +33,10 @@ function logIn() {
         button.id = "loginFields";
 
         // add welcome sign
-        var helloSign = document.createElement("ul"),
-            text = document.getElementById("username").value ,
-            hiText = document.createTextNode(text);
-        helloSign.appendChild(hiText);
+        var helloSign = document.createElement("p"),
+          //  text = document.getElementById("username").value ,
+            hiText = document.createTextNode("Hello John");
+      //  helloSign.appendChild(hiText);
         helloSign.style.color = "white";
 
         var element = document.getElementById("myNavbar");
