@@ -82,7 +82,7 @@ if(isset($_POST['submit'])){
             <input id="password1" type="password" placeholder="enter password:" name="password" required>
 
             <label class="repeatPassword"><b>Repeat Password:</b></label>
-            <input id="password2" type="password" placeholder="repeat password:" name="pswrepeat" required>
+            <input id="password2" type="password" placeholder="repeat password:" name="rpassword" required>
 
             <label class="email"><b>Email:</b></label>
             <input  type="email" placeholder="email:" name="email" required>
