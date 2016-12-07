@@ -152,6 +152,7 @@ if(isset($_POST['submit'])){
                                 <td><input type="text" name="tel"/></td>
                             </tr>
                             <tr>
+                                <td>Type of user:</td>
                                 <td>
                                     <select class="dropDownForm" name="userChooser">
                                         <option value= 1>Choose:</option>
@@ -161,12 +162,7 @@ if(isset($_POST['submit'])){
                                     </select>
                                 </td>
                             </tr>
-                            <select class="dropDownForm" name="userChooser">
-                                <option value= 1>Choose:</option>
-                                <option value= 2>Saab</option>
-                                <option value= 3>Fiat</option>
-                                <option value= 4>Audi</option>
-                            </select>
+
 
                         </table>
 
