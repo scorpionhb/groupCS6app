@@ -132,7 +132,7 @@ function startTimer(duration) {
 
 var eventData = [
     {"date":"2016-12-01","badge":false,"title":"Example 1"},
-    {"date":"2016-12-12","badge":true,"title":"Example 2"}
+    {"date":"2016-12-16","badge":true,"title":"Example 2"}
 ];
 ////////////testttttttttttt
 
@@ -143,7 +143,7 @@ $(document).ready(function () {
         month: month,
         show_previous: true,
         show_next: true,
-        data: eventData,
+        data: false, //can hard-code using eventData.. now we use event.txt for the events
         legend: false, // object array, [{type: string, label: string, classname: string}]
         action: false, // function
         action_nav: true,
