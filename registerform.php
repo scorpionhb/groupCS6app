@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
         </div>
     </nav>
 
-    <form action="registerform.php" onsubmit="return myFunction()" method="post">
+    <form action="registerform.php"  method="post">
 
 
         <div class="container">
@@ -96,10 +96,10 @@ if(isset($_POST['submit'])){
             <label class="chooseUser"><b>Type of user:</b></label>
 
             <select class="dropDownForm" name="userChooser">
-                <option value="choose">Choose:</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value= 1>Choose:</option>
+                <option value= 2>Saab</option>
+                <option value= 3>Fiat</option>
+                <option value= 4>Audi</option>
             </select>
 
             <input class="checkboxNKPAG" type="checkbox" checked="checked"> Choose if you want to be NKPAG
@@ -107,7 +107,7 @@ if(isset($_POST['submit'])){
             <br><input class="checkboxTerms" type="checkbox" checked="checked"> I agree with terms and conditions</br>
 
             <input class="registerbtn" type="submit" value="Register">
-            <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
+            <button class="cancelbtn" type="button" >Cancel</button>
         </div>
     </form>
 
