@@ -123,7 +123,7 @@
                             $username = $mysqli->real_escape_string($username);
                             $password = $mysqli->real_escape_string($password);
                             $query= $mysqli->query("SELECT userID FROM users WHERE username =
-          '$username' AND password = '$password'");
+          '$username' AND password = md5('$password')");
 
                             if($query->num_rows == 0){
                                 $output = "Invalid username/password";
