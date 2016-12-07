@@ -104,7 +104,7 @@ $output = "Welcome Guest";
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
-                        <form id="signin" class="navbar-form navbar-right" role="form">
+                        <form id="signin" class="navbar-form navbar-right" role="form" method="post">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <input id="username" type="text" class="form-control" name="username" value=""
