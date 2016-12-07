@@ -51,7 +51,7 @@
             <input id="password1" type="text" placeholder="enter password:" name="clubgenre" required>
 
             <label class="repeatPassword"><b>Club Description</b></label>
-            <textarea name="message" rows="10" cols="40" required></textarea>
+            <textarea name="message" rows="10" cols="80" required></textarea>
 
             <label class="email"><b>Email:</b></label>
             <input  type="email" placeholder="email:" name="email" required>
