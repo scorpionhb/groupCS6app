@@ -19,7 +19,18 @@ if(isset($_POST['submit'])){
         $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
         $username = $mysqli->real_escape_string($username);
         $password = $mysqli->real_escape_string($password);
+        $query= $mysqli->query("SELECT userID FROM users WHERE username =
+          '$username' AND password = '$password'");
 
+        if($query->num_rows == 0){
+            $output = "Invalid username/password";
+        }else{
+            $_SESSION['loggedin'] = true;
+            $_SESSION['user'] = $username;
+
+            $output = "Welcome". $_SESSION['user']."- <a href='index.php'>Logout</a>";
+
+        }
 
     }
 }
