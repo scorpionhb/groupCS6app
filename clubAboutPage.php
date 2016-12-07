@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-9 text-left">
+            <div class="col-sm-6 text-left">
                 <div class="textCont">
                     <h2>About</h2>
                     <hr>
