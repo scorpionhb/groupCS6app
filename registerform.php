@@ -4,7 +4,7 @@
 $output = null;
 
 if(isset($_POST['submit'])){
-    include ("dbconnect.php");
+    include ("dbConnect.php");
 
     $username = $mysqli->real_escape_string($_POST['username']);
     $password = $mysqli->real_escape_string ($_POST['password']);
