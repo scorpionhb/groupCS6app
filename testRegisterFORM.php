@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gerry
- * Date: 7.12.2016 г.
- * Time: 16:55
- */
+
 
 $output = null;
 
@@ -21,9 +16,12 @@ if(isset($_POST['submit'])){
 
 
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
-    if($query->num_rows != 0){
-        $output = "That User Name already taken ";
-
+    if(empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)){
+        $output = "Please fill in all fields.";
+    }elseif($query->num_rows != 0){
+        $output = "That User Name already taken!";
+    }elseif($rpassword != $password){
+        $output ="Your passwords does not match!";
     }else{
         //Encrypt the password
         $password = md5($password);
@@ -39,6 +37,7 @@ if(isset($_POST['submit'])){
 
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
