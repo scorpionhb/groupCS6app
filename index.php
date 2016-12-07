@@ -1,47 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: ACER
- * Date: 04/12/2016
- * Time: 14:07
- */
-session_start();
-$output = null;
-//Check Form
-if(isset($_POST['submit'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
 
-    if(empty('$username') || empty('$password')){
-        $output = "Password or username not valid ";
-    }else{
-        //Connect to the database
-        $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
-        $username = $mysqli->real_escape_string($username);
-        $password = $mysqli->real_escape_string($password);
-        $query= $mysqli->query("SELECT userID FROM users WHERE username =
-          '$username' AND password = '$password'");
-
-        if($query->num_rows == 0){
-            $output = "Invalid username/password";
-        }else{
-            $_SESSION['loggedin'] = true;
-            $_SESSION['user'] = $username;
-
-            $output = "Welcome". $_SESSION['user']."- <a href='index.php'>Logout</a>";
-
-        }
-
-    }
-}
-
-
-
-if(!isset($_SESSION['loggedin'])){
-//Display Welcome Guest/Display login form
-echo "Welcome Guest";
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -144,6 +101,50 @@ echo "Welcome Guest";
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
+                    <?php
+                    /**
+                     * Created by PhpStorm.
+                     * User: ACER
+                     * Date: 04/12/2016
+                     * Time: 14:07
+                     */
+                    session_start();
+                    $output = null;
+                    //Check Form
+                    if(isset($_POST['submit'])){
+                        $username = $_POST['username'];
+                        $password = $_POST['password'];
+
+                        if(empty('$username') || empty('$password')){
+                            $output = "Password or username not valid ";
+                        }else{
+                            //Connect to the database
+                            $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+                            $username = $mysqli->real_escape_string($username);
+                            $password = $mysqli->real_escape_string($password);
+                            $query= $mysqli->query("SELECT userID FROM users WHERE username =
+          '$username' AND password = '$password'");
+
+                            if($query->num_rows == 0){
+                                $output = "Invalid username/password";
+                            }else{
+                                $_SESSION['loggedin'] = true;
+                                $_SESSION['user'] = $username;
+
+                                $output = "Welcome". $_SESSION['user']."- <a href='index.php'>Logout</a>";
+
+                            }
+
+                        }
+                    }
+
+
+
+                    if(!isset($_SESSION['loggedin'])){
+//Display Welcome Guest/Display login form
+                        echo "Welcome Guest";
+
+                        ?>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
                     <?php
