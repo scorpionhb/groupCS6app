@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
 
 if(!isset($_SESSION['loggedin'])){
 //Display Welcome Guest/Display login form
-$output = "Welcome Guest";
+echo "Welcome Guest";
 
 ?>
 
