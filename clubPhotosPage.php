@@ -65,7 +65,7 @@
                     <li ><form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="username" class="form-control" name="username" value="" placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
                             </div>
 
                             <div class="input-group">
@@ -128,7 +128,7 @@
                                 </li>
 
                                 <li class="col-sm-3">
-                                    <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                                    <a class="thumbnail" id="carousel-selector-3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png"></a>
                                 </li>
 
                                 <li class="col-sm-3">
@@ -264,7 +264,7 @@
 
 
 <div class="push"></div>
-</div>
+
 
 
 <footer class="container-fluid text-center">
