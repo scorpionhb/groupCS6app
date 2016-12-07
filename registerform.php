@@ -16,14 +16,14 @@ if(isset($_POST['submit'])){
     $phone = $mysqli->real_escape_string($_POST['tel']);
     $typeOfUser =    $mysqli->real_escape_string ($_POST['userChooser']);
 
-    $query = $mysqli->query("SELECT * FROM user WHERE username = '$username'");
+    $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
     if($query->num_rows != 0){
         $output = "That User Name already taken ";
     }else{
         //Encrypt the password
         $password = md5($password);
         //Insert the record
-        $insert = $mysqli->query("INSERT INTO user(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$phone','$typeOfUser')");
+        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$phone','$typeOfUser')");
         if($insert != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
