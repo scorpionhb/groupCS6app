@@ -128,7 +128,7 @@
                                 </li>
 
                                 <li class="col-sm-3">
-                                    <a class="thumbnail" id="carousel-selector-3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png"></a>
+                                    <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/470x480&text=3"></a>
                                 </li>
 
                                 <li class="col-sm-3">
@@ -195,7 +195,7 @@
                                                     <img src="http://placehold.it/470x480&text=2"></div>
 
                                                 <div class="item" data-slide-number="3">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png"></div>
+                                                    <img src="http://placehold.it/470x480&text=3"></div>
 
                                                 <div class="item" data-slide-number="4">
                                                     <img src="http://placehold.it/470x480&text=4"></div>
