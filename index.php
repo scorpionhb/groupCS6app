@@ -5,6 +5,31 @@
  * Date: 04/12/2016
  * Time: 14:07
  */
+session_start();
+$output = null;
+//Check Form
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if(empty('$username') || empty('$password')){
+        $output = "Password or username not valid ";
+    }else{
+        //Connect to the database
+        $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+        $username = $mysqli->real_escape_string($username);
+        $password = $mysqli->real_escape_string($password);
+
+
+    }
+}
+
+
+
+if(!isset($_SESSION['loggedin'])){
+//Display Welcome Guest/Display login form
+$output = "Welcome Guest";
+
 ?>
 
 <!DOCTYPE html>
@@ -38,11 +63,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="navbar-brand" src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
+                <img class="navbar-brand"
+                     src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
+                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a>
+                    </li>
                     <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
@@ -63,17 +90,23 @@
                     </li>
                 </ul>
 
+
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
-                    <li><form id="signin" class="navbar-form navbar-right" role="form">
+                    <li>
+                        <form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value=""
+                                       placeholder="Username">
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                            </div></form>
+                                <input id="password" type="password" class="form-control" name="password"
+                                       value="" placeholder="Password">
+                            </div>
+                        </form>
+
                     </li>
                     <li  onclick="logIn()"><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
                     <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
@@ -81,7 +114,13 @@
             </div>
         </div>
     </nav>
+    <?php
+    }else{
+        //Display Welcome *USER
 
+    }
+    echo $output;
+    ?>
     <div class="container-fluid text-center">
         <div class="row content">
 
