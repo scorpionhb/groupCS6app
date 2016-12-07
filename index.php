@@ -76,6 +76,7 @@
                             </div></form>
                     </li>
                     <li  onclick="logIn()"><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
+                    <li  onclick="logIn()"><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
                     <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
