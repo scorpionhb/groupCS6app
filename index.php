@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
                                 return true;
-                                $test = $("#loginFields1").val("Hello ");
+                               // $test = $("#loginFields1").val("Hello ");
                             }
                             return false;
                         }
