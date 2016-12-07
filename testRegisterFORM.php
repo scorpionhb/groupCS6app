@@ -34,7 +34,6 @@ if(isset($_POST['submit'])){
             $output .= $mysqli->error;
         }else{
             $output = "You have been registered!";
-            echo "<script type=\"text/javascript\">  alertify.success(\"Timer resseted for 10 minutes\"); </script> ";
         }
     }
 
@@ -129,7 +128,7 @@ if(isset($_POST['submit'])){
             <div class="col-sm-3 text-left aaa"></div>
 
                 <div class="col-sm-6 text-center aaa">
-
+                    <h2>New user registration form:</h2>
                     <form method="post" onsubmit="return myFunction()">
                         <table>
                             <tr>
