@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                                 <input id="password" type="password" class="form-control" name="password"
                                        value="" placeholder="Password">
                             </div>
-                    <li onclick="logIn()"><input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span></li>
+                    <input type="submit" value="Login"/><span class="glyphicon glyphicon-log-in"></span>
                     </form>
 
                     </li>
