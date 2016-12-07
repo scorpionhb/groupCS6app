@@ -125,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                         function checkLogin($username, $password, $db)
                         {
-                            $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
+                            $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
                                 return true;
@@ -137,6 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             session_start();
                             $_SESSION['username'] = $username;
                             header("location: http://cs6testapp.azurewebsites.net/index.php ");
+
                         } else {
                             header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
                         }
