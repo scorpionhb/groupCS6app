@@ -96,6 +96,7 @@
         $phone = $mysqli->real_escape_string($_POST['tel']);
         $typeOfUser =    $mysqli->real_escape_string ($_POST['userChooser']);
 
+
         $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
         if($query->num_rows != 0){
             $output = "That User Name already taken ";
