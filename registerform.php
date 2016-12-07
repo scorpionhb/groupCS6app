@@ -103,7 +103,7 @@
             //Encrypt the password
             $password = md5($password);
             //Insert the record
-            $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$phone','$typeOfUser')");
+            $insert = $mysqli->query("INSERT INTO users(username, password, email, tel_number, type_of_user) VALUE ('" . $username ."','" . $password ."','". $email ."','". $phone ."','". $typeOfUser ."')");
             if($insert != true){
                 $output = "There was a problem <br/>";
                 $output .= $mysqli->error;
