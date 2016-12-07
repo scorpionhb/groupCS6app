@@ -16,6 +16,8 @@ if(isset($_POST['submit'])){
     $password = $mysqli->real_escape_string ($_POST['password']);
     $rpassword = $mysqli->real_escape_string($_POST['rpassword']);
     $email =    $mysqli->real_escape_string ($_POST['email']);
+    $telNumber =    $mysqli->real_escape_string ($_POST['tel']);
+
 
 
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
@@ -25,7 +27,7 @@ if(isset($_POST['submit'])){
         //Encrypt the password
         $password = md5($password);
         //Insert the record
-        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email')");
+        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number) VALUES ('$username','$password','$email','$telNumber')");
         if($insert != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
@@ -54,6 +56,10 @@ if(isset($_POST['submit'])){
         <tr>
             <td>Email:</td>
             <td><input type="email" name="email"/></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="tel"/></td>
         </tr>
     </table>
 
