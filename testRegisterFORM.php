@@ -23,6 +23,7 @@ if(isset($_POST['submit'])){
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
     if($query->num_rows != 0){
         $output = "That User Name already taken ";
+        alertify.success("Timer resseted for 10 minutes");
     }else{
         //Encrypt the password
         $password = md5($password);

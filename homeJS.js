@@ -110,9 +110,7 @@ function startTimer(duration) {
 }
 
  function logginTimeout() {
-    var fiveMinutes = 60 * 10,
-        display = document.querySelector('#test');
-    startTimer(fiveMinutes, display);
+     alertify.success("Timer resseted for 10 minutes");
 };
 
 

@@ -18,6 +18,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="homeStyle.css">
     <script src="homeJS.js"></script>
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 </head>
 <body>
 
@@ -69,7 +76,7 @@
                             </div></form>
                     </li>
                     <li  onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
         </div>
