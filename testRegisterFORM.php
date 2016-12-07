@@ -34,6 +34,7 @@ if(isset($_POST['submit'])){
             $output .= $mysqli->error;
         }else{
             $output = "You have been registered!";
+            echo "<script type=\"text/javascript\">  alertify.success(\"Timer resseted for 10 minutes\"); </script> ";
         }
     }
 
