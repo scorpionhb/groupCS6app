@@ -138,6 +138,21 @@ var eventData = [
 
 $(document).ready(function () {
     $("#demo").zabuto_calendar({
+        language: false,
+        year: year,
+        month: month,
+        show_previous: true,
+        show_next: true,
+        cell_border: false,
+        today: false,
+        show_days: true,
+        weekstartson: 1,
+        nav_icon: false, // object: prev: string, next: string
+        data: eventData,
+        ajax: false, // object: url: string, modal: boolean,
+        legend: false, // object array, [{type: string, label: string, classname: string}]
+        action: false, // function
+        action_nav: false,
         cell_border: true,
         today: true,
         show_days: false,
