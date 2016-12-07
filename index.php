@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                         if (checkLogin($username, $password, $db)) {
                             session_start();
                             $_SESSION['username'] = $username;
-                            header("location: http://cs6testapp.azurewebsites.net/clubHomePage.php ");
+                            header("location: http://cs6testapp.azurewebsites.net/index.php ");
                         } else {
                             header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
                         }
