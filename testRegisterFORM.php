@@ -152,8 +152,13 @@ if(isset($_POST['submit'])){
 
                         <input type="submit" name="submit" value="Register"/>
                     </form>
+
+                    <?PHP
+                    echo $output;
+                    ?>/
+
                 </div>
-            <div class="col-sm-3 aaa></div>
+            <div class="col-sm-3 aaa"></div>
         </div>
     </div>
 
