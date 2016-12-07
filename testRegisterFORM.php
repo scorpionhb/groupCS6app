@@ -50,6 +50,7 @@ if(isset($_POST['submit'])){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="clubPageStyle.css">
     <script src="homeJS.js"></script>
+    <script type="text/javascript" src="registerJS.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -118,7 +119,7 @@ if(isset($_POST['submit'])){
 
                 <div class="col-sm-6 text-center aaa">
 
-                    <form method="post">
+                    <form method="post" onsubmit="return myFunction()">
                         <table>
                             <tr>
                                 <td>Username:</td>
