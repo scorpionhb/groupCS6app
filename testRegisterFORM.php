@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
         //Insert the record
         $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')");
         $insert2 = $mysqli->query("INSERT INTO type_of_users(username) VALUES ('$username')");
-        if($insert != true){
+        if($insert2 != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
         }else{
