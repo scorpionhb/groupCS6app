@@ -114,36 +114,40 @@ if(isset($_POST['submit'])){
     <div class="container-fluid text-center">
         <div class="row content">
 
+            <div class="col-sm-3 text-left"></div>
 
-<form method="post">
-    <table>
-        <tr>
-            <td>Username:</td>
-            <td><input type="text" name="username"/></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="password"/></td>
-        </tr>
-        <tr>
-            <td>Repeat Password:</td>
-            <td><input type="password" name="rpassword"/></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input type="email" name="email"/></td>
-        </tr>
-        <tr>
-            <td>Telephone:</td>
-            <td><input type="text" name="tel"/></td>
-        </tr>
-    </table>
+                <div class="col-sm-6 text-center">
 
-    <input type="submit" name="submit" value="Register"/>
-</form>
+                    <form method="post">
+                        <table>
+                            <tr>
+                                <td>Username:</td>
+                                <td><input type="text" name="username"/></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="password"/></td>
+                            </tr>
+                            <tr>
+                                <td>Repeat Password:</td>
+                                <td><input type="password" name="rpassword"/></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="email"/></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone:</td>
+                                <td><input type="text" name="tel"/></td>
+                            </tr>
+                        </table>
 
-            </div>
+                        <input type="submit" name="submit" value="Register"/>
+                    </form>
+                </div>
+            <div class="col-sm-3"></div>
         </div>
+    </div>
 
 
 
