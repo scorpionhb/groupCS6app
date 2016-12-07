@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
     if($query->num_rows != 0){
         $output = "That User Name already taken ";
-        alertify.success("Timer resseted for 10 minutes");
+
     }else{
         //Encrypt the password
         $password = md5($password);
@@ -34,6 +34,7 @@ if(isset($_POST['submit'])){
             $output .= $mysqli->error;
         }else{
             $output = "You have been registered!";
+            alertify.success("Timer resseted for 10 minutes");
         }
     }
 
@@ -52,6 +53,15 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" type="text/css" href="clubPageStyle.css">
     <script src="homeJS.js"></script>
     <script type="text/javascript" src="registerJS.js"></script>
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
+
+
 </head>
 <body>
 <div id="wrapper">
@@ -105,7 +115,7 @@ if(isset($_POST['submit'])){
                     </li>
 
                     <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
 
 
