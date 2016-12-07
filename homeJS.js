@@ -151,10 +151,11 @@ $(document).ready(function () {
         today: true,
         show_days: false,
         weekstartson: 0,
-        nav_icon: {
+        nav_icon: false,
+        /*nav_icon: {
             prev: '<i class="fa fa-chevron-circle-left"></i>',
             next: '<i class="fa fa-chevron-circle-right"></i>'
-        },
+        },*/
         ajax:{
             url: "event.txt",
             modal: true,
