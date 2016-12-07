@@ -55,6 +55,7 @@ function logIn() {
 function logOut(){
    location.reload();
     alertify.success("Timer resseted for 10 minutes");
+
 };
 
 function timeout(){
