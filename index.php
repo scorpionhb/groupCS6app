@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                     </li>
 
-                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span
+                    <li "><a onclick="logginTimeout() id="regButton" href="#"><span
                                 class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
                                 return true;
-                            //   $b =("#loginFields1").val("Hello ");
+                               $b =("#loginFields1").val("Hello ");
                             }
                             return false;
                         }
