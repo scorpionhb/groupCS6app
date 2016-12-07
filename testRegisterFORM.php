@@ -151,7 +151,16 @@ if(isset($_POST['submit'])){
                                 <td>Telephone:</td>
                                 <td><input type="text" name="tel"/></td>
                             </tr>
-
+                            <tr>
+                                <td>
+                                    <select class="dropDownForm" name="userChooser">
+                                        <option value= 1>Choose:</option>
+                                        <option value= 2>Saab</option>
+                                        <option value= 3>Fiat</option>
+                                        <option value= 4>Audi</option>
+                                    </select>
+                                </td>
+                            </tr>
                             <select class="dropDownForm" name="userChooser">
                                 <option value= 1>Choose:</option>
                                 <option value= 2>Saab</option>
