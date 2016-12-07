@@ -5,41 +5,9 @@
  * Date: 04/12/2016
  * Time: 14:07
  */
-session_start();
-$output = null;
-//Check Form
-if(isset($_POST['submit'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
 
-    if(empty('$username') || empty('$password')){
-        $output = "Password or username not valid ";
-    }else{
-        //Connect to the database
-        $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
-        $username = $mysqli->real_escape_string($username);
-        $password = $mysqli->real_escape_string($password);
-        $query= $mysqli->query("SELECT userID FROM users WHERE username =
-          '$username' AND password = md5('$password')");
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
-        if($query->num_rows == 0){
-            $output = "Invalid username/password";
-        }else{
-            $_SESSION['loggedin'] = true;
-            $_SESSION['user'] = $username;
-
-            $output = "Welcome". $_SESSION['user']."- <a href='index.php'>Logout</a>";
-
-        }
-
-    }
-}
-
-
-
-if(!isset($_SESSION['loggedin'])){
-//Display Welcome Guest/Display login form
-echo "Welcome Guest";
 
 ?>
 
@@ -145,13 +113,44 @@ echo "Welcome Guest";
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
+                    <?php
 
+                    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+                        include("dbConnect.php");
+
+                        $username = $_POST["username"];
+                        $password = $_POST["password"];
+
+                        function checkLogin($username, $password, $db)
+                        {
+                            $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . $password . "'";
+                            $result = $db->query($sql);
+                            while ($row = $result->fetch_array()) {
+                                return true;
+                            }
+                            return false;
+                        }
+
+
+                        if (checkLogin($username, $password, $db)) {
+                            session_start();
+                            $_SESSION['username'] = $username;
+                            header("location: http://cs6testapp.azurewebsites.net/clubHomePage.php ");
+                        } else {
+                            header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
+                        }
+
+                    } else {
+                        print('whoops');
+                    }
+
+
+
+
+                    ?>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
-                    <?php
-                    }
-                    echo $output;
-                    ?>
                 </div>
             </div>
 
