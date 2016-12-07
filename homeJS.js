@@ -54,6 +54,7 @@ function logIn() {
 //if logout kick user from platform
 function logOut(){
    location.reload();
+    alertify.success("Timer resseted for 10 minutes");
 };
 
 function timeout(){
