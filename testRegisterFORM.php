@@ -16,8 +16,7 @@ if(isset($_POST['submit'])){
     $password = $mysqli->real_escape_string ($_POST['password']);
     $rpassword = $mysqli->real_escape_string($_POST['rpassword']);
     $email =    $mysqli->real_escape_string ($_POST['email']);
-    $rpassword = $mysqli->real_escape_string($_POST['']);
-    $email =    $mysqli->real_escape_string ($_POST['email']);
+
 
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
     if($query->num_rows != 0){
