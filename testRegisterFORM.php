@@ -26,8 +26,9 @@ if(isset($_POST['submit'])){
         //Encrypt the password
         $password = md5($password);
         //Insert the record
-        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')");
-        $insert2 = $mysqli->query("INSERT INTO type_of_users(username) VALUES ('$username')");
+        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')",
+            "INSERT INTO type_of_users(username) VALUES ('$username')");
+
         if($insert != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
