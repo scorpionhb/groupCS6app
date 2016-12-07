@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     $rpassword = $mysqli->real_escape_string($_POST['rpassword']);
     $email =    $mysqli->real_escape_string ($_POST['email']);
     $telNumber =    $mysqli->real_escape_string ($_POST['tel']);
-
+    $typeOfUser = "Admin";
 
 
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
@@ -140,6 +140,14 @@ if(isset($_POST['submit'])){
                                 <td>Telephone:</td>
                                 <td><input type="text" name="tel"/></td>
                             </tr>
+
+                            <select class="dropDownForm" name="userChooser">
+                                <option value= 1>Choose:</option>
+                                <option value= 2>Saab</option>
+                                <option value= 3>Fiat</option>
+                                <option value= 4>Audi</option>
+                            </select>
+
                         </table>
 
                         <input type="submit" name="submit" value="Register"/>
