@@ -1,39 +1,5 @@
 <?php
 
-
-
-
-$output = null;
-
-if(isset($_POST['submit'])){
-
-    include ("dbConnect.php");
-
-    $username = $mysqli->real_escape_string($_POST['username']);
-    $password = $mysqli->real_escape_string ($_POST['password']);
-    $rpassword = $mysqli->real_escape_string($_POST['rpassword']);
-    $email =    $mysqli->real_escape_string ($_POST['email']);
-    $phone = $mysqli->real_escape_string($_POST['tel']);
-    $typeOfUser =    $mysqli->real_escape_string ($_POST['userChooser']);
-
-    $query = $mysqli->query("SELECT * FROM user WHERE username = '$username'");
-    if($query->num_rows != 0){
-        $output = "That User Name already taken ";
-    }else{
-        //Encrypt the password
-        $password = md5($password);
-        //Insert the record
-        $insert = $mysqli->query("INSERT INTO user(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$phone','$typeOfUser')");
-        if($insert != true){
-            $output = "There was a problem <br/>";
-            $output .= $mysqli->error;
-        }else{
-            $output = "You have been registered!";
-        }
-    }
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -78,14 +44,14 @@ if(isset($_POST['submit'])){
 
 
         <div class="container">
-            <label class="username"><b>Enter Username:</b></label>
-            <input  type="text" placeholder="enter username:" name="uesername" required>
+            <label class="username"><b>Enter Club Name:</b></label>
+            <input  type="text" placeholder="enter club name:" name="clubname" required>
 
-            <label class="password"><b>Enter Password:</b></label>
-            <input id="password1" type="password" placeholder="enter password:" name="password" required>
+            <label class="password"><b>Club Genre:</b></label>
+            <input id="password1" type="text" placeholder="enter password:" name="clubgenre" required>
 
-            <label class="repeatPassword"><b>Repeat Password:</b></label>
-            <input id="password2" type="password" placeholder="repeat password:" name="rpassword" required>
+            <label class="repeatPassword"><b>Club Description</b></label>
+            <textarea name="message" rows="10" cols="30" required></textarea>
 
             <label class="email"><b>Email:</b></label>
             <input  type="email" placeholder="email:" name="email" required>
@@ -123,5 +89,3 @@ if(isset($_POST['submit'])){
 
 </body>
 
-
-</html>
