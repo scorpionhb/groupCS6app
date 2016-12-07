@@ -114,9 +114,9 @@ if(isset($_POST['submit'])){
     <div class="container-fluid text-center">
         <div class="row content">
 
-            <div class="col-sm-3 text-left"></div>
+            <div class="col-sm-3 text-left aaa"></div>
 
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-6 text-center aaa">
 
                     <form method="post">
                         <table>
@@ -145,7 +145,7 @@ if(isset($_POST['submit'])){
                         <input type="submit" name="submit" value="Register"/>
                     </form>
                 </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3 aaa></div>
         </div>
     </div>
 
