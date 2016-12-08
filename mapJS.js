@@ -1,6 +1,7 @@
 /**
  * Created by Sanctuum on 04-Dec-16.
  */
+var allMap;
 function load(){
     var map = new google.maps.Map(document.getElementById("map"),{
         center: new google.maps.LatLng(57.060955, -2.134886),
