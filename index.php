@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                     </li>
 
-                    <li "><a onclick="logginTimeout() id="regButton" href="#"><span
+                    <li "><a onclick="logginTimeout()" id="regButton" href="#"><span
                                 class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
@@ -130,8 +130,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
-                                return true;
-                               $b =("#loginFields1").val("Hello ");
+                                $test =( "#loginFields1" ).val(); // Get the value of a form input.
+
+                               $test.val( "hello world" );
+                               // $("#loginFields1").val("Hello ");
+                                 return true;
+
                             }
                             return false;
                         }
