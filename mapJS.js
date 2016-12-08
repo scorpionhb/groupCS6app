@@ -29,6 +29,55 @@ function load(){
 
 }
 
+function downloadUrl(url,callback){
+    var request =window.ActiveXObject ?
+        new ActiveXObject('Microsoft.XMLHTTP') :
+        new XMLHttpRequest;
+
+    request.onreadystatechange = function(){
+        if (request.readyState == 4){
+            callback(request, request.sttus);
+        }
+    };
+    request.open('GET', url, true);
+    request.send(null);
+}
+
+function test() {
+    console.log("test");
+    load();
+    if(document.getElementById("clubs").checked) {
+        downloadUrl("locations.php", function (data) {
+            var xml = data.responseXML;
+            var markers = xml.documentElement.getElementsByTagName("marker");
+            for (var i = 0; i < markers.length; i++) {
+                var point = new google.maps.LatLng(
+                    parseFloat(markers[i].getAttribute("lat")),
+                    parseFloat(markers[i].getAttribute("lng")));
+                var marker = new google.maps.Marker({
+                    map: allMap,
+                    position: point
+                });
+            }
+        });
+    }
+    else{
+        downloadUrl("location.php", function (data) {
+            var xml = data.responseXML;
+            var markers = xml.documentElement.getElementsByTagName("marker");
+            for (var i = 0; i < markers.length; i++) {
+                var point = new google.maps.LatLng(
+                    parseFloat(markers[i].getAttribute("lat")),
+                    parseFloat(markers[i].getAttribute("lng")));
+                var marker = new google.maps.Marker({
+                    map: allMap,
+                    position: point
+                });
+            }
+        });
+    }
+}
+
 function geoLocation() {
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode({'address': address}, function (results, status) {

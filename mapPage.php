@@ -68,6 +68,7 @@
                 <label class="checkboxes"><input type="checkbox" value="Landmarks"><b>Landmarks</b></label><br>
             </div>
             <p id="test">Testvai Tova</p>
+            <button onclick="test()" type="button" id="filterButton"><b>Filter</b></button>
         </div>
         <div id = "map"></div>
         
