@@ -130,9 +130,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
                             $result = $db->query($sql);
                             while ($row = $result->fetch_array()) {
-                                $test =( "#loginFields1" ).val(); // Get the value of a form input.
+                                //$test =( "#loginFields1" ); // Get the value of a form input.
 
-                               $test.val( "hello world" );
+                          //     $test.val( "hello world" );
                                // $("#loginFields1").val("Hello ");
                                  return true;
 
