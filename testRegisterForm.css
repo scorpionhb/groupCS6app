@@ -28,7 +28,7 @@ li a{
 }
 
 label.UserName, label.Password, label.RepeatPassword, label.TelephoneClass, label.EmailClass,label.chooseUser{
-    margin-right: 90%;
+    margin-right: 100%;
 }
 
 .dropDownForm{
@@ -42,7 +42,7 @@ label.UserName, label.Password, label.RepeatPassword, label.TelephoneClass, labe
 input.registerbtn {
     background-color: #2b8aaf;
     padding: 14px;
-    margin-right: 50%;
+    margin-right: 35%;
     width: 24%;
     color: white;
     border: none;
