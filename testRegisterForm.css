@@ -3,12 +3,6 @@ html, body {
     margin: 0;
 }
 
-form {
-    border: 3px solid #f1f1f1;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
 #wrapper {
     min-height: 100%;
     /* Equal to height of footer */
@@ -48,15 +42,6 @@ li a{
     clear: both;
     margin-top: 2%;
     /*border: 1px solid black;     only for testing  */
-}
-
-input[type=text], input[type=password],input[type=tel],input[type=email]{
-    width:50%;
-    padding: 12px 20px;
-    margin: 0.5% 50% 0.5% 25%;
-    display: block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 
@@ -189,7 +174,7 @@ table{
 
 
 /* medium sized screens: a few adjustments in the margins of the content */
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px){
     .navbar-toggle span {
         background-color: white;
     }
@@ -198,12 +183,20 @@ table{
         margin-top: 15%;
     }
 
-    /* On small screens, set height to 'auto' for sidenav and grid */
+
+}
+
+
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
     html, body {
         height: 100%;
         margin: 0;
     }
-
     #wrapper {
         min-height: 100%;
 
@@ -211,23 +204,22 @@ table{
         /* But also accounting for potential margin-bottom of last child */
         margin-bottom: -60px;
     }
-
     .sidenav {
         height: auto;
         padding: 15px;
     }
-
     .row.content {
         float: none;
         margin-top: 30%;
         margin-bottom: 13%;
     }
 
+
     .navbar-toggle span {
         background-color: white;
     }
 
-    footer {
+    footer{
         background-color: #555;
         width: 100%;
         color: white;
@@ -240,15 +232,17 @@ table{
         height: 80px;
     }
 
-    .img-responsive {
+
+    .img-responsive{
         max-width: 20%;
         max-height: 20%;
     }
 
-    .button {
+    .button{
         display: block;
         margin-top: 2%;
         font-size: large;
     }
+
 
 }
