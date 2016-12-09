@@ -3,6 +3,12 @@ html, body {
     margin: 0;
 }
 
+form {
+    border: 3px solid #f1f1f1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 #wrapper {
     min-height: 100%;
     /* Equal to height of footer */
@@ -185,8 +191,6 @@ table{
 
 
 }
-
-
 
 
 
