@@ -73,6 +73,10 @@ input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownFo
     width: 24%;
     padding: 14px;
     background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+
 }
 
 
