@@ -62,7 +62,7 @@ input.registerbtn {
 }
 
 input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
-    width:25%;
+    width:50%;
     padding: 12px 20px;
     display: block;
     border: 1px solid #ccc;
@@ -70,7 +70,7 @@ input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownFo
 }
 
 .cancelbtn {
-    width: 50%;
+    width: 25%;
     padding: 14px;
     background-color: #f44336;
     color: white;
