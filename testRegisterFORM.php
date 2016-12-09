@@ -134,13 +134,13 @@ if(isset($_POST['submit'])){
                         <div class="container">
 
                             <label class="UserName"><b>Enter Username:</b></label>
-                            <input type="text" placeholder="enter username:" name="username" required/>
+                            <input class="CName" type="text" placeholder="enter username:" name="username" required/>
 
                             <label class="Password"><b>Enter Password:</b></label>
-                            <input type="password" placeholder="enter password:" name="password" required/>
+                            <input class="CPassword" type="password" placeholder="enter password:" name="password" required/>
 
                             <label class="RepeatPassword"><b>Repeat Password:</b></label>
-                            <input type="password" placeholder="repeat password:" name="rpassword" required/>
+                            <input class="CPassword" type="password" placeholder="repeat password:" name="rpassword" required/>
 
 
                             <tr>

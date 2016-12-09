@@ -27,6 +27,20 @@ li a{
     color: white;
 }
 
+label.UserName, label.Password, label.RepeatPassword, label.telephone, label.email,label.chooseUser{
+    margin: 0.5% 10% 0.5% 25%;
+}
+
+input.CPassword, input.CName{
+    width:50%;
+    padding: 12px 20px;
+    margin: 0.5% 50% 0.5% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
     margin-top: 5%;
