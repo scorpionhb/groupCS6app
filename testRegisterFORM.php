@@ -143,10 +143,9 @@ if(isset($_POST['submit'])){
                             <input class="CPassword" type="password" placeholder="repeat password:" name="rpassword" required/>
 
 
-                            <tr>
-                                <td>Email:</td>
-                                <td><input type="email" name="email"/></td>
-                            </tr>
+                            <label class="EmailClass"><b>Email:</b></label>
+                            <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
+
                             <tr>
                                 <td>Telephone:</td>
                                 <td><input type="text" name="tel"/></td>
