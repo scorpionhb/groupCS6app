@@ -28,13 +28,12 @@ li a{
 }
 
 label.UserName, label.Password, label.RepeatPassword, label.TelephoneClass, label.EmailClass,label.chooseUser{
-    margin: 0.5% 10% 0.5% 50%;
+
 }
 
 .dropDownForm{
     width:50%;
     padding: 12px 10px;
-    margin: 0.5% 50% 0.5% 25%;
     display: block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -53,7 +52,6 @@ input.registerbtn {
 input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
     width:50%;
     padding: 12px 20px;
-    margin: 0% 0% 0% 0%;
     display: block;
     border: 1px solid #ccc;
     box-sizing: border-box;
