@@ -180,7 +180,7 @@ table{
 
 
 /* medium sized screens: a few adjustments in the margins of the content */
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
     .navbar-toggle span {
         background-color: white;
     }
@@ -189,18 +189,12 @@ table{
         margin-top: 15%;
     }
 
-
-}
-
-
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-
+    /* On small screens, set height to 'auto' for sidenav and grid */
     html, body {
         height: 100%;
         margin: 0;
     }
+
     #wrapper {
         min-height: 100%;
 
@@ -208,22 +202,23 @@ table{
         /* But also accounting for potential margin-bottom of last child */
         margin-bottom: -60px;
     }
+
     .sidenav {
         height: auto;
         padding: 15px;
     }
+
     .row.content {
         float: none;
         margin-top: 30%;
         margin-bottom: 13%;
     }
 
-
     .navbar-toggle span {
         background-color: white;
     }
 
-    footer{
+    footer {
         background-color: #555;
         width: 100%;
         color: white;
@@ -236,17 +231,15 @@ table{
         height: 80px;
     }
 
-
-    .img-responsive{
+    .img-responsive {
         max-width: 20%;
         max-height: 20%;
     }
 
-    .button{
+    .button {
         display: block;
         margin-top: 2%;
         font-size: large;
     }
-
 
 }
