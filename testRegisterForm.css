@@ -32,7 +32,7 @@ li a{
     padding-bottom: 5%;
     float: none;
 }
-
+/*
 .col-sm-3.text-left{
     height: inherit;
     margin-left: auto;
@@ -41,10 +41,10 @@ li a{
     padding-right: 10%;
     clear: both;
     margin-top: 2%;
-    /*border: 1px solid black;     only for testing  */
+    /*border: 1px solid black;     only for testing
 }
 
-
+*/
 /* test for different layout
 .col-sm-9.text-center{
     height: inherit;
@@ -175,9 +175,7 @@ table{
 
 /* medium sized screens: a few adjustments in the margins of the content */
 @media screen and (max-width: 1180px){
-    .navbar-toggle span {
-        background-color: white;
-    }
+
 
     .row.content {
         margin-top: 15%;
