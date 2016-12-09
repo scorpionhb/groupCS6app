@@ -161,7 +161,7 @@ if(isset($_POST['submit'])){
 
                         </div>
 
-                        <input type="submit" name="submit" value="Register"/>
+                        <input  class="registerbtn" type="submit" name="submit" value="Register"/>
                     </form>
 
                     <?PHP
