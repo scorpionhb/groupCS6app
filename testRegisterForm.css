@@ -32,41 +32,10 @@ li a{
     padding-bottom: 5%;
     float: none;
 }
-/*
-.col-sm-3.text-left{
-    height: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    clear: both;
-    margin-top: 2%;
-    /*border: 1px solid black;     only for testing
-}
 
-*/
-/* test for different layout
-.col-sm-9.text-center{
-    height: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 2%;
-    border: 1px solid black;
+.UserName{
+    margin: 5%;
 }
-*/
-/*
-.col-sm-9.text-left{
-    height: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 2%;
-    /*border: 1px solid black;     only for testing
-}
-*/
 
 
 .colTitle{
