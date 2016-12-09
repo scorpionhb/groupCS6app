@@ -149,9 +149,8 @@ if(isset($_POST['submit'])){
                             <label class="TelephoneClass"><b>Phone Number:</b></label>
                             <input class="CPhoneNumber" type="text" placeholder="enter phone:" name="tel"/>
 
-                            <tr>
-                                <td>Type of user:</td>
-                                <td>
+                            <label class="chooseUser"><b>Type of user:</b></label>
+
                                     <select class="dropDownForm" name="userChooser">
                                         <option value= 1>User:</option>
                                         <option value= 2>Contributor</option>
@@ -159,9 +158,7 @@ if(isset($_POST['submit'])){
                                         <option value= 4>Club Administrator</option>
                                         <option value= 5>Site Administrator</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr></tr>
+
                         </div>
 
                         <input type="submit" name="submit" value="Register"/>

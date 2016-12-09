@@ -31,7 +31,7 @@ label.UserName, label.Password, label.RepeatPassword, label.TelephoneClass, labe
     margin: 0.5% 10% 0.5% 25%;
 }
 
-input.CPassword, input.CName, input.CEmail, input.CPhoneNumber{
+input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
     width:50%;
     padding: 12px 20px;
     margin: 0.5% 50% 0.5% 25%;
