@@ -132,10 +132,10 @@ if(isset($_POST['submit'])){
                     <h2>New user registration form:</h2>
                     <form method="post" onsubmit="return myFunction()">
                         <div class="container">
-                            <tr>
-                                <td>Username:</td>
-                                <td><input type="text" name="username"/></td>
-                            </tr>
+
+                            <label class="UserName"><b>Enter Username:</b></label>
+                            <input type="text" placeholder="enter username:" name="username" required/>
+
                             <tr>
                                 <td>Password:</td>
                                 <td><input type="password" name="password"/></td>
