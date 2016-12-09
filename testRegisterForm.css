@@ -181,16 +181,6 @@ table{
         margin-top: 15%;
     }
 
-
-
-
-
-
-
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-
-
     html, body {
         height: 100%;
         margin: 0;
@@ -229,6 +219,8 @@ table{
     .push {
         height: 80px;
     }
+
+
 
 
     .img-responsive{

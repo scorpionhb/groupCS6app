@@ -182,7 +182,11 @@ if(isset($_POST['submit'])){
             <div class="col-sm-3"></div>
 
         </div>
+        <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+        </footer>
     </div>
+
     <footer class="container-fluid text-center">
         <p>Footer Text</p>
     </footer>
