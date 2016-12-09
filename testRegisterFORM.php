@@ -131,8 +131,8 @@ if(isset($_POST['submit'])){
                 <div class="col-sm-6 text-center ">
                     <h2>New user registration form:</h2>
                     <form method="post" onsubmit="return myFunction()">
-                        <table>
-                            <tr class="UserName">
+                        <div class="container">
+                            <tr>
                                 <td>Username:</td>
                                 <td><input type="text" name="username"/></td>
                             </tr>
@@ -165,9 +165,7 @@ if(isset($_POST['submit'])){
                                 </td>
                             </tr>
                             <tr></tr>
-
-
-                        </table>
+                        </div>
 
                         <input type="submit" name="submit" value="Register"/>
                     </form>
