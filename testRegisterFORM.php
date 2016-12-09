@@ -176,12 +176,13 @@ if(isset($_POST['submit'])){
                     echo $output;
                     ?>
 
-                    <footer class="container-fluid text-center">
-                        <p>Footer Text</p>
-                    </footer>
+
 
                 </div>
             <div class="col-sm-3"></div>
+            <footer class="container-fluid text-center">
+                <p>Footer Text</p>
+            </footer>
         </div>
     </div>
 

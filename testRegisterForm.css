@@ -50,6 +50,7 @@ li a{
     /*border: 1px solid black;     only for testing
 }
 */
+
 input[type=text], input[type=password],input[type=tel],input[type=email]{
     width:50%;
     padding: 12px 20px;
