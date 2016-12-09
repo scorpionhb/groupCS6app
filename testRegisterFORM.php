@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="clubPageStyle.css">
     <script src="homeJS.js"></script>
     <script type="text/javascript" src="registerJS.js"></script>
     <link rel="stylesheet" type="text/css" href="testRegisterForm.css">
