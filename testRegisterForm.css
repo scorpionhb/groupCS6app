@@ -1,0 +1,29 @@
+footer {
+    background-color: #555;
+    width: 100%;
+    color: white;
+    padding-top: 15px;
+    clear: both;
+}
+
+footer,
+.push {
+    height: 80px;
+}
+
+@media screen and (max-width: 1010px) {
+
+    footer{
+        background-color: #555;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        clear: both;
+        margin-top: 15%;
+    }
+
+    footer,
+    .push {
+        height: 80px;
+    }
+}
