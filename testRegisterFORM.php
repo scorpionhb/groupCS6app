@@ -179,7 +179,7 @@ if(isset($_POST['submit'])){
 
 
                 </div>
-            <div class="col-sm-3"></div>
+
 
         </div>
         <footer class="container-fluid text-center">
