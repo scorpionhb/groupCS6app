@@ -173,7 +173,11 @@ if(isset($_POST['submit'])){
 
                     <?PHP
                     echo $output;
-                    ?>/
+                    ?>
+
+                    <footer class="container-fluid text-center">
+                        <p>Footer Text</p>
+                    </footer>
 
                 </div>
             <div class="col-sm-3"></div>
