@@ -185,6 +185,7 @@ if(isset($_POST['submit'])){
             </footer>
         </div>
     </div>
-
+</body>
+</html>
 
 
