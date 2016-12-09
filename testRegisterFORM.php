@@ -180,11 +180,12 @@ if(isset($_POST['submit'])){
 
                 </div>
             <div class="col-sm-3"></div>
-            <footer class="container-fluid text-center">
-                <p>Footer Text</p>
-            </footer>
+
         </div>
     </div>
+    <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+    </footer>
 </body>
 </html>
 
