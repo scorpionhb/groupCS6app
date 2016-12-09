@@ -3,7 +3,7 @@ html, body {
     margin: 0;
 }
 
-label.username, label.password, label.repeatPassword, label.telephone, label.email,label.chooseUser{
+label.UserName, label.password, label.repeatPassword, label.telephone, label.email,label.chooseUser{
     margin: 0.5% 10% 0.5% 25%;
 }
 
