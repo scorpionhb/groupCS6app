@@ -155,10 +155,11 @@ if(isset($_POST['submit'])){
                                 <td>Type of user:</td>
                                 <td>
                                     <select class="dropDownForm" name="userChooser">
-                                        <option value= 1>Choose:</option>
-                                        <option value= 2>Saab</option>
-                                        <option value= 3>Fiat</option>
-                                        <option value= 4>Audi</option>
+                                        <option value= 1>User:</option>
+                                        <option value= 2>Contributor</option>
+                                        <option value= 3>NKPAG</option>
+                                        <option value= 4>Club Administrator</option>
+                                        <option value= 5>Site Administrator</option>
                                     </select>
                                 </td>
                             </tr>

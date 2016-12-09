@@ -104,10 +104,11 @@ if(isset($_POST['submit'])){
             <label class="chooseUser"><b>Type of user:</b></label>
 
             <select class="dropDownForm" name="userChooser">
-                <option value= 1>Choose:</option>
-                <option value= 2>Saab</option>
-                <option value= 3>Fiat</option>
-                <option value= 4>Audi</option>
+                <option value= 1>User:</option>
+                <option value= 2>Contributor</option>
+                <option value= 3>NKPAG</option>
+                <option value= 4>Club Administrator</option>
+                <option value= 5>Site Administrator</option>
             </select>
 
             <input class="checkboxNKPAG" type="checkbox" checked="checked"> Choose if you want to be NKPAG
