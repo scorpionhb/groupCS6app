@@ -162,6 +162,7 @@ if(isset($_POST['submit'])){
                         </div>
 
                         <input  class="registerbtn" type="submit" name="submit" value="Register"/>
+                        <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
                     </form>
 
                     <?PHP

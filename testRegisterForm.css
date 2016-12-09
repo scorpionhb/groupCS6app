@@ -69,6 +69,12 @@ input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownFo
     box-sizing: border-box;
 }
 
+.cancelbtn {
+    width: 24%;
+    padding: 14px;
+    background-color: #f44336;
+}
+
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
