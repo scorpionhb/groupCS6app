@@ -27,11 +27,11 @@ li a{
     color: white;
 }
 
-label.UserName, label.Password, label.RepeatPassword, label.telephone, label.EmailClass,label.chooseUser{
+label.UserName, label.Password, label.RepeatPassword, label.TelephoneClass, label.EmailClass,label.chooseUser{
     margin: 0.5% 10% 0.5% 25%;
 }
 
-input.CPassword, input.CName, input.CEmail{
+input.CPassword, input.CName, input.CEmail, input.CPhoneNumber{
     width:50%;
     padding: 12px 20px;
     margin: 0.5% 50% 0.5% 25%;

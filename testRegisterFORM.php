@@ -146,10 +146,9 @@ if(isset($_POST['submit'])){
                             <label class="EmailClass"><b>Email:</b></label>
                             <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
 
-                            <tr>
-                                <td>Telephone:</td>
-                                <td><input type="text" name="tel"/></td>
-                            </tr>
+                            <label class="TelephoneClass"><b>Phone Number:</b></label>
+                            <input class="CPhoneNumber" type="text" placeholder="enter phone:" name="tel"/>
+
                             <tr>
                                 <td>Type of user:</td>
                                 <td>
