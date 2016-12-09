@@ -55,14 +55,14 @@ input.registerbtn {
     background-color: #2b8aaf;
     padding: 14px;
     margin: 0.5% 1% 0.5% 0%;
-    width: 50%;
+    width: 25%;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
-    width:50%;
+    width:25%;
     padding: 12px 20px;
     display: block;
     border: 1px solid #ccc;
