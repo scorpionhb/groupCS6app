@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                     </li>
 
-                    <li "><a  id="regButton" href="#"><span
+                    <li "><a  id="regButton" href="testRegisterFORM.php"><span
                                 class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
