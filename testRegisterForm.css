@@ -27,16 +27,20 @@ li a{
     color: white;
 }
 
-label.UserName, label.Password, label.TelephoneClass, label.chooseUser{
+label.UserName, label.Password, label.chooseUser{
     margin-right: 90%;
 }
 
+label.TelephoneClass{
+    margin-right: 97%;
+}
+
 label.RepeatPassword{
-    margin-right: 85%;
+    margin-right: 87%;
 }
 
 label.EmailClass{
-    margin-right: 95%;
+    margin-right: 97%;
 }
 
 .dropDownForm{
