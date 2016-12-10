@@ -72,7 +72,7 @@ input.ClubName, input.ClubGenre{
     box-sizing: border-box;
 }
 
-input.ClubDescription{
+textarea.ClubDescription{
     width:100%;
     height: 150px;
     padding: 12px 20px;
@@ -313,7 +313,7 @@ table {
         box-sizing: border-box;
     }
 
-    input.ClubDescription{
+    textarea.ClubDescription{
         width:100%;
         height: 150px;
         padding: 12px 20px;
