@@ -10,7 +10,7 @@
 
     <script src="homeJS.js"></script>
     <script type="text/javascript" src="registerJS.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="testRegisterForm.css">
 
     <!-- JavaScript -->
     <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
