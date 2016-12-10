@@ -261,12 +261,20 @@ table{
     }
 
 
-    label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword{
-        margin-right: 40%;
+    label.UserName, label.Password, label.TelephoneClass{
+        margin-right: 33%;
     }
 
     label.EmailClass{
-        margin-right: 80%;
+        margin-right: 44%;
+    }
+
+    label.RepeatPassword{
+        margin-right: 34%;
+    }
+
+    label.chooseUser{
+        margin-right: 35%;
     }
 
 
