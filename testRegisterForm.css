@@ -32,7 +32,7 @@ label.UserName, label.Password, label.TelephoneClass,label.RepeatPassword{
 }
 
 label.EmailClass{
-    margin-right: 50%;
+    margin-right: 45%;
 }
 
 label.chooseUser{
