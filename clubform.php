@@ -135,7 +135,7 @@ if (isset($_POST['submit'])) {
                 <h2>New club registration form:</h2>
 
                 <form method="post">
-                    <div class="container">
+
 
                         <label class="UserName"><b>Enter Club Name:</b></label>
                         <input class="ClubName" type="text" placeholder="enter club name:" name="clubname" required/>
@@ -152,7 +152,7 @@ if (isset($_POST['submit'])) {
 
                         <label class="Password"><b>Club Email:</b></label>
                         <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
-                    </div>
+
 
                     <input class="registerbtn" type="submit" name="submit" value="Register"/>
                 </form>
