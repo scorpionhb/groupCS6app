@@ -144,7 +144,7 @@ if (isset($_POST['submit'])) {
                         <input class="ClubGenre" type="text" placeholder="enter club genre:" name="clubgenre" required/>
 
                         <label class="Password"><b>Club Description:</b></label>
-                        <br></br>
+
                         <textarea class="ClubDescription" name="description">Some text...</textarea>
 
                         <label class="Password"><b>Phone Number:</b></label>
