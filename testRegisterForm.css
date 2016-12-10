@@ -63,7 +63,7 @@ input.registerbtn {
 }
 
 /*Style for the club registration form*/
-input.ClubName, input.ClubGenre, input.ClubDescription {
+input.ClubName, input.ClubGenre{
     width: 50%;
     padding: 12px 20px;
     margin: 0% 15% 0% 25%;
@@ -75,6 +75,11 @@ input.ClubName, input.ClubGenre, input.ClubDescription {
 input.ClubDescription{
     width:326px;
     height: 136px;
+    padding: 12px 20px;
+    margin: 0% 15% 0% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 /*Style for the user registration form */
