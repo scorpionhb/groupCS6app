@@ -28,7 +28,7 @@ li a{
 }
 
 label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
-    margin-right: 50%;
+    margin-right: 45%;
 }
 
 .dropDownForm{
@@ -42,7 +42,7 @@ label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.Repe
 
 input.registerbtn {
     background-color: #2b8aaf;
-    margin: 10% 0% 0% 0%;
+    margin: 5% 0% 0% 0%;
     padding: 14px;
     width: 30%;
     color: white;
@@ -61,7 +61,7 @@ input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownFo
 
 .cancelbtn {
     width: 30%;
-    margin: 10% 0% 0% 0%;
+    margin: 5% 0% 0% 0%;
     padding: 14px;
     background-color: #f44336;
     color: white;
@@ -249,7 +249,7 @@ table{
 
 
     label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
-        margin-right: 50%;
+        margin-right: 45%;
     }
 
 
@@ -263,7 +263,7 @@ table{
     }
 
     input.registerbtn {
-        margin: 10% 0% 0% 0%;
+        margin: 5% 0% 0% 0%;
         background-color: #2b8aaf;
         padding: 14px;
         width: 30%;
@@ -283,7 +283,7 @@ table{
 
     .cancelbtn {
         width: 30%;
-        margin: 10% 0% 0% 0%;
+        margin: 5% 0% 0% 0%;
         padding: 14px;
         background-color: #f44336;
         color: white;
