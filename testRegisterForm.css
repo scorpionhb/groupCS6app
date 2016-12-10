@@ -45,6 +45,7 @@ label.EmailClass{
 
 .dropDownForm{
     width:50%;
+    margin: 0% 15% 0% 25%;
     padding: 12px 10px;
     display: block;
     border: 1px solid #ccc;
@@ -275,6 +276,7 @@ table{
 
     .dropDownForm{
         width:50%;
+        margin: 0% 15% 0% 25%;
         padding: 12px 10px;
         display: block;
         border: 1px solid #ccc;
@@ -293,7 +295,7 @@ table{
     input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
         width:50%;
         padding: 12px 20px;
-        margin: 0% 90% 0% 0%;
+        margin: 0% 15% 0% 25%;
         display: block;
         border: 1px solid #ccc;
         box-sizing: border-box;
