@@ -1,3 +1,40 @@
+<?php
+
+
+$output = null;
+
+if(isset($_POST['submit'])){
+    //Connect to db
+    $mysqli =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+
+    $clubname = $mysqli->real_escape_string($_POST['clubname']);
+    $clubgenre = $mysqli->real_escape_string ($_POST['clubgenre']);
+    $clubdescription = $mysqli->real_escape_string($_POST['description']);
+    $email =    $mysqli->real_escape_string ($_POST['email']);
+    $phoneNumber =    $mysqli->real_escape_string ($_POST['phoneNumber']);
+
+
+    $query = $mysqli->query("SELECT * FROM clubs WHERE clubName = '$clubname'");
+    if(empty($clubname) OR empty($clubgenre) OR empty($email) OR empty($clubdescription) OR empty($phoneNumber)){
+        $output = "Please fill in all fields.";
+    }elseif($query->num_rows != 0){
+        $output = "That Club Name already taken!";
+    }else{
+        //Insert the record
+        $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_number) VALUES ('$clubname','$clubgenre','$deubdescription','$email','$phoneNumber')");
+
+        if($insert != true){
+            $output = "There was a problem <br/>";
+            $output .= $mysqli->error;
+        }else{
+            $output = "You have been registered!";
+        }
+    }
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
