@@ -88,3 +88,31 @@
 
             <div class="col-sm-6 text-center ">
                 <h2>New club registration form:</h2>
+
+                <form method="post">
+                    <div class="container">
+                      <input class="ClubName" type="text" placeholder="enter club name:" name="clubname" required/>
+                      <input class="ClubGenre" type="text" placeholder="enter club genre:" name="clubgenre" required/>
+                      <textarea class="ClubDescription" name="description">Some text...</textarea>
+                        <input class="CPhoneNumber" type="tel" placeholder="enter phone number:" name="phoneNumber" required/>
+                        <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
+                    </div>
+
+                    <input  class="registerbtn" type="submit" name="submit" value="Register"/>
+                </form>
+
+
+
+
+
+
+
+
+
+             </div>
+         </div>
+     </div>
+
+
+</body>
+</html>
