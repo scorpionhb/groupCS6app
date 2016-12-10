@@ -12,23 +12,18 @@ if(isset($_POST['submit'])){
     $description = $mysqli->real_escape_string($_POST['message']);
     $email =    $mysqli->real_escape_string ($_POST['email']);
     $telNumber =    $mysqli->real_escape_string ($_POST['tel']);
-    $typeOfUser = $mysqli->real_escape_string ($_POST['userChooser']);
 
 
-    $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
-    if(empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)){
+
+    $query = $mysqli->query("SELECT * FROM clubs WHERE clubName = '$clubname'");
+    if(empty($clubname) OR empty($clubgenre) OR empty($email) OR empty($description) OR empty($telNumber)){
         $output = "Please fill in all fields.";
     }elseif($query->num_rows != 0){
-        $output = "That User Name already taken!";
-    }elseif($rpassword != $password){
-        $output ="Your passwords does not match!";
+        $output = "That Club Name is already taken!";
     }else{
-        //Encrypt the password
-        $password = md5($password);
         //Insert the record
-        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')");
-        $insert2 = $mysqli->query("INSERT INTO type_of_user(username) VALUES ('$username')");
-        if($insert2 != true){
+        $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_number ) VALUES ('$clubname','$clubgenre','$description','$email','$telNumber')");
+        if($insert != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
         }else{
