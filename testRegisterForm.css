@@ -43,6 +43,10 @@ label.chooseUser {
     margin-right: 35%;
 }
 
+label.ClubEmail{
+    margin-right: 50%;
+}
+
 .dropDownForm {
     width: 50%;
     margin: 0% 15% 0% 25%;
@@ -314,7 +318,7 @@ table {
     }
 
     textarea.ClubDescription{
-        width:100%;
+        width:50%;
         height: 150px;
         padding: 12px 20px;
         margin: 0% 15% 0% 25%;

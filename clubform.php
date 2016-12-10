@@ -152,7 +152,7 @@ if (isset($_POST['submit'])) {
                                required/>
 
                         <label class="Password"><b>Club Email:</b></label>
-                        <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
+                        <input class="ClubEmail" type="email" placeholder="enter email:" name="email" required/>
 
 
                     <input class="registerbtn" type="submit" name="submit" value="Register"/>
