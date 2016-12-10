@@ -28,7 +28,7 @@ li a{
 }
 
 label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
-    margin-right: 45%;
+    margin-right: 25%;
 }
 
 .dropDownForm{
@@ -249,7 +249,7 @@ table{
 
 
     label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
-        margin-right: 45%;
+        margin-right: 25%;
     }
 
 
