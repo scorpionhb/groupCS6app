@@ -248,8 +248,12 @@ table{
     }
 
 
-    label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
-        margin-right: 25%;
+    label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword{
+        margin-right: 30%;
+    }
+
+    label.EmailClass{
+        margin-right: 50%;
     }
 
 
