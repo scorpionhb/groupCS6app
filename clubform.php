@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
         </div>
     </nav>
 
-    <form action="action_page.php" onsubmit="return myFunction()" method="post">
+    <form method="post">
 
 
         <div class="container">
