@@ -27,12 +27,16 @@ li a{
     color: white;
 }
 
-label.UserName, label.Password, label.TelephoneClass,label.RepeatPassword{
+label.UserName, label.Password, label.TelephoneClass{
     margin-right: 33%;
 }
 
 label.EmailClass{
     margin-right: 44%;
+}
+
+label.RepeatPassword{
+    margin-right: 34%;
 }
 
 label.chooseUser{
