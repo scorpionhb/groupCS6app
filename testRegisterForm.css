@@ -28,11 +28,11 @@ li a{
 }
 
 label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword{
-    margin-right: 40%;
+    margin-right: 35%;
 }
 
 label.EmailClass{
-    margin-right: 80%;
+    margin-right: 50%;
 }
 
 
