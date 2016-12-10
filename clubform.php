@@ -151,8 +151,8 @@ if (isset($_POST['submit'])) {
                         <input class="CPhoneNumber" type="tel" placeholder="enter phone number:" name="phoneNumber"
                                required/>
 
-                        <label class="Password"><b>Club Email:</b></label>
-                        <input class="ClubEmail" type="email" placeholder="enter email:" name="email" required/>
+                        <label class="ClubEmail"><b>Club Email:</b></label>
+                        <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
 
 
                     <input class="registerbtn" type="submit" name="submit" value="Register"/>
