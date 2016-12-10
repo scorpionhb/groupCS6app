@@ -72,6 +72,11 @@ input.ClubName, input.ClubGenre, input.ClubDescription {
     box-sizing: border-box;
 }
 
+input.ClubDescription{
+    width:326px;
+    height: 136px;
+}
+
 /*Style for the user registration form */
 input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm {
     width: 50%;
