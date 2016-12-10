@@ -304,8 +304,18 @@ table {
     }
 
     /*Style for the club registration form*/
-    input.ClubName, input.ClubGenre, input.ClubDescription {
+    input.ClubName, input.ClubGenre{
         width: 50%;
+        padding: 12px 20px;
+        margin: 0% 15% 0% 25%;
+        display: block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input.ClubDescription{
+        width:100%;
+        height: 150px;
         padding: 12px 20px;
         margin: 0% 15% 0% 25%;
         display: block;
