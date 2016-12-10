@@ -293,6 +293,7 @@ table{
     input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownForm{
         width:50%;
         padding: 12px 20px;
+        margin: 0% 90% 0% 0%;
         display: block;
         border: 1px solid #ccc;
         box-sizing: border-box;
