@@ -27,20 +27,8 @@ li a{
     color: white;
 }
 
-label.UserName, label.Password, label.TelephoneClass{
-    margin-right: 90%;
-}
-
-label.chooseUser{
-    margin-right: 91%;
-}
-
-label.RepeatPassword{
-    margin-right: 89%;
-}
-
-label.EmailClass{
-    margin-right: 97%;
+label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
+    margin-right: 50%;
 }
 
 .dropDownForm{
@@ -54,6 +42,7 @@ label.EmailClass{
 
 input.registerbtn {
     background-color: #2b8aaf;
+    margin: 10% 0% 0% 0%;
     padding: 14px;
     width: 30%;
     color: white;
@@ -72,6 +61,7 @@ input.CPassword, input.CName, input.CEmail, input.CPhoneNumber, input.dropDownFo
 
 .cancelbtn {
     width: 30%;
+    margin: 10% 0% 0% 0%;
     padding: 14px;
     background-color: #f44336;
     color: white;
@@ -258,21 +248,10 @@ table{
     }
 
 
-    label.UserName, label.Password, label.TelephoneClass{
-        margin-right: 90%;
+    label.UserName, label.Password, label.TelephoneClass,label.chooseUser,label.RepeatPassword,label.EmailClass{
+        margin-right: 50%;
     }
 
-    label.chooseUser{
-        margin-right: 91%;
-    }
-
-    label.RepeatPassword{
-        margin-right: 89%;
-    }
-
-    label.EmailClass{
-        margin-right: 97%;
-    }
 
     .dropDownForm{
         width:50%;
@@ -284,6 +263,7 @@ table{
     }
 
     input.registerbtn {
+        margin: 10% 0% 0% 0%;
         background-color: #2b8aaf;
         padding: 14px;
         width: 30%;
@@ -303,6 +283,7 @@ table{
 
     .cancelbtn {
         width: 30%;
+        margin: 10% 0% 0% 0%;
         padding: 14px;
         background-color: #f44336;
         color: white;
