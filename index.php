@@ -85,13 +85,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                                 <input id="password" type="password" class="form-control" name="password"
                                        value="" placeholder="Password">
                             </div>
-                    <input type="submit" value="Login" class="btn btn-info"/>
-                    </form>
+                            <input type="submit" value="Login" class="btn btn-info"/>
+                        </form>
 
                     </li>
 
-                    <li "><a  id="regButton" href="#"><span
-                                class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li
+                    "><a id="regButton" href="#"><span
+                            class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
         </div>
@@ -123,8 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                         $password = $_POST["password"];
 
 
-
-
                         function checkLogin($username, $password, $db)
                         {
                             $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
@@ -132,9 +131,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             while ($row = $result->fetch_array()) {
                                 //$test =( "#loginFields1" ); // Get the value of a form input.
 
-                          //     $test.val( "hello world" );
-                               // $("#loginFields1").val("Hello ");
-                                 return true;
+                                //     $test.val( "hello world" );
+                                // $("#loginFields1").val("Hello ");
+                                return true;
 
                             }
                             return false;
@@ -154,8 +153,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                     }
 
 
-
-
                     ?>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
@@ -165,9 +162,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             <div class="col-sm-12 text-left">
                 <div class="textCont">
-                    <img src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w" alt="">
+                    <img
+                        src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w"
+                        alt="">
                     <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
@@ -176,9 +180,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             <div class="col-sm-12 text-left">
                 <div class="textCont">
-                    <img src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w" alt="">
+                    <img
+                        src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w"
+                        alt="">
                     <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
@@ -187,9 +198,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             <div class="col-sm-12 text-left">
                 <div class="textCont">
-                    <img src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w" alt="">
+                    <img
+                        src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w"
+                        alt="">
                     <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
@@ -198,15 +216,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             <div class="col-sm-12 text-left">
                 <div class="textCont">
-                    <img src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w" alt="">
+                    <img
+                        src="https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w"
+                        alt="">
                     <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
-
 
 
         </div>

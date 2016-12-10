@@ -3,30 +3,30 @@
 
 $output = null;
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     //Connect to db
-    $mysqli =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+    $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
     $clubname = $mysqli->real_escape_string($_POST['clubname']);
-    $clubgenre = $mysqli->real_escape_string ($_POST['clubgenre']);
+    $clubgenre = $mysqli->real_escape_string($_POST['clubgenre']);
     $clubdescription = $mysqli->real_escape_string($_POST['description']);
-    $email =    $mysqli->real_escape_string ($_POST['email']);
-    $phoneNumber =    $mysqli->real_escape_string ($_POST['phoneNumber']);
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $phoneNumber = $mysqli->real_escape_string($_POST['phoneNumber']);
 
 
     $query = $mysqli->query("SELECT * FROM clubs WHERE clubName = '$clubname'");
-    if(empty($clubname) OR empty($clubgenre) OR empty($email) OR empty($clubdescription) OR empty($phoneNumber)){
+    if (empty($clubname) OR empty($clubgenre) OR empty($email) OR empty($clubdescription) OR empty($phoneNumber)) {
         $output = "Please fill in all fields.";
-    }elseif($query->num_rows != 0){
+    } elseif ($query->num_rows != 0) {
         $output = "That Club Name already taken!";
-    }else{
+    } else {
         //Insert the record
         $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_numer) VALUES ('$clubname','$clubgenre','$clubdescription','$email','$phoneNumber')");
 
-        if($insert != true){
+        if ($insert != true) {
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
-        }else{
+        } else {
             $output = "You have been registered!";
         }
     }
@@ -69,12 +69,14 @@ if(isset($_POST['submit'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="navbar-brand" src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
+                <img class="navbar-brand"
+                     src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
+                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a>
+                    </li>
                     <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
@@ -97,20 +99,26 @@ if(isset($_POST['submit'])){
 
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
-                    <li ><form id="signin" class="navbar-form navbar-right" role="form">
+                    <li>
+                        <form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value=""
+                                       placeholder="Username">
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                            </div></form>
+                                <input id="password" type="password" class="form-control" name="password" value=""
+                                       placeholder="Password">
+                            </div>
+                        </form>
                     </li>
 
-                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+                            Login</a></li>
+                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span
+                                class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
 
 
@@ -128,17 +136,26 @@ if(isset($_POST['submit'])){
 
                 <form method="post">
                     <div class="container">
-                      <input class="ClubName" type="text" placeholder="enter club name:" name="clubname" required/>
-                      <input class="ClubGenre" type="text" placeholder="enter club genre:" name="clubgenre" required/>
-                      <textarea class="ClubDescription" name="description">Some text...</textarea>
-                        <input class="CPhoneNumber" type="tel" placeholder="enter phone number:" name="phoneNumber" required/>
+
+                        <label class="UserName"><b>Enter Club Name:</b></label>
+                        <input class="ClubName" type="text" placeholder="enter club name:" name="clubname" required/>
+
+                        <label class="Password"><b>Enter Club Genre:</b></label>
+                        <input class="ClubGenre" type="text" placeholder="enter club genre:" name="clubgenre" required/>
+
+                        <label class="Password"><b>Club Description:</b></label>
+                        <textarea class="ClubDescription" name="description">Some text...</textarea>
+
+                        <label class="Password"><b>Phone Number:</b></label>
+                        <input class="CPhoneNumber" type="tel" placeholder="enter phone number:" name="phoneNumber"
+                               required/>
+
+                        <label class="Password"><b>Club Email:</b></label>
                         <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
                     </div>
 
-                    <input  class="registerbtn" type="submit" name="submit" value="Register"/>
+                    <input class="registerbtn" type="submit" name="submit" value="Register"/>
                 </form>
-
-
 
 
                 <?PHP
@@ -146,11 +163,9 @@ if(isset($_POST['submit'])){
                 ?>
 
 
-
-
-             </div>
-         </div>
-     </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>

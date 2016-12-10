@@ -3,35 +3,35 @@
 
 $output = null;
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     //Connect to db
-    $mysqli =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+    $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
     $username = $mysqli->real_escape_string($_POST['username']);
-    $password = $mysqli->real_escape_string ($_POST['password']);
+    $password = $mysqli->real_escape_string($_POST['password']);
     $rpassword = $mysqli->real_escape_string($_POST['rpassword']);
-    $email =    $mysqli->real_escape_string ($_POST['email']);
-    $telNumber =    $mysqli->real_escape_string ($_POST['tel']);
-    $typeOfUser = $mysqli->real_escape_string ($_POST['userChooser']);
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $telNumber = $mysqli->real_escape_string($_POST['tel']);
+    $typeOfUser = $mysqli->real_escape_string($_POST['userChooser']);
 
 
     $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
-    if(empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)){
+    if (empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)) {
         $output = "Please fill in all fields.";
-    }elseif($query->num_rows != 0){
+    } elseif ($query->num_rows != 0) {
         $output = "That User Name already taken!";
-    }elseif($rpassword != $password){
-        $output ="Your passwords does not match!";
-    }else{
+    } elseif ($rpassword != $password) {
+        $output = "Your passwords does not match!";
+    } else {
         //Encrypt the password
         $password = md5($password);
         //Insert the record
         $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')");
         $insert2 = $mysqli->query("INSERT INTO type_of_user(username) VALUES ('$username')");
-        if($insert2 != true){
+        if ($insert2 != true) {
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
-        }else{
+        } else {
             $output = "You have been registered!";
         }
     }
@@ -74,12 +74,14 @@ if(isset($_POST['submit'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="navbar-brand" src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
+                <img class="navbar-brand"
+                     src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
+                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a>
+                    </li>
                     <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
@@ -102,20 +104,26 @@ if(isset($_POST['submit'])){
 
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
-                    <li ><form id="signin" class="navbar-form navbar-right" role="form">
+                    <li>
+                        <form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value=""
+                                       placeholder="Username">
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                            </div></form>
+                                <input id="password" type="password" class="form-control" name="password" value=""
+                                       placeholder="Password">
+                            </div>
+                        </form>
                     </li>
 
-                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+                            Login</a></li>
+                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span
+                                class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
 
 
@@ -128,50 +136,48 @@ if(isset($_POST['submit'])){
 
             <div class="col-sm-3 text-left"></div>
 
-                <div class="col-sm-6 text-center ">
-                    <h2>New user registration form:</h2>
-                    <form method="post" onsubmit="return myFunction()">
+            <div class="col-sm-6 text-center ">
+                <h2>New user registration form:</h2>
+                <form method="post" onsubmit="return myFunction()">
 
 
-                            <label class="UserName"><b>Enter Username:</b></label>
-                            <input class="CName" type="text" placeholder="enter username:" name="username" required/>
+                    <label class="UserName"><b>Enter Username:</b></label>
+                    <input class="CName" type="text" placeholder="enter username:" name="username" required/>
 
-                            <label class="Password"><b>Enter Password:</b></label>
-                            <input class="CPassword" type="password" placeholder="enter password:" name="password" required/>
+                    <label class="Password"><b>Enter Password:</b></label>
+                    <input class="CPassword" type="password" placeholder="enter password:" name="password" required/>
 
-                            <label class="RepeatPassword"><b>Repeat Password:</b></label>
-                            <input class="CPassword" type="password" placeholder="repeat password:" name="rpassword" required/>
-
-
-                            <label class="EmailClass"><b>Email:</b></label>
-                            <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
-
-                            <label class="TelephoneClass"><b>Phone Number:</b></label>
-                            <input class="CPhoneNumber" type="text" placeholder="enter phone:" name="tel"/>
-
-                            <label class="chooseUser"><b>Type of user:</b></label>
-
-                                    <select class="dropDownForm" name="userChooser">
-                                        <option value= 1>User:</option>
-                                        <option value= 2>Contributor</option>
-                                        <option value= 3>NKPAG</option>
-                                        <option value= 4>Club Administrator</option>
-                                        <option value= 5>Site Administrator</option>
-                                    </select>
+                    <label class="RepeatPassword"><b>Repeat Password:</b></label>
+                    <input class="CPassword" type="password" placeholder="repeat password:" name="rpassword" required/>
 
 
+                    <label class="EmailClass"><b>Email:</b></label>
+                    <input class="CEmail" type="email" placeholder="enter email:" name="email" required/>
 
-                        <input  class="registerbtn" type="submit" name="submit" value="Register"/>
-                        <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
-                    </form>
+                    <label class="TelephoneClass"><b>Phone Number:</b></label>
+                    <input class="CPhoneNumber" type="text" placeholder="enter phone:" name="tel"/>
 
-                    <?PHP
-                    echo $output;
-                    ?>
+                    <label class="chooseUser"><b>Type of user:</b></label>
+
+                    <select class="dropDownForm" name="userChooser">
+                        <option value=1>User:</option>
+                        <option value=2>Contributor</option>
+                        <option value=3>NKPAG</option>
+                        <option value=4>Club Administrator</option>
+                        <option value=5>Site Administrator</option>
+                    </select>
 
 
+                    <input class="registerbtn" type="submit" name="submit" value="Register"/>
+                    <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
+                </form>
 
-                </div>
+                <?PHP
+                echo $output;
+                ?>
+
+
+            </div>
 
 
         </div>
