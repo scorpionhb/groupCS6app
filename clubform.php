@@ -1,5 +1,42 @@
 <?php
 
+
+$output = null;
+
+if(isset($_POST['submit'])){
+    //Connect to db
+    $mysqli =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+
+    $clubname = $mysqli->real_escape_string($_POST['clubname']);
+    $clubgenre = $mysqli->real_escape_string ($_POST['clubgenre']);
+    $description = $mysqli->real_escape_string($_POST['message']);
+    $email =    $mysqli->real_escape_string ($_POST['email']);
+    $telNumber =    $mysqli->real_escape_string ($_POST['tel']);
+    $typeOfUser = $mysqli->real_escape_string ($_POST['userChooser']);
+
+
+    $query = $mysqli->query("SELECT * FROM users WHERE username = '$username'");
+    if(empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)){
+        $output = "Please fill in all fields.";
+    }elseif($query->num_rows != 0){
+        $output = "That User Name already taken!";
+    }elseif($rpassword != $password){
+        $output ="Your passwords does not match!";
+    }else{
+        //Encrypt the password
+        $password = md5($password);
+        //Insert the record
+        $insert = $mysqli->query("INSERT INTO users(username,password,email,tel_number,type_of_user) VALUES ('$username','$password','$email','$telNumber','$typeOfUser')");
+        $insert2 = $mysqli->query("INSERT INTO type_of_user(username) VALUES ('$username')");
+        if($insert2 != true){
+            $output = "There was a problem <br/>";
+            $output .= $mysqli->error;
+        }else{
+            $output = "You have been registered!";
+        }
+    }
+
+}
 ?>
 
 <!DOCTYPE html>

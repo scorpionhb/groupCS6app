@@ -195,7 +195,7 @@ table{
 
 
 /* medium sized screens: a few adjustments in the margins of the content */
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 2125px){
 
 
     .row.content {
