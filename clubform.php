@@ -104,9 +104,7 @@ if(isset($_POST['submit'])){
 
 
 </div>
-<footer class="container-fluid text-center">
-    <p>Footer Text</p>
-</footer>
+
 
 </body>
 
