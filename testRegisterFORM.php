@@ -131,7 +131,7 @@ if(isset($_POST['submit'])){
                 <div class="col-sm-6 text-center ">
                     <h2>New user registration form:</h2>
                     <form method="post" onsubmit="return myFunction()">
-                        <div class="container">
+
 
                             <label class="UserName"><b>Enter Username:</b></label>
                             <input class="CName" type="text" placeholder="enter username:" name="username" required/>
@@ -159,7 +159,7 @@ if(isset($_POST['submit'])){
                                         <option value= 5>Site Administrator</option>
                                     </select>
 
-                        </div>
+
 
                         <input  class="registerbtn" type="submit" name="submit" value="Register"/>
                         <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
