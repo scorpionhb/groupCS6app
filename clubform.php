@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
         $output = "That Club Name already taken!";
     }else{
         //Insert the record
-        $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_number) VALUES ('$clubname','$clubgenre','$deubdescription','$email','$phoneNumber')");
+        $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_numer) VALUES ('$clubname','$clubgenre','$clubdescription','$email','$phoneNumber')");
 
         if($insert != true){
             $output = "There was a problem <br/>";
