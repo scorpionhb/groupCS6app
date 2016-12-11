@@ -111,7 +111,7 @@ $clubID = $_GET['clubID'];
 
 
                 <?php
-                    $sql_query = "SELECT * FROM clubs WHERE clubName = $clubID";
+                    $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
                     $result = $mysqli->query($sql_query);
                     while($row = $result->fetch_array()){
                         echo "<div class='textCont' >";
