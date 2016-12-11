@@ -41,7 +41,7 @@ echo $output= null;
         $sql_query1 = "SELECT * FROM type_of_users";
         $out = $mysqli->query($sql_query1);
         $result = $mysqli->query($sql_query);
-        while ($row = $result->fetch_array() && $res = $out->fetch_array()) {
+        while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
             echo "<td>" . $row['username'] . " </td>";
@@ -53,7 +53,6 @@ echo $output= null;
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
             echo "</tr>";
             echo "</form>";
-
         }
 
 
