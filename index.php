@@ -5,6 +5,8 @@
  * Date: 04/12/2016
  * Time: 14:07
  */
+$mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
+echo $output= null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
@@ -31,6 +33,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 </head>
 <body>
+
+
+
+
+
+<?php
+
+
+//-------------------------------------LOGIN REQUEST
+
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    include("dbConnect.php");
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+
+    function checkLogin($username, $password, $db)
+    {
+        $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
+        $result = $db->query($sql);
+        while ($row = $result->fetch_array()) {
+            //$test =( "#loginFields1" ); // Get the value of a form input.
+
+            //     $test.val( "hello world" );
+            // $("#loginFields1").val("Hello ");
+            return true;
+
+        }
+        return false;
+    }
+
+    if (checkLogin($username, $password, $db)) {
+        session_start();
+        $_SESSION['username'] = $username;
+        header("location: http://cs6testapp.azurewebsites.net/index.php ");
+
+    } else {
+        header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
+    }
+
+} else {
+    print('whoops');
+}
+
+
+?>
+
+
+
+
 
 
 <div id="wrapper">
@@ -98,6 +152,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         </div>
     </nav>
 
+
+
+
+
+
+
+
+
     <div class="container-fluid text-center">
         <div class="row content">
 
@@ -114,50 +176,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <hr>
-                    <?php
 
-                    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-                        include("dbConnect.php");
-
-                        $username = $_POST["username"];
-                        $password = $_POST["password"];
-
-
-                        function checkLogin($username, $password, $db)
-                        {
-                            $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
-                            $result = $db->query($sql);
-                            while ($row = $result->fetch_array()) {
-                                //$test =( "#loginFields1" ); // Get the value of a form input.
-
-                                //     $test.val( "hello world" );
-                                // $("#loginFields1").val("Hello ");
-                                return true;
-
-                            }
-                            return false;
-                        }
-
-                        if (checkLogin($username, $password, $db)) {
-                            session_start();
-                            $_SESSION['username'] = $username;
-                            header("location: http://cs6testapp.azurewebsites.net/index.php ");
-
-                        } else {
-                            header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
-                        }
-
-                    } else {
-                        print('whoops');
-                    }
-
-
-                    ?>
                     <h3>Test</h3>
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
+
+
+
+            <?php
+
+                $sql_query = "SELECT * FROM clubs";
+                $result = $mysqli->query($sql_query);
+                while ($row = $result->fetch_array()){
+                    echo "<div class='col-sm-12 text-left' >";
+                    echo "<div class='textCont'>";
+                    echo "<img src='https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w'
+                        alt='' >";
+                    echo "<a href='http://cs6testapp.azurewebsites.net/clubHomePage.php'>" . $row['clubName'] . "</a>";
+                    echo "<p>" . $row['description'] . "</p>";
+                    echo "<hr>";
+                    echo "</div>";
+                    echo "</div>";
+
+                }
+
+            ?>
+
+
+
 
 
             <div class="col-sm-12 text-left">
