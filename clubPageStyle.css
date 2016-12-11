@@ -158,9 +158,7 @@ table {
     margin-right: auto;
 }
 
-.col-sm-6.text-left {
-    margin-top: 10%;
-}
+
 
 /* medium sized screens: a few adjustments in the margins of the content */
 @media screen and (max-width: 1180px) {
@@ -172,6 +170,9 @@ table {
         margin-top: 15%;
     }
 
+    .col-sm-6.text-left {
+        margin-top: 10%;
+    }
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
