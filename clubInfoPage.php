@@ -116,7 +116,7 @@ $clubID = $_GET['clubID'];
                         echo "<h1>" . $clubID . "</h1>";
                         echo "</div>";
                         echo "<div>";
-                        echo "<h2>" . Information . "</h2>";
+                        echo "<h2>Information</h2>";
                         echo "</div>";
                     }
 
