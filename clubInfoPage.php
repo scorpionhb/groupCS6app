@@ -100,6 +100,9 @@ $clubName = $_GET['clubID'];
             <div class="col-sm-9 text-left">
                 <div class="textCont">
                     <h1>Volkswagen Club</h1>
+                    <?php
+                        echo $clubName;
+                    ?>
                 </div>
                 <div>
                     <h2>Information</h2>
