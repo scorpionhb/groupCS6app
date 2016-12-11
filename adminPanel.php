@@ -39,7 +39,9 @@ echo $output= null;
 
         $sql_query = "SELECT * FROM users";
         $result = $mysqli->query($sql_query);
-        while ($row = $result->fetch_array()) {
+    $sql_query1 = "SELECT * FROM type_of_user";
+    $out = $mysqli->query($sql_query1);
+        while ($row = $result->fetch_array() && $row= $out->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
             echo "<td>" . $row['username'] . " </td>";
@@ -48,10 +50,13 @@ echo $output= null;
             echo "<td>" . "<input type='text' name='UserEmail' value=" . $row['email'] . " </td>";
             echo "<input type='hidden' name='hidden' value=" . $row['userID'] . " ";
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
+            echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
+            echo "</tr>";
+            echo "</form>";
 
 
         }
-
+/*
         $sql_query1 = "SELECT * FROM type_of_user";
         $out = $mysqli->query($sql_query1);
         while($row=$out->fetch_array()){
@@ -60,7 +65,7 @@ echo $output= null;
             echo "</form>";
         }
 
-
+*/
 
     ?>
 
