@@ -18,7 +18,7 @@ echo $output= null;
         <label class="username"><b>Enter the name of the user that you want to delete:</b></label>
         <input  type="text" placeholder="username:" name="name" required>
         <?php
-        echo "Hellooooo WORLD". $output;
+        echo "G WORLD". $output;
         ?>
         <input class="deletebtn" type="submit" value="Delete User">
 
