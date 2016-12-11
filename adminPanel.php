@@ -35,7 +35,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $userphone = $mysqli->real_escape_string($_POST['UserPhone']);
     $useremail = $mysqli->real_escape_string($_POST['UserEmail']);
     $hiddenFielden = $mysqli->real_escape_string($_POST['hidden']);
-    if(isset($_POST['update'])){
+    if(isset($_POST['submit'])){
 
         $UpdateQuery = "UPDATE users SET username='$username', type_of_user ='$usertype', email='$useremail', tel_number='$userphone' WHERE username='$hiddenFielden'  ";
 
