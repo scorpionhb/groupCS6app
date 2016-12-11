@@ -29,14 +29,8 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     ?>
         <tr>
             <td><?php echo $row[username]; ?></td>
-        </tr>
-        <tr>
             <td><?php echo $row[type_of_user]; ?></td>
-        </tr>
-        <tr>
             <td><?php echo $row[tel_number]; ?></td>
-        </tr>
-        <tr>
             <td><?php echo $row[email]; ?></td>
         </tr>
 
