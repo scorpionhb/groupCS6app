@@ -35,15 +35,18 @@ $query = $mysqli->query("DELETE * FROM users WHERE username = '$username'");
     $sql_query = "SELECT * FROM users";
     $result = $mysqli->query($sql_query);
     while ($row = $result->fetch_array()) {
-    ?>
+
+
+        echo"<td>".$row[username]."</td>";
+    /*
         <tr>
             <td><?php echo $row[username]; ?></td>
             <td><?php echo $row[type_of_user]; ?></td>
             <td><?php echo $row[tel_number]; ?></td>
             <td><?php echo $row[email]; ?></td>
         </tr>
+*/
 
-      <?php
     }
     ?>
 
