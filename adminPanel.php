@@ -36,7 +36,7 @@ echo $output= null;
 
 
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
-
+        $updateQuery = $mysqli->query("UPDATE type_of_user SET access_level='$_POST[UserAccess]' WHERE id='$_POST[ide]'");
 
         $sql_query = "SELECT users.*,type_of_user.* FROM users INNER JOIN type_of_user ON users.username = type_of_user.username";
         $result = $mysqli->query($sql_query);
@@ -49,6 +49,7 @@ echo $output= null;
             echo "<td>" . "<input type='text' name='UserEmail' value=" . $row['email'] . " </td>";
             echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
             echo "<input type='hidden' name='hidden' value=" . $row['userID'] . " ";
+            echo "<input type='hidden' name='ide' value=" . $row['id'] . " ";
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
             echo "</tr>";
             echo "</form>";
