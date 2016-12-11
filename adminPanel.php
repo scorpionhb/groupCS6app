@@ -1,6 +1,6 @@
 <?php
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-
+echo $output= null;
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,9 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <form method="post">
         <label class="username"><b>Enter the name of the user that you want to delete:</b></label>
         <input  type="text" placeholder="username:" name="name" required>
-
+        <?php
+        echo $output;
+        ?>
         <input class="deletebtn" type="submit" value="Delete User">
 
     </form>
@@ -35,7 +37,12 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
 
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[hidden]'");
-
+        if ($UpdateQuery != true) {
+            $output = "There was a problem <br/>";
+            $output .= $mysqli->error;
+        } else {
+            $output = "You have been registered!";
+        }
     };
         $sql_query = "SELECT * FROM users";
         $result = $mysqli->query($sql_query);
