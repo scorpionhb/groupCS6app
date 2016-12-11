@@ -37,7 +37,7 @@ echo $output= null;
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
 
 
-        $sql_query = "SELECT * FROM users";
+        $sql_query = "SELECT users.*,type_of_users.* FROM users,type_of_users";
 
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
