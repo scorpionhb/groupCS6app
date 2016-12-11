@@ -43,7 +43,7 @@ echo $output= null;
         } else {
             $output = "You have been registered!";
         }
-    };
+
 
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
@@ -61,7 +61,7 @@ echo $output= null;
         }
         echo $output;
 
-
+    };
     ?>
 
     </table>
