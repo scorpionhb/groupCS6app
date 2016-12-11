@@ -37,7 +37,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $hiddenFielden = $mysqli->real_escape_string($_POST['hidden']);
     if(isset($_POST['submit'])){
 
-        $UpdateQuery = "UPDATE users SET username='$username', type_of_user ='$usertype', email='$useremail', tel_number='$userphone' WHERE username='$hiddenFielden'  ";
+        $UpdateQuery = $mysqli->query("UPDATE users SET username='$username',  email='$useremail', tel_number='$userphone', type_of_user ='$usertype'  WHERE username='$hiddenFielden'  ");
 
     };
 
@@ -54,14 +54,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         echo"<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
         echo"</tr>";
         echo"</form>";
-    /*
-        <tr>
-            <td><?php echo $row[username]; ?></td>
-            <td><?php echo $row[type_of_user]; ?></td>
-            <td><?php echo $row[tel_number]; ?></td>
-            <td><?php echo $row[email]; ?></td>
-        </tr>
-*/
 
     }
     ?>
