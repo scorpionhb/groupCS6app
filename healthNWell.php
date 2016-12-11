@@ -124,7 +124,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
             </div>
 
-            <div class="col-sm-5 text-center" id="eventsDiv">
+            <div class="col-sm-6 text-center" id="eventsDiv">
 
                 <?php
 
@@ -135,7 +135,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                     echo "<div class='textCont'>";
                     echo "<img src='https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w'
                         alt='' >";
-                    echo "<h2>" . $row['title'] . "</h2>";
+                    echo "<h1>" . $row['title'] . "</h1>";
                     echo "<p>" . $row['content'] . "</p>";
                     echo "<h4>Start date: " . $row['start_date'] . "</h4>";
                     if($row['end_date']!= NULL) {
