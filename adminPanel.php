@@ -35,7 +35,7 @@ echo $output= null;
     if(isset($_POST['submit'])) {
 
 
-
+        $sql_query = "SELECT * FROM users";
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[231]'");
         if ($UpdateQuery != true) {
             $output = "There was a problem <br/>";
@@ -44,7 +44,7 @@ echo $output= null;
             $output = "You have been registered!";
         }
     };
-        $sql_query = "SELECT * FROM users";
+
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
