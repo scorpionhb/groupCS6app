@@ -15,7 +15,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 <ul>
     <?
     $sql_query="SELECT * FROM users";
-    $result = $db->query($sql_query);
+    $result = $mysqli->query($sql_query);
     while($row = $result->fetch_array()){
         $username = $row['username'];
 
