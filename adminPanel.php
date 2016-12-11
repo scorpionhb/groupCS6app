@@ -37,7 +37,7 @@ echo $output= null;
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
 
 
-        $sql_query = "SELECT * FROM users";
+        $sql_query = "SELECT users.*,type_of_user.* FROM users INNER JOIN type_of_user ON users.username = type_of_user.username";
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
