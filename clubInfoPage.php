@@ -5,6 +5,7 @@
  * Date: 06/12/2016
  * Time: 22:25
  */
+$mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 $clubID = $_GET['clubID'];
 ?>
 
