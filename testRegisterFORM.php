@@ -160,11 +160,11 @@ if (isset($_POST['submit'])) {
                     <label class="chooseUser"><b>Type of user:</b></label>
 
                     <select class="dropDownForm" name="userChooser">
-                        <option value=1>User:</option>
-                        <option value=2>Contributor</option>
-                        <option value=3>NKPAG</option>
-                        <option value=4>Club Administrator</option>
-                        <option value=5>Site Administrator</option>
+                        <option value="User">User:</option>
+                        <option value="Contributor">Contributor</option>
+                        <option value="NKPAG">NKPAG</option>
+                        <option value="Club Administrator">Club Administrator</option>
+                        <option value="Site Administrator">Site Administrator</option>
                     </select>
 
 
