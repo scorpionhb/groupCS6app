@@ -165,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                     echo "<div class='textCont'>";
                     echo "<img src='http://placehold.it/350x150'
                         alt='' >";
-                    echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=" . $row["clubName"] . ">" . $row['clubName'] . "</a>";
+                    echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php'>" . $row['clubName'] . "</a>";
                     echo "<p>" . $row['description'] . "</p>";
                     echo "<hr>";
                     echo "</div>";
