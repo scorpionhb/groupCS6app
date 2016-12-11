@@ -115,14 +115,12 @@ $clubID = $_GET['clubID'];
                     $result = $mysqli->query($sql_query);
                     while($row = $result->fetch_array()){
                         echo "<div class='textCont' >";
-                        echo "<h1>" . $clubID . "</h1>";
+                        echo "<h1>" . row['clubName'] . "</h1>";
                         echo "</div>";
                         echo "<div>";
-                        echo "<h2>Information</h2>";
+                        //echo "<h2>Information</h2>";
                         echo "</div>";
                     }
-
-
 
                 ?>
 
