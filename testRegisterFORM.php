@@ -74,14 +74,12 @@ if (isset($_POST['submit'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="navbar-brand"
-                     src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
+                <img class="navbar-brand" src="https://github.com/scorpionhb/groupCS6app/blob/testBranch/LOGO1.png?raw=true"/>
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a>
-                    </li>
+                    <li class="active"><a href="http://cs6testapp.azurewebsites.net/index.php">Clubs and Societies</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/healthNWell.php">Health and Well-being</a></li>
                     <li><a href="http://cs6testapp.azurewebsites.net/mapPage.php">Map</a></li>
                 </ul>
@@ -104,26 +102,22 @@ if (isset($_POST['submit'])) {
 
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
-                    <li>
-                        <form id="signin" class="navbar-form navbar-right" role="form">
+                    <!--
+                    <li ><form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="text" class="form-control" name="username" value=""
-                                       placeholder="Username">
+                                <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password" value=""
-                                       placeholder="Password">
-                            </div>
-                        </form>
+                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                            </div></form>
                     </li>
 
-                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span>
-                            Login</a></li>
-                    <li onclick="logginTimeout()"><a id="regButton" href="#"><span
-                                class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    -->
                 </ul>
 
 

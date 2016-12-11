@@ -63,7 +63,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
 
-
+                    <!--
 
                     <li ><form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
@@ -79,6 +79,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                     <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    -->
                 </ul>
 
 
