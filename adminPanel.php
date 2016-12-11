@@ -34,12 +34,12 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $result = $mysqli->query($sql_query);
     while ($row = $result->fetch_array()) {
 
-
+        echo"<tr>";
         echo"<td>".$row[username]."</td>";
         echo"<td>".$row[type_of_user]."</td>";
         echo"<td>".$row[tel_number]."</td>";
         echo"<td>".$row[email]."</td>";
-
+        echo"</tr>";
     /*
         <tr>
             <td><?php echo $row[username]; ?></td>
