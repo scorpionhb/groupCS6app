@@ -1,5 +1,8 @@
 li{
     text-decoration: none;
     list-style: none;
+}
 
+table,td{
+    border: 1px solid blanchedalmond;
 }
