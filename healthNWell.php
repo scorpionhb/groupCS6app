@@ -101,7 +101,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                 <h1>Upcoming Events</h1>
             </div>
 
-            <div class="col-sm-7 text-center" id="newsDiv">
+            <div class="col-sm-6 text-center" id="newsDiv">
 
                 <?php
 
@@ -135,9 +135,9 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                         alt='' >";
                     echo "<h2>" . $row['title'] . "</h2>";
                     echo "<p>" . $row['content'] . "</p>";
-                    echo "<h4>Start date:" . $row['start_date'] . "</h4>";
+                    echo "<h4>Start date: " . $row['start_date'] . "</h4>";
                     if($row['end_date']!= NULL) {
-                        echo "<h4>End date:" . $row['end_date'] . "</h4>";
+                        echo "<h4>End date: " . $row['end_date'] . "</h4>";
                     }
                     echo "<hr>";
                     echo "</div>";
