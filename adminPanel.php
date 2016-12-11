@@ -20,7 +20,9 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     while ($row = $result->fetch_array()) {
         $username = $row['username'];
 
-        echo "<table><tr><th>{$username}</th></tr></table>";
+        echo "<table><tr><th>User Name</th></tr>
+                    <tr><td>{$username}</td></tr>
+             </table>";
     }
     ?>
 </ul>
