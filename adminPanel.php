@@ -30,14 +30,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
             <th>User Email</th>
         </tr>
     <?php
-    $username = $mysqli->real_escape_string($_POST['UserName']);
-    $usertype = $mysqli->real_escape_string($_POST['UserType']);
-    $userphone = $mysqli->real_escape_string($_POST['UserPhone']);
-    $useremail = $mysqli->real_escape_string($_POST['UserEmail']);
-    $hiddenField = $mysqli->real_escape_string($_POST['hidden']);
+
     if(isset($_POST['submit'])){
 
-        $UpdateQuery = $mysqli->query("UPDATE users SET username='$username',  email='$useremail', tel_number='$userphone', type_of_user ='$usertype'  WHERE username='$hiddenField'  ");
+        $UpdateQuery = $mysqli->query("UPDATE users SET username='$_POST[UserName]', email='$_POST[UserEmail]' WHERE username='$_POST[hidden]'");
         if($UpdateQuery != true){
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
