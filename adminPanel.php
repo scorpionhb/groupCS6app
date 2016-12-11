@@ -35,12 +35,7 @@ echo $output= null;
 
 
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[hidden]'");
-        if ($UpdateQuery != true) {
-            $output = "There was a problem <br/>";
-            $output .= $mysqli->error;
-        } else {
-            $output = "You have been registered!";
-        }
+
 
         $sql_query = "SELECT * FROM users";
         $result = $mysqli->query($sql_query);
@@ -64,7 +59,7 @@ echo $output= null;
 
     </table>
     <?php
-    echo $output;
+
     ?>
 </ul>
 
