@@ -92,7 +92,14 @@ $clubID = $_GET['clubID'];
 
             <div class="col-sm-3 text-left">
                 <div class="textCont">
-                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png" alt="">
+                    <img class="img-responsive" src="http://placehold.it/350x150" alt="">
+                    <?php
+                        $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
+                        $result = $mysqli->query($sql_query);
+                        while($row = $result->fetch_array()){
+                            echo "<a class='button' href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=$clubID'>Information</a>";
+                        }
+                    ?>
                     <a class="button" href="http://cs6testapp.azurewebsites.net/clubInfoPage.php">Information</a>
                     <a class="button" href="http://cs6testapp.azurewebsites.net/clubPhotosPage.php">Photos</a>
                 </div>
