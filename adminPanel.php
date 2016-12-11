@@ -52,7 +52,7 @@ echo $output= null;
             echo "</form>";
         }
 
-        $sql_query1 = "SELECT * FROM type_of_users";
+        $sql_query1 = "SELECT * FROM type_of_user";
         $out = $mysqli->query($sql_query1);
         while($row=$out->fetch_array()){
             echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
