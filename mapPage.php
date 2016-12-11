@@ -60,13 +60,29 @@
     <div style="clear: both"></div>
     <div id="mapControls">
         <div id="filter">
-            <label class="checkboxes"><input type="checkbox" value="Clubs" id="clubs" checked><b>Clubs</b></label><br>
-            <label class="checkboxes"><input type="checkbox" value="Viewpoints" id="viewpoints" checked><b>Viewpoints</b></label><br>
-            <label class="checkboxes"><input type="checkbox" value="Routes" id="routes" checked><b>Routes</b></label><br>
-            <label class="checkboxes"><input type="checkbox" value="Landmarks" id="landmarks" checked><b>Landmarks</b></label><br>
+            <p class="checkboxText"><b>Clubs</b></p>
+            <div class="slideThree">
+                <input type="checkbox" value="None" id="clubs" name="check"/>
+                <label for="clubs"></label>
+            </div>
+            <p class="checkboxText"><b>Viewpoints</b></p>
+            <div class="slideThree">
+                <input type="checkbox" value="None" id="viewpoints" name="check1"/>
+                <label for="viewpoints"></label>
+            </div>
+            <p class="checkboxText"><b>Routes</b></p>
+            <div class="slideThree">
+                <input type="checkbox" value="None" id="routes" name="check2"/>
+                <label for="routes"></label>
+            </div>
+            <p class="checkboxText"><b>Landmarks</b></p>
+            <div class="slideThree">
+                <input type="checkbox" value="None" id="landmarks" name="check3"/>
+                <label for="landmarks"></label>
+            </div>
         </div>
-        <p onload="geoLocation()" id="test">Testvai Tova</p>
-        <button onclick="addMarks()" type="button" id="filterButton"><b>Filter</b></button>
+        <p onload="geoLocation()" id="test">Testvai Tovaa</p>
+        <button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>
     </div>
     <div id = "map"></div>
 
