@@ -100,15 +100,6 @@
                 <h1>Upcoming Events</h1>
             </div>
 
-            <div class="col-sm-7 text-center">
-                <h1>News</h1>
-            </div>
-
-
-            <div class="col-sm-5 text-center">
-                <h2>Upcoming Events</h2>
-            </div>
-
             <div class="col-sm-7 text-center" id="newsDiv">
 
                 <div class="col-sm-12 text-left">
