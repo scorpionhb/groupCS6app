@@ -149,9 +149,11 @@ $clubID = $_GET['clubID'];
                         echo "<p>" . $row['clubGenre'] . "</p>";
                         echo "<h3>Description</h3>";
                         echo "<p>" . $row['description'] . "</p>";
+                        echo "<h3>Location</h3>";
                         if($row['location'] != NULL) {
-                            echo "<h3>Location</h3>";
                             echo "<p>" . $row['location'] . "</p>";
+                        } else {
+                            echo "<p>N/A</p>";
                         }
                         echo "<h3>Contact</h3>";
                         echo "<p>Email: " . $row['email'] . "</p>";
