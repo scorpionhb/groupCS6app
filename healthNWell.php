@@ -122,6 +122,8 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                 ?>
 
+            </div>
+
             <div class="col-sm-5 text-center" id="eventsDiv">
 
                 <?php
