@@ -38,8 +38,8 @@ echo $output= null;
 
 
         $sql_query = "SELECT * FROM users";
-        $sql_query1 = "SELECT * FROM type_of_users";
-        $result = $mysqli->query($sql_query,$sql_query1);
+
+        $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
