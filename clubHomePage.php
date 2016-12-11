@@ -102,50 +102,29 @@
             </div>
 
             <div class="col-sm-6 text-left">
-                <div class="textCont">
-                    <h2>Event one</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
+
+                <div class="col-sm-12 text-left">
+                    <div class="textCont">
+                        <h2>About</h2>
+                        <hr>
+                        <h3>Genre</h3>
+                        <p>Fun</p>
+                        <hr>
+                        <h3>Description</h3>
+                        <p>СкандаУ са готини, ама ние повече!</p>
+                        <p>Търси го като къртица в тъмното.</p>
+                        <p>Иска да смуче на Пикачуто сока.</p>
+                        <hr>
+                        <h3>Location</h3>
+                        <p>Има ли платена любов у тая могила?</p>
+                        <hr>
+                        <h3>Contact</h3>
+                        <p>Yes, baby!</p>
+                    </div>
                 </div>
 
 
-                <div class="textCont">
-                    <h2>Event one</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                </div>
 
-                <div class="textCont">
-                    <h2>Event one</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                </div>
-
-                <div class="textCont">
-                    <h2>Event one</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <hr>
-                </div>
 
             </div>
 
