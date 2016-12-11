@@ -37,10 +37,11 @@ echo $output= null;
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
 
 
-        $sql_query = "SELECT users.*,type_of_users.* FROM users,type_of_users";
-
+        $sql_query = "SELECT * FROM users";
+        $sql_query1 = "SELECT * FROM type_of_users";
+        $out = $mysqli->query($sql_query1);
         $result = $mysqli->query($sql_query);
-        while ($row = $result->fetch_array()) {
+        while ($row = $result->fetch_array() && $res = $out->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
             echo "<td>" . $row['username'] . " </td>";
