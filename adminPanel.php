@@ -17,9 +17,7 @@ echo $output= null;
     <form method="post">
         <label class="username"><b>Enter the name of the user that you want to delete:</b></label>
         <input  type="text" placeholder="username:" name="name" required>
-        <?php
-        echo "G WORLD". $output;
-        ?>
+
         <input class="deletebtn" type="submit" value="Delete User">
 
     </form>
@@ -66,6 +64,9 @@ echo $output= null;
     ?>
 
     </table>
+    <?php
+    echo $output;
+    ?>
 </ul>
 
 </body>
