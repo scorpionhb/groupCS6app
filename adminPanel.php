@@ -36,6 +36,7 @@ echo $output= null;
 
 
         $sql_query = "SELECT * FROM users";
+
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[231]'");
         if ($UpdateQuery != true) {
             $output = "There was a problem <br/>";
@@ -60,8 +61,8 @@ echo $output= null;
 
         }
         echo $output;
-
     };
+
     ?>
 
     </table>
