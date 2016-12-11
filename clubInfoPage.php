@@ -98,14 +98,15 @@
                 <div class="textCont">
                     <h1>Volkswagen Club</h1>
                 </div>
+                <div>
+                    <h2>Information</h2>
+                </div>
             </div>
 
             <div class="col-sm-6 text-left">
 
                 <div class="col-sm-12 text-left">
                     <div class="textCont">
-                        <h1>Information</h1>
-                        <hr>
                         <h3>Genre</h3>
                         <p>Fun</p>
                         <hr>
