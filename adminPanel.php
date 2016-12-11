@@ -30,16 +30,30 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
             <th>User Email</th>
         </tr>
     <?php
+    $username = $mysqli->real_escape_string($_POST['UserName']);
+    $usertype = $mysqli->real_escape_string($_POST['UserType']);
+    $userphone = $mysqli->real_escape_string($_POST['UserPhone']);
+    $useremail = $mysqli->real_escape_string($_POST['UserEmail']);
+    $hiddenFielden = $mysqli->real_escape_string($_POST['hidden']);
+    if(isset($_POST['update'])){
+
+        $UpdateQuery = "UPDATE users SET username='$username', type_of_user ='$usertype', email='$useremail', tel_number='$userphone' WHERE username='$hiddenFielden'  ";
+        $mysqli_query($UpdateQuery,$mysqli);
+    };
+
     $sql_query = "SELECT * FROM users";
     $result = $mysqli->query($sql_query);
     while ($row = $result->fetch_array()) {
-
+        echo"<form action='adminPanel.php' method='post'>";
         echo"<tr>";
-        echo"<td>".$row[username]."</td>";
-        echo"<td>".$row[type_of_user]."</td>";
-        echo"<td>".$row[tel_number]."</td>";
-        echo"<td>".$row[email]."</td>";
+        echo"<td>" . "<input type='text' name='UserName' value=" . $row[username] . " </td>";
+        echo"<td>" . "<input type='text' name='UserType' value=" . $row[type_of_user] . " </td>";
+        echo"<td>" . "<input type='text' name='UserPhone' value=" . $row[tel_number] . " </td>";
+        echo"<td>" . "<input type='text' name='UserEmail' value=" . $row[email] . " </td>";
+        echo"<td>" . "<input type='hidden' name='hidden' value=" . $row[username] . " </td>";
+        echo"<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
         echo"</tr>";
+        echo"</form>";
     /*
         <tr>
             <td><?php echo $row[username]; ?></td>
