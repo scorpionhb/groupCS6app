@@ -39,7 +39,7 @@ echo $output= null;
 
         $sql_query = "SELECT * FROM users";
         $result = $mysqli->query($sql_query);
-        while ($row = $result->fetch_array() && $row= $out->fetch_array()) {
+        while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
             echo "<td>" . $row['username'] . " </td>";
