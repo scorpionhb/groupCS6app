@@ -14,6 +14,13 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 <h1>User List</h1>
 <p>The following users are registered on the site:</p>
 <ul>
+    <form method="post">
+        <label class="username"><b>Enter the name of the user that you want to delete:</b></label>
+        <input  type="text" placeholder="username:" name="name" required>
+
+        <input class="deletebtn" type="submit" value="Delete User">
+
+    </form>
 
     <table>
         <tr>
