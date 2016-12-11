@@ -38,7 +38,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     if(isset($_POST['update'])){
 
         $UpdateQuery = "UPDATE users SET username='$username', type_of_user ='$usertype', email='$useremail', tel_number='$userphone' WHERE username='$hiddenFielden'  ";
-        $mysqli_query($UpdateQuery,$mysqli);
+
     };
 
     $sql_query = "SELECT * FROM users";
