@@ -161,11 +161,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                 $sql_query = "SELECT * FROM clubs";
                 $result = $mysqli->query($sql_query);
                 while ($row = $result->fetch_array()){
+                    $clubName = $row['clubName'];
                     echo "<div class='col-sm-12 text-left' >";
                     echo "<div class='textCont'>";
                     echo "<img src='http://placehold.it/350x150'
                         alt='' >";
                     echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php'>" . $row['clubName'] . "</a>";
+                    echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=<?php echo $clubName ?>'>" . $row['clubName'] . "</a>";
                     echo "<p>" . $row['description'] . "</p>";
                     echo "<hr>";
                     echo "</div>";
