@@ -37,7 +37,8 @@ echo $output= null;
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
 
 
-        $sql_query = "SELECT * FROM users";
+        $sql_query = "SELECT * FROM users, type_of_users";
+
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
@@ -46,7 +47,7 @@ echo $output= null;
             echo "<td>" . "<input type='text' name='UserType' value=" . $row['type_of_user'] . " </td>";
             echo "<td>" . "<input type='text' name='UserPhone' value=" . $row['tel_number'] . " </td>";
             echo "<td>" . "<input type='text' name='UserEmail' value=" . $row['email'] . " </td>";
-            echo "<td>" . "<input type='hidden' name='hidden' value=" . $row['userID'] . " </td>";
+            echo "<input type='hidden' name='hidden' value=" . $row['userID'] . " ";
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
             echo "</tr>";
             echo "</form>";
