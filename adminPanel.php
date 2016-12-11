@@ -14,15 +14,24 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 <h1>User List</h1>
 <p>The following users are registered on the site:</p>
 <ul>
-    <?
+
+    <table>
+        <tr>
+            <td>User Name</td>
+        </tr>
+    <?php
     $sql_query = "SELECT * FROM users";
     $result = $mysqli->query($sql_query);
     while ($row = $result->fetch_array()) {
-        $username = $row['username'];
-
-        echo "<table><td>{$username}</td></table>";
+    ?>
+        <tr>
+            <td><?php echo $row[username]; ?></td>
+        </tr>
+      <?php
     }
     ?>
+
+    </table>
 </ul>
 
 </body>
