@@ -5,7 +5,7 @@
  * Date: 7.12.2016 г.
  * Time: 0:50
  */
- include ("dbConnect.php");
+$mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -101,6 +101,25 @@
             </div>
 
             <div class="col-sm-7 text-center" id="newsDiv">
+
+                <?php
+
+                $sql_query = "SELECT * FROM news";
+                $result = $mysqli->query($sql_query);
+                while ($row = $result->fetch_array()){
+                    echo "<div class='col-sm-12 text-left' >";
+                    echo "<div class='textCont'>";
+                    echo "<img src='https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w'
+                        alt='' >";
+                    echo "<h1>" . $row['title'] . "</h1>";
+                    echo "<p>" . $row['content'] . "</p>";
+                    echo "<hr>";
+                    echo "</div>";
+                    echo "</div>";
+
+                }
+
+                ?>
 
                 <div class="col-sm-12 text-left">
                     <div class="textCont">
