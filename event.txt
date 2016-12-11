@@ -8,4 +8,13 @@
     "classname":"purple-event"
   }
 
+  {
+      "date":"2016-12-16",
+      "badge":true,
+      "title":"Yoooo",
+      "body":"<p class=\"lead\">Party<\/p><p>End of the semester<\/p>",
+      "footer":"Aberdeen",
+      "classname":"purple-event"
+    }
+
 ]
