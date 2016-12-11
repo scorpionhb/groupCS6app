@@ -37,7 +37,7 @@ echo $output= null;
 
 
 
-        $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[231]'");
+        $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[hidden]'");
         if ($UpdateQuery != true) {
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
