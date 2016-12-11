@@ -17,7 +17,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <table>
         <tr>
-            <td>User Name</td>
+            <th>User Name</th>
         </tr>
     <?php
     $sql_query = "SELECT * FROM users";
