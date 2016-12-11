@@ -51,7 +51,7 @@ echo $output= null;
             echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
             echo "<input type='hidden' name='hidden' value=" . $row['userID'] . " ";
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
-
+            echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
             echo "</tr>";
             echo "</form>";
 
