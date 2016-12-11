@@ -15,6 +15,15 @@
       "body":"<p class=\"lead\">Party<\/p><p>End of the semester<\/p>",
       "footer":"Aberdeen",
       "classname":"purple-event"
-    }
+    },
+
+    {
+          "date":"2016-12-25",
+          "badge":true,
+          "title":"Christmas",
+          "body":"<p class=\"lead\">Special Event<\/p><p>It's Christmas!!!<\/p>",
+          "footer":"Everywhere",
+          "classname":"purple-event"
+        }
 
 ]
