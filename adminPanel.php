@@ -31,14 +31,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         </tr>
     <?php
     if(isset($_POST['submit'])) {
-        $username = $mysqli->real_escape_string($_POST['UserName']);
-        $email = $mysqli->real_escape_string($_POST['UserEmail']);
-        $telNumber = $mysqli->real_escape_string($_POST['UserPhone']);
-        $typeOfUser = $mysqli->real_escape_string($_POST['UserType']);
-        $hiddenValue = $mysqli->real_escape_string($_POST['hidden']);
 
 
-        $UpdateQuery = $mysqli->query("UPDATE users SET email='$email',tel_number='$telNumber',type_of_user='$typeOfUser' WHERE userID='$hiddenValue'");
+
+        $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[hidden]'");
 
     };
         $sql_query = "SELECT * FROM users";
@@ -46,7 +42,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         while ($row = $result->fetch_array()) {
             echo "<form action='adminPanel.php' method='post'>";
             echo "<tr>";
-            echo "<td>" . "<input type='text' name='UserName' value=" . $row['username'] . " </td>";
+            echo "<td>" . $row['username'] . " </td>";
             echo "<td>" . "<input type='text' name='UserType' value=" . $row['type_of_user'] . " </td>";
             echo "<td>" . "<input type='text' name='UserPhone' value=" . $row['tel_number'] . " </td>";
             echo "<td>" . "<input type='text' name='UserEmail' value=" . $row['email'] . " </td>";
