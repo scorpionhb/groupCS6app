@@ -35,7 +35,7 @@ echo $output= null;
 
 
 
-        $UpdateQuery = $mysqli->query("UPDATE users INNER JOIN type_of_user ON (users.username = type_of_user.username) SET access_level='$_POST[UserAccess]' email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
+        $UpdateQuery = $mysqli->query("UPDATE users INNER JOIN type_of_user ON (users.username = type_of_user.username) SET access_level='$_POST[UserAccess]', email='$_POST[UserEmail]',tel_number='$_POST[UserPhone]',type_of_user='$_POST[UserType]' WHERE userID='$_POST[hidden]'");
 
 
         $sql_query = "SELECT users.*,type_of_user.* FROM users INNER JOIN type_of_user ON users.username = type_of_user.username";
