@@ -40,7 +40,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$email',tel_number='$telNumber',type_of_user='$typeOfUser' WHERE userID='$hiddenValue'");
 
-
+    };
         $sql_query = "SELECT * FROM users";
         $result = $mysqli->query($sql_query);
         while ($row = $result->fetch_array()) {
@@ -58,7 +58,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         }
         echo $output;
 
-    }
+
     ?>
 
     </table>
