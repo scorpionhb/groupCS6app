@@ -3,7 +3,6 @@ include("dbConnect.php");
 $dom = new DOMDOcument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
-
 $query = "SELECT * FROM locations WHERE type = 'Club'";
 $result = $db->query($query);
 if(!$result){
