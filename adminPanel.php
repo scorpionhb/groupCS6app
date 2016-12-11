@@ -32,7 +32,7 @@ echo $output= null;
             <th>User Email</th>
         </tr>
     <?php
-    if(isset($_POST['submit'])) {
+
 
 
 
@@ -61,7 +61,7 @@ echo $output= null;
 
         }
         echo $output;
-    };
+
 
     ?>
 
