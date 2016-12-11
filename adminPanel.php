@@ -8,6 +8,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 <head>
     <meta charset="UTF-8">
     <title>My form</title>
+    <link rel="stylesheet" type="text/css" href="adminPanelStyle.css">
 </head>
 <body>
 <h1>User List</h1>
