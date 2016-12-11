@@ -194,6 +194,8 @@ $clubID = $_GET['clubID'];
                 </div>
             </div>
 
+            <div class="col-sm-10"></div>
+
             <div class="col-sm-2 text-left photos">
                 <div>
                     <div class="col-xs-4">
