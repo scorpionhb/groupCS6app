@@ -1,5 +1,5 @@
 <?php
-include("dbConnect.php");
+$db =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
 $dom = new DOMDOcument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
