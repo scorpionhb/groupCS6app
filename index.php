@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                     </li>
 
-                    <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a id="regButton" href="http://cs6testapp.azurewebsites.net/testRegisterForm.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 </ul>
             </div>
         </div>
