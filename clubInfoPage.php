@@ -100,16 +100,6 @@ $clubID = $_GET['clubID'];
 
             <div class="col-sm-9 text-left">
 
-                <!--
-                <div class="textCont">
-                    <h1>Volkswagen Club</h1>
-                </div>
-                <div>
-                    <h2>Information</h2>
-                </div>
-                -->
-
-
                 <?php
                     $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
                     $result = $mysqli->query($sql_query);
@@ -130,6 +120,8 @@ $clubID = $_GET['clubID'];
             <div class="col-sm-6 text-left">
 
                 <div class="col-sm-12 text-left">
+
+                    <!--
                     <div class="textCont">
                         <h3>Genre</h3>
                         <p>Fun</p>
@@ -145,9 +137,33 @@ $clubID = $_GET['clubID'];
                         <h3>Contact</h3>
                         <p>Yes, baby!</p>
                     </div>
+                    -->
+
+
+                    <?php
+                    $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
+                    $result = $mysqli->query($sql_query);
+                    while($row = $result->fetch_array()){
+                        echo "<div class='textCont'>";
+                        echo "<h3>Genre</h3>";
+                        echo "<p>" . $row['clubGenre'] . "</p>";
+                        echo "<h3>Description</h3>";
+                        echo "<p>" . $row['description'] . "</p>";
+                        if($row['location'] != NULL) {
+                            echo "<h3>Location</h3>";
+                            echo "<p>" . $row['location'] . "</p>";
+                        }
+                        echo "<h3>Contact</h3>";
+                        echo "<p>Email: " . $row['email'] . "</p>";
+                        echo "<p>Telephone: " . $row['tel_number'] . "</p>";
+                        echo "</div>";
+                    }
+
+
+                    ?>
+
+
                 </div>
-
-
 
             </div>
 
