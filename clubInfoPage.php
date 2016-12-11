@@ -5,7 +5,7 @@
  * Date: 06/12/2016
  * Time: 22:25
  */
-$clubName = $_GET['clubID'];
+$clubID = $_GET['clubID'];
 ?>
 
 <!DOCTYPE html>
@@ -98,15 +98,33 @@ $clubName = $_GET['clubID'];
             </div>
 
             <div class="col-sm-9 text-left">
+
+                <!--
                 <div class="textCont">
                     <h1>Volkswagen Club</h1>
-                    <?php
-                        echo $clubName;
-                    ?>
                 </div>
                 <div>
                     <h2>Information</h2>
                 </div>
+                -->
+
+                <?php
+                    $sql_query = "SELECT * FROM clubs WHERE clubName = $clubID";
+                    $result = $mysqli->query($sql_query);
+                    while($row = $result->fetch_array()){
+                        echo "<div class='textCont' >";
+                        echo "<h1>" . $clubID . "</h1>";
+                        echo "</div>";
+                        echo "<div>";
+                        echo "<h2>" . Information . "</h2>";
+                        echo "</div>";
+                    }
+
+
+
+                ?>
+
+
             </div>
 
             <div class="col-sm-6 text-left">
