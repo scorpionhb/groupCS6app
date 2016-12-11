@@ -47,7 +47,7 @@ echo $output= null;
             echo "<td>" . "<input type='text' name='UserType' value=" . $row['type_of_user'] . " </td>";
             echo "<td>" . "<input type='text' name='UserPhone' value=" . $row['tel_number'] . " </td>";
             echo "<td>" . "<input type='text' name='UserEmail' value=" . $row['email'] . " </td>";
-            echo "<td>" . "<input type='text' name='UserAccess' value=" . $row['access_level'] . " </td>";
+            echo "<td>" . "<input type='number' name='UserAccess' value=" . $row['access_level'] . " </td>";
             echo "<input type='hidden' name='hidden' value=" . $row['userID'] . " ";
             echo "<input type='hidden' name='ide' value=" . $row['id'] . " ";
             echo "<td>" . "<input type='submit' name='update' value='update'>" . " </td>";
