@@ -25,9 +25,10 @@ echo $output= null;
     <table>
         <tr>
             <th>User Name</th>
-            <th>User Access Level</th>
+            <th>User Access Request</th>
             <th>User Phone Number</th>
             <th>User Email</th>
+            <th>User Access Approval</th>
         </tr>
     <?php
 
@@ -53,7 +54,6 @@ echo $output= null;
             echo "</form>";
 
         }
-
 
 
 
