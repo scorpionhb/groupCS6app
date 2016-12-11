@@ -6,7 +6,6 @@
  * Time: 14:07
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-echo $output= null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
@@ -171,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                 while ($row = $result->fetch_array()){
                     echo "<div class='col-sm-12 text-left' >";
                     echo "<div class='textCont'>";
-                    echo "<img src='https://static1.squarespace.com/static/55d2a01fe4b03323486a59d5/55e0b531e4b0ee392efcad2d/55e0b532e4b0fadc15afb2b4/1440789817077/Audi.png?format=300w'
+                    echo "<img src='http://placehold.it/350x150'
                         alt='' >";
                     echo "<a href='http://cs6testapp.azurewebsites.net/clubHomePage.php'>" . $row['clubName'] . "</a>";
                     echo "<p>" . $row['description'] . "</p>";
