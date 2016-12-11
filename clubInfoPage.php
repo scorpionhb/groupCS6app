@@ -5,6 +5,7 @@
  * Date: 06/12/2016
  * Time: 22:25
  */
+$clubName = $_GET['clubID'];
 ?>
 
 <!DOCTYPE html>
