@@ -32,7 +32,6 @@ echo $output= null;
     <?php
 
 
-    if (isset($_POST['submit'])) {
 
 
         $UpdateQuery = $mysqli->query("UPDATE users SET email='$_POST[UserEmail]',tel_number='$_POST[UserType]',type_of_user='$_POST[UserPhone]' WHERE userID='$_POST[hidden]'");
@@ -59,7 +58,7 @@ echo $output= null;
 
         }
 
-    }
+
 
     ?>
 
