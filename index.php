@@ -142,8 +142,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                             <?php
 
-                            //if ($_SESSION['username'] == $username) {
-
                               if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
 

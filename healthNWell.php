@@ -21,6 +21,14 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <script src="homeJS.js"></script>
 </head>
 <body>
+
+<?php
+    session_start();
+
+?>
+
+
+
 <div id="wrapper">
     <nav class="navbar navbar-fixed-top navbar-absolute navbar-transparent big">
         <div class="container-fluid">
@@ -62,10 +70,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
-
+                    <li>
                     <!--
 
-                    <li ><form id="signin" class="navbar-form navbar-right" role="form">
+                    <form id="signin" class="navbar-form navbar-right" role="form">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <input id="username" type="text" class="form-control" name="username" value="" placeholder="Username">
@@ -75,11 +83,31 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                 <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
                             </div></form>
-                    </li>
+
 
                     <li id="loginBut" onclick="logIn()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li><a id="regButton" href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                     -->
+                        <?php
+
+                        if(isset($_SESSION['username'])){
+                            $username = $_SESSION['username'];
+
+                            echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
+
+                            echo "<div class='input-group' style='display: inline'><p  id='welcomeText' style='display: inline'>Welcome, " . $username . "!</p>";
+
+                            echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
+
+                            echo "</form>";
+                            ?>
+                            <p onload="logginTimeout()"></p>
+                            <?php
+                        }
+                        ?>
+
+
+                    </li>
                 </ul>
 
 
