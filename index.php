@@ -79,6 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         echo "<p>" .$row['$username'] . " </p>";
         echo "</div>";
         echo "</div>";
+
         header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
 
     } else {
