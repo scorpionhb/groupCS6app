@@ -15,7 +15,7 @@ if(isset($_SESSION['username'])){
         $eventText = $db->real_escape_string($_POST['eventText']);
         $startDate = $db->real_escape_string($_POST['startDate']);
         $endDate = $db->real_escape_string($_POST['endDate']);
-        if($endDate.is_null()){
+        if($endDate == ''){
             $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate',NULL)";
         }
         else {
