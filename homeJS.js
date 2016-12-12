@@ -4,21 +4,21 @@
 
 //give user info about the sites cockies
  window.onload = function cookieDiscalimer(){
-     window.addEventListener("load", function(){
-         window.cookieconsent.initialise({
-             "palette": {
-                 "popup": {
-                     "background": "#d44747"
+
+         window.addEventListener("load", function(){
+             window.cookieconsent.initialise({
+                 "palette": {
+                     "popup": {
+                         "background": "#eb6c44",
+                         "text": "#ffffff"
+                     },
+                     "button": {
+                         "background": "#f5d948"
+                     }
                  },
-                 "button": {
-                     "background": "#f5d948"
-                 }
-             },
-             "position": "top",
-             "content": {
-                 "href": "http://cookies.insites.com/about-cookies/"
-             }
-         })});
+                 "position": "bottom-right"
+             })});
+
 
 };
 //log in button
