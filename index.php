@@ -194,8 +194,13 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
             <?php
             if ($typeOfUser == 'Site Administrator') {
-                echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%'>Admin Panel</a>";
+                echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 5%'>Admin Panel</a>";
             }
+
+            if ($typeOfUser == 'Club Administrator') {
+                echo "<a href='clubform.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 5%'>Admin Panel</a>";
+            }
+
             ?>
 
 
