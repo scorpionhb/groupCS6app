@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         return false;
     }
 
-    if (checkLogin($username, $password, $db)) {
+    if ($username == "ijoTest" && $password == "1234") {
         session_start();
         $_SESSION['username'] = $username;
         echo "<div class='col-sm-12 text-left' >";
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         echo "</div>";
         echo "</div>";
 
-        header("Refresh: 1; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
+        header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
 
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>1 sec </p>
+            <p>custom </p>
 
 
             <?php
