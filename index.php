@@ -39,7 +39,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
 
 
-<?
+<?php
 
 
 //-------------------------------------LOGIN REQUEST
@@ -142,7 +142,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                         -->
 
-                            <?
+                            <?php
 
                             //if ($_SESSION['username'] == $username) {
 
@@ -199,10 +199,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>rabotiiiii</p>
+            <p>php</p>
 
 
-            <?
+            <?php
                 $photo;
                 $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
                 $res = $mysqli->query($new_sql);
