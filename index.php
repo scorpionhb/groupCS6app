@@ -158,22 +158,22 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                     echo "</form>";
                             } else {
                                 ?>
-                                    <form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >;
-                                    <div class='input-group'>;
-                                    <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>;
+                                    <form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >
+                                    <div class='input-group'>
+                                    <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
                                    <input id='username' type = 'text' class='form-control' name = 'username' value =''
-                                       placeholder = 'Username'>;
-                                   </div>;
+                                       placeholder = 'Username'>
+                                   </div>
 
-                                    <div class='input-group'>;
-                                    <span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>;
+                                    <div class='input-group'>
+                                    <span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>
                                     <input id='password' type = 'password' class='form-control' name = 'password' value =''
-                                       placeholder = 'Password'>;
-                                    </div>;
+                                       placeholder = 'Password'>
+                                    </div>
 
-                                    <input type='submit' value='Login' class='btn btn-info' />;
+                                    <input type='submit' value='Login' class='btn btn-info' />
 
-                                    </form>;
+                                    </form>
 
                                 <?
                             }
@@ -199,7 +199,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>proba</p>
+            <p>php</p>
 
 
             <?php
