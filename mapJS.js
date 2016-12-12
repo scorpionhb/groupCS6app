@@ -83,10 +83,8 @@ function addMarks() {
                 var name = markers[i].getAttribute("name");
                 var address = markers[i].getAttribute("address");
                 var description = markers[i].getAttribute("description");
-                var img = markers[i].getAttribute("imgURL");
                 var icon = customIcons[type] || {};
-                var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p>" + "<img id='wtf'>";
-                document.getElementById("wtf").src = img;
+                var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p>";
                 var marker = new google.maps.Marker({
                     map: allMap,
                     position: point,
