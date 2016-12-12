@@ -4,10 +4,21 @@
 
 //give user info about the sites cockies
  window.onload = function cookieDiscalimer(){
-     alertify.alert('Cookie Discalimer!',"We use cookies to ensure that we give you the best experience on our website." +
-         " If you continue without changing your settings," +
-         " we'll assume that you are happy to receive all cookies from this website").set('closable', false);
-
+     window.addEventListener("load", function(){
+         window.cookieconsent.initialise({
+             "palette": {
+                 "popup": {
+                     "background": "#d44747"
+                 },
+                 "button": {
+                     "background": "#f5d948"
+                 }
+             },
+             "position": "top",
+             "content": {
+                 "href": "http://cookies.insites.com/about-cookies/"
+             }
+         })});
 };
 //log in button
 function logIn() {

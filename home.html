@@ -18,6 +18,9 @@
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
 
 </head>
 <body>
@@ -199,5 +202,23 @@
     <p>Footer Text</p>
 </footer>
 
+
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#d44747"
+                },
+                "button": {
+                    "background": "#f5d948"
+                }
+            },
+            "position": "top",
+            "content": {
+                "href": "http://cookies.insites.com/about-cookies/"
+            }
+        })});
+</script>
 </body>
 </html>
