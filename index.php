@@ -195,10 +195,11 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     </nav>
 
 
+
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >assssssb</p>
+            <p >rrrr</p>
 
 
             <?php
