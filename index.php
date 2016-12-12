@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                     $clubName = $row['clubName'];
                     echo "<div class='col-sm-12 text-left' >";
                     echo "<div class='textCont'>";
-                    echo "<img src='$photo' alt='' >";
+                    echo "<img src=$photo alt='' >";
                     echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=$clubName'>" . $row['clubName'] . "</a>";
                     echo "<p>" . $row['description'] . "</p>";
                     echo "<hr>";
