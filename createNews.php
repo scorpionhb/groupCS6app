@@ -7,9 +7,9 @@
  */
 
 $output = null;
-
+include(dbConnect.php);
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-if(isset($_POST['submit'])) {
+//if(isset($_POST['submit'])) {
 
 
     $articleName = $_POST['articleName'];
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
     } else {
         $output = "Your news has been successfully added!";
     }
-}
+//}
 
 ?>
 <!DOCTYPE html>
