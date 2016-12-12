@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     if (empty($username) OR empty($password) OR empty($email) OR empty($rpassword) OR empty($telNumber) OR empty($typeOfUser)) {
         $output = "Please fill in all fields.";
     } elseif ($query->num_rows != 0) {
-        $output = "That User Name already taken!";
+        $output = "That User Name is already taken!";
     } elseif ($rpassword != $password) {
         $output = "Your passwords does not match!";
     }elseif (strlen($password) < 8){
