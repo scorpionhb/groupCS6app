@@ -1,4 +1,5 @@
 <?php
+
 $db =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
 $type = $_POST["type"];
 $name = $_POST["name"];
@@ -10,7 +11,9 @@ $image = $_POST["image"];
 $lat = $_POST["latitude"];
 $lon = $_POST["longitude"];
 $imageCheck = substr($image, -3);
-$warning = "";
+$warning = null;
+
+
 
 if(empty($type) OR empty($name) OR empty($address) OR empty($desc) OR empty($lat) OR empty($lon)){
     $warning = "Please fill in all the required fields!";
@@ -44,6 +47,11 @@ else{
 </head>
 <body>
     <h2 id="warning">.</h2>
+
+    <?php
+
+    echo  $warning;
+    ?>
     <form action="mapForm.php" method="post">
         <div class="form-group">
             <label for="inputType">Location Type</label>
