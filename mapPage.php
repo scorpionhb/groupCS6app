@@ -15,6 +15,12 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMI5iwxHNqNnZSvbVJkE656xZoKPpfBfc "
         type="text/JavaScript">
     </script>
+    <style>
+        .btn-primary{
+            margin-left: 4%;
+            width: 16%;
+        }
+    </style>
 </head>
 
 <body onload ="load()">
