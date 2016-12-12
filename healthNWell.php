@@ -91,7 +91,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>tar</p>
+            <p>tara</p>
 
 
             <div class="col-sm-6 text-center">
