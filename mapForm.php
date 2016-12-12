@@ -51,19 +51,19 @@ else{
     ?>
     <form action="mapForm.php" method="post">
         <div class="form-group">
-            <label for="inputType">Location Type</label>
+            <label for="inputType">Location Type*</label>
             <input type="text" class="form-control" id="inputType" name="type">
         </div>
         <div class="form-group">
-            <label for="inputName">Location Name</label>
+            <label for="inputName">Location Name*</label>
             <input type="text" class="form-control" id="inputName" name="name">
         </div>
         <div class="form-group">
-            <label for="inputAddress">Location Address</label>
+            <label for="inputAddress">Location Address*</label>
             <input type="text" class="form-control" id="inputAddress" name="address">
         </div>
         <div class="form-group">
-            <label for="inputDescription">Descriptiona</label>
+            <label for="inputDescription">Descriptiona*</label>
             <textarea class="form-control" id="inputDescription" rows="3" name="description"></textarea>
         </div>
         <div class="form-group">
@@ -79,11 +79,11 @@ else{
             <textarea class="form-control" id="image" rows="3" name="image"></textarea>
         </div>
         <div class="form-group">
-            <label for="inputLatitude">Latitude</label>
+            <label for="inputLatitude">Latitude*</label>
             <input type="text" class="form-control" id="inputLatitude" name="latitude">
         </div>
         <div class="form-group">
-            <label for="inputLongitude">Longitude</label>
+            <label for="inputLongitude">Longitude*</label>
             <input type="text" class="form-control" id="inputLongitude" name="longitude">
         </div>
         <button type="submit" class="btn btn-primary" onclick>Submit</button>
