@@ -7,7 +7,17 @@
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
+if ($_SESSION['username'] == $username) {
 
+    echo "<div>";
+    echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+    echo "</div>";
+
+} else {
+    echo "<div>";
+    echo "Please log in first to see this page.";
+    echo "</div>";
+}
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
@@ -82,17 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
     }
-    if ($_SESSION['username'] == $username) {
 
-        echo "<div>";
-        echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
-        echo "</div>";
-
-    } else {
-        echo "<div>";
-        echo "Please log in first to see this page.";
-        echo "</div>";
-    }
 
 } else {
     print('whoops');
@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PAsss</p>
+            <p>PAdddsfdssfssss</p>
 
 
             <?php
