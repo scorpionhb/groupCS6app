@@ -32,17 +32,7 @@ if(isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="homeJS.js"></script>
-    <script type="text/javascript" src="registerJS.js"></script>
     <link rel="stylesheet" type="text/css" href="testRegisterForm.css">
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
-    <!-- Bootstrap theme -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 
 </head>
 <body>
