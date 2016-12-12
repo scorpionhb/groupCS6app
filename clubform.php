@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     if (empty($clubname) OR empty($clubgenre) OR empty($email) OR empty($clubdescription) OR empty($phoneNumber)) {
         $output = "Please fill in all fields.";
     } elseif ($query->num_rows != 0) {
-        $output = "That Club Name already taken!";
+        $output = "That Club Name is already taken!";
     } else {
         //Insert the record
         $insert = $mysqli->query("INSERT INTO clubs(clubName,clubGenre,description,email,tel_number) VALUES ('$clubname','$clubgenre','$clubdescription','$email','$phoneNumber')");
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
             $output = "There was a problem <br/>";
             $output .= $mysqli->error;
         } else {
-            $output = "You have been registered!";
+            $output = "Your club have been registered!";
         }
     }
 
@@ -128,6 +128,10 @@ if (isset($_POST['submit'])) {
             <div class="col-sm-6 text-center ">
                 <h2>New club registration form:</h2>
 
+                <?PHP
+                echo $output;
+                ?>
+
                 <form method="post">
 
 
@@ -153,9 +157,7 @@ if (isset($_POST['submit'])) {
                 </form>
 
 
-                <?PHP
-                echo $output;
-                ?>
+
 
 
             </div>
