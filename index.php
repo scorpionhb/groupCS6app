@@ -7,6 +7,14 @@
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
+if($_SESSION['username'] == $username){
+    echo "<div class='col-sm-12 text-left' >";
+    echo "<div class='textCont'>";
+    echo "<p>" .$row['$username'] . " </p>";
+    echo "</div>";
+    echo "</div>";
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
 
@@ -71,16 +79,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         return false;
     }
 
-    if ($username == "ijoTest" && $password == "1234") {
+    if (checkLogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
-        echo "<div class='col-sm-12 text-left' >";
-        echo "<div class='textCont'>";
-        echo "<p>" .$row['$username'] . " </p>";
-        echo "</div>";
-        echo "</div>";
 
-        header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
+
+       // header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
 
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
@@ -167,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>custom </p>
+            <p>1 sec </p>
 
 
             <?php
