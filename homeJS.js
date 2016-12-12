@@ -4,7 +4,7 @@
 
 //log in button
 function logIn() {
-    alertify.alert("ALOOOO");
+  /*  alertify.alert("ALOOOO");
     var i = 0;
 
     if (i == 0) {
@@ -50,14 +50,15 @@ function logIn() {
         helloSign.id = "loginFields1";
 
      // var  display = document.querySelector('#test');
-        startTimer(600);
-    }
+
+    }*/
+    startTimer(600);
 };
 
 //if logout kick user from platform
 function logOut(){
    location.reload();
-    alertify.success("Timer resseted for 10 minutes");
+   // alertify.success("Timer resseted for 10 minutes");
 
 };
 

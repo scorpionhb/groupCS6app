@@ -153,7 +153,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                     echo "<p id='welcomeText'>Welcome, " . $username . "!</p>";
 
-                                    echo "<input type='submit' value='Logout' class='btn btn-info'  />";
+                                    echo "<input onclick='logIn()' type='submit' value='Logout' class='btn btn-info'  />";
 
                                     echo "</form>";
                             } else {
