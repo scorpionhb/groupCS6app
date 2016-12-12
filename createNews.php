@@ -7,20 +7,15 @@
  */
 
 $output = null;
-include(dbConnect.php);
+include("dbConnect.php");
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 //if(isset($_POST['submit'])) {
 
 
-    $articleName = $mysqli-> $_POST['articleName'];
-    $articleText = $mysqli-> $_POST['articleText'];
+    $articleName = $_POST['articleName'];
+    $articleText = $_POST['articleText'];
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
-    if ($insert != true) {
-        $output = "There was a problem :@ <br/>";
-        $output .= $mysqli->error;
-    } else {
-        $output = "Your news has been successfully added!";
-    }
+
 //}
 
 ?>
