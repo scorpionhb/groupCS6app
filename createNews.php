@@ -16,7 +16,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $articleText =  $db->real_escape_string($_POST['articleText']);
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
     $result = $db->query($insert);
-    if ($insert != true) {
+    if ($insert == true) {
         $output = "There was a problem <br/>";
         $output .= $db->error;
     } else {
@@ -104,7 +104,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>D</p>
+            <p>De</p>
             <div class="col-sm-3 text-left"></div>
 
             <div class="col-sm-6 text-center ">
