@@ -2,25 +2,6 @@
  * Created by azifchyy on 4.12.2016 г..
 */
 
-//give user info about the sites cockies
- /*window.onload = function cookieDiscalimer(){
-
-         window.addEventListener("load", function(){
-             window.cookieconsent.initialise({
-                 "palette": {
-                     "popup": {
-                         "background": "#eb6c44",
-                         "text": "#ffffff"
-                     },
-                     "button": {
-                         "background": "#f5d948"
-                     }
-                 },
-                 "position": "bottom-right"
-             })});
-
-
-};*/
 //log in button
 function logIn() {
     var i = 0;
