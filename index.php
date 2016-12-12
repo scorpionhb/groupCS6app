@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>1 sec </p>
+            <p>10 sec </p>
 
 
             <?php
