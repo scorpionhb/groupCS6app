@@ -103,7 +103,7 @@ function startTimer(duration) {
 
         if (--timer < 0) {
                 location.reload();
-        }else if(timer == 60 ){
+        }else if(timer == 595 ){
             timeout();
 
 

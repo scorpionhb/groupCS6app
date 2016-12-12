@@ -39,7 +39,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
 
 
-<?
+<?php
 
 
 //-------------------------------------LOGIN REQUEST
@@ -142,7 +142,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                         -->
 
-                            <?
+                            <?php
 
                             //if ($_SESSION['username'] == $username) {
 
@@ -151,31 +151,31 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
-                                    echo "<p id='welcomeText'>Welcome," . $username . "</p>";
+                                    echo "<p id='welcomeText'>Welcome, " . $username . "!</p>";
 
                                     echo "<input type='submit' value='Logout' class='btn btn-info'  />";
 
                                     echo "</form>";
                             } else {
+                                ?>
+                                    <form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >
+                                    <div class='input-group'>
+                                    <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
+                                   <input id='username' type = 'text' class='form-control' name = 'username' value =''
+                                       placeholder = 'Username'>
+                                   </div>
 
-                                    echo "<form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >";
-                                    echo "<div class='input-group'>";
-                                    echo "<span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>";
-                                    echo "<input id='username' type = 'text' class='form-control' name = 'username' value =''
-                                       placeholder = 'Username'>";
-                                    echo "</div>";
+                                    <div class='input-group'>
+                                    <span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>
+                                    <input id='password' type = 'password' class='form-control' name = 'password' value =''
+                                       placeholder = 'Password'>
+                                    </div>
 
-                                    echo "<div class='input-group'>";
-                                    echo "<span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>";
-                                    echo "<input id='password' type = 'password' class='form-control' name = 'password' value =''
-                                       placeholder = 'Password'>";
-                                    echo "</div>";
+                                    <input onclick="logIn()" type='submit' value='Login' class='btn btn-info' />
 
-                                    echo "<input type='submit' value='Login' class='btn btn-info' />";
+                                    </form>
 
-                                    echo "</form>";
-
-
+                                <?
                             }
 
 
@@ -199,10 +199,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>rabotiiiii</p>
+            <p >phps</p>
 
 
-            <?
+            <?php
                 $photo;
                 $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
                 $res = $mysqli->query($new_sql);
