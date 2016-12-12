@@ -152,11 +152,8 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                     echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
 
                                     echo "</form>";
+                              } else {
                                   ?>
-                                  <p onload="logginTimeout()"></p>
-                                  <?php
-                            } else {
-                                ?>
                                     <form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >
                                     <div class='input-group'>
                                     <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>

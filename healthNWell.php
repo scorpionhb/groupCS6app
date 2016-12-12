@@ -100,9 +100,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                             echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
 
                             echo "</form>";
-                            ?>
-                            <p onload="logginTimeout()"></p>
-                            <?php
                         }
                         ?>
 
