@@ -93,6 +93,13 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                         if(isset($_SESSION['username'])){
                             $username = $_SESSION['username'];
 
+                            $typeOfUser = null;
+                            $sql1 = "SELECT * FROM users WHERE username='" . $username . " ' ";
+                            $result1 = $db->query($sql1);
+                            while ($row = $result1->fetch_array()) {
+                                $typeOfUser = $row['type_of_user'];
+                            }
+
                             echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
                             echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $username . "!</p>";
@@ -114,7 +121,13 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>tard</p>
+            <?php
+            if ($typeOfUser == 'Site Administrator') {
+                echo "<a href='createNews.php.php' type='button' class='btn btn-primary' style='float: left; margin-right: 15%; margin-top: 2%'>Create News</a>";
+                echo "<a href='createEvent.php.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
+            }
+
+            ?>
 
 
             <div class="col-sm-6 text-center">
