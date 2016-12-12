@@ -92,7 +92,7 @@
         <div id="filter">
             <p class="checkboxText"><b>Clubs</b></p>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="clubs" name="check"/>
+                <input type="checkbox" value="None" id="clubs" name="check" onclick="addMarks()"/>
                 <label for="clubs"></label>
             </div>
             <p class="checkboxText"><b>Viewpoints</b></p>
@@ -111,7 +111,7 @@
                 <label for="landmarks"></label>
             </div>
         </div>
-        <p onload="geoLocation()" id="test">Testvai Tovaa</p>
+        <p onload="geoLocation()" id="test">Testvai Tova</p>
         <button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>
         <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Submit</button></a>
     </div>
