@@ -17,7 +17,7 @@
     </script>
     <style>
         .btn-primary{
-            margin-left: 4%;
+            margin-left: 30%;
             width: 16%;
         }
     </style>
@@ -113,7 +113,7 @@
         </div>
         <p onload="geoLocation()" id="test">Testvai Tova</p>
         <!--<button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>-->
-        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Submit</button></a>
+        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Add</button></a>
     </div>
     <div id = "map"></div>
 
