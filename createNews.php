@@ -22,6 +22,7 @@ if(isset($_POST['submit'])) {
         $output = "Your news has been successfully added!";
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
