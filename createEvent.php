@@ -106,8 +106,9 @@ if(isset($_SESSION['username'])){
 
                     <form method="post">
                         <input type="text" name="eventName" placeholder="Name of Event"><br>
-                        <input type="datetime" name="startDate" placeholder="Enter start date like: YYYY-MM-DD HH:MM:SS"><br>
-                        <input type="datetime" name="endDate" placeholder="Enter end date(if applicable) like: YYYY-MM-DD HH:MM:SS">
+                        <p>Please enter start/end date in format YYYY-MM-DD HH:MM:SS</p>
+                        <input type="datetime" name="startDate" placeholder="Enter start date"><br>
+                        <input type="datetime" name="endDate" placeholder="Enter end date(if applicable)">
                         <textarea name="eventText"></textarea>
                         <input  name="submit" type="submit">
                     </form>
