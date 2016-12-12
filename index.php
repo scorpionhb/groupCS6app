@@ -77,13 +77,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
         header("location: http://cs6testapp.azurewebsites.net/index.php");
 
-
        // header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
 
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
     }
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    if ($_SESSION['username'] == $username) {
 
         echo "<div>";
         echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
@@ -177,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PAs</p>
+            <p>PAsss</p>
 
 
             <?php
