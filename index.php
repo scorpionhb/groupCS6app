@@ -147,13 +147,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
-                        <!--<form id="signin" class="navbar-form navbar-right" role="form" method="post"> -->
-
-                            <?php
-
-                            if ($_SESSION['username'] == $username) {
-                            /*
-                                <div class="input-group" >
+                        <!--<form id="signin" class="navbar-form navbar-right" role="form" method="post">
+                            <div class="input-group" >
                                 <span class="input-group-addon" ><i class="glyphicon glyphicon-user" ></i ></span >
                                 <input id = "username" type = "text" class="form-control" name = "username" value = ""
                                        placeholder = "Username" >
@@ -166,7 +161,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             </div >
                             <input type = "submit" value = "Login" class="btn btn-info" />
 
-                            */
+
+
+                        -->
+
+                            <?php
+
+                            /*if ($_SESSION['username'] == $username) {*/
+
+                                if(isset($_SESSION['username'])){
 
                                 echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
                                 echo "<div class='input-group'>";
