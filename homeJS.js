@@ -51,7 +51,7 @@ function logIn() {
 
      // var  display = document.querySelector('#test');
 
-    }*/
+    }*/ alertify.success("EPA ");
     startTimer(600);
 };
 
