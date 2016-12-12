@@ -134,6 +134,9 @@ if (isset($_POST['submit'])) {
 
             <div class="col-sm-6 text-center ">
                 <h2>New user registration form:</h2>
+                <?PHP
+                echo $output;
+                ?>
                 <form method="post" onsubmit="return myFunction()">
 
 
@@ -168,9 +171,7 @@ if (isset($_POST['submit'])) {
                     <button class="cancelbtn" type="button" class="cancelbtn">Cancel</button>
                 </form>
 
-                <?PHP
-                echo $output;
-                ?>
+
 
 
             </div>
