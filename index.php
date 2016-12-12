@@ -8,11 +8,11 @@
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
 if($_SESSION['username'] == $username){
-    echo "<div class='col-sm-12 text-left' >";
+
     echo "<div class='textCont'>";
     echo "<p>" .$row['$username'] . " </p>";
     echo "</div>";
-    echo "</div>";
+
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
