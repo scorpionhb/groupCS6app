@@ -147,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
-                        <form id="signin" class="navbar-form navbar-right" role="form" method="post">
+                        <!--<form id="signin" class="navbar-form navbar-right" role="form" method="post"> -->
 
                             <?php
 
@@ -219,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PAsghg</p>
+            <p>bgbgbgbgbg</p>
 
 
             <?php
