@@ -48,6 +48,7 @@ else{
     <?php
 
     echo  $warning;
+    $warning= null;
     ?>
     <form action="mapForm.php" method="post">
         <div class="form-group">
