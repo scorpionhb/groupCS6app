@@ -22,7 +22,9 @@ if (isset($_POST['submit'])) {
         $output = "That User Name already taken!";
     } elseif ($rpassword != $password) {
         $output = "Your passwords does not match!";
-    } else {
+    }elseif ($password < 6){
+        $output = "Your password must be longer than 6 symbols";
+    }else {
         //Encrypt the password
         $password = md5($password);
         //Insert the record
