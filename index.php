@@ -10,7 +10,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 if ($_SESSION['username'] == $username) {
 
     echo "<div>";
-    echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+    echo "Welcome to the member's area, " . $username . "!";
     echo "</div>";
 
 } else {
@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PAdddsfdssfssss</p>
+            <p>PA</p>
 
 
             <?php
