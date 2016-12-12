@@ -92,14 +92,14 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                         if(isset($_SESSION['username'])){
                             $username = $_SESSION['username'];
-
+/*
                             $typeOfUser = null;
                             $sql1 = "SELECT * FROM users WHERE username='" . $username . " ' ";
                             $result1 = $db->query($sql1);
                             while ($row = $result1->fetch_array()) {
                                 $typeOfUser = $row['type_of_user'];
                             }
-
+*/
                             echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
                             echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $username . "!</p>";
