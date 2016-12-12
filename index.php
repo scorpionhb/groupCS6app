@@ -61,13 +61,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 //-------------------------------------LOGIN REQUEST
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-/*
+    session_start();
     include("dbConnect.php");
 
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-
+/*
     function checkLogin($username, $password, $db)
     {
         $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
@@ -222,7 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>ai raboti veche beeee</p>
+            <p>ai raboti veche</p>
 
 
             <?php
