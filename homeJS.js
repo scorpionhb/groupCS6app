@@ -19,6 +19,7 @@
                  "href": "http://cookies.insites.com/about-cookies/"
              }
          })});
+
 };
 //log in button
 function logIn() {
