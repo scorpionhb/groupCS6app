@@ -69,7 +69,6 @@
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
                         <!--
-
                         <form id="signin" class="navbar-form navbar-right" role="form">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>

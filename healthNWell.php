@@ -108,8 +108,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                 </ul>
 
 
-
-
             </div>
         </div>
     </nav>

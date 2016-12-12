@@ -56,7 +56,6 @@ if (isset($_POST['submit'])) {
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 
-
 </head>
 <body>
 
