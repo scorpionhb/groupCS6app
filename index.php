@@ -144,10 +144,11 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                               if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
+                                    $typeOfUser = $_SESSION['type_of_user'];
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
-                                    echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $username . "!</p>";
+                                    echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $typeOfUser . "!</p>";
 
                                     echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
 
@@ -190,7 +191,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >rrr</p>
+            <p >aaaaar</p>
 
 
             <?php

@@ -19,9 +19,13 @@ $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" .
 $sql1 ="SELECT * FROM users WHERE username='" . $username ." ' ";
 //RUN THE QUERY
 $result = $db->query($sql);
+$result1 = $db->query($sql1);
 $loginSuccessful = 0;
 while($row = $result->fetch_array()) {
     $loginSuccessful = 1;
+}
+while($row = $result1->fetch_array()){
+    $typeOfUser = $row['type_of_user'];
 }
 // If result matched $username and $password, table row must be 1 row
 if($loginSuccessful==1){
