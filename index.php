@@ -199,7 +199,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 </div>
 <footer class="container-fluid text-center">
     <p>Footer Text</p>
-</footer>
+
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#eb6c44",
+                    "text": "#ffffff"
+                },
+                "button": {
+                    "background": "#f5d948"
+                }
+            },
+            "position": "bottom-right"
+        })});
+</script>
 
 </body>
 </html>

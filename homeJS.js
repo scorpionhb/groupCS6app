@@ -3,7 +3,7 @@
 */
 
 //give user info about the sites cockies
- window.onload = function cookieDiscalimer(){
+ /*window.onload = function cookieDiscalimer(){
 
          window.addEventListener("load", function(){
              window.cookieconsent.initialise({
@@ -20,7 +20,7 @@
              })});
 
 
-};
+};*/
 //log in button
 function logIn() {
     var i = 0;
