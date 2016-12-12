@@ -92,7 +92,7 @@ $clubID = $_GET['clubID'];
 
             <div class="col-sm-3 text-left">
                 <div class="textCont">
-                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=768x768&w=768&h=768" alt="">
+                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=120&txt=768x768&w=768&h=768" alt="">
                     <?php
                         $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
                         $result = $mysqli->query($sql_query);
