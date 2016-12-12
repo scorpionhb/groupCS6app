@@ -8,6 +8,27 @@
 $output = null;
 session_start();
 if(isset($_SESSION['username'])){
+    if (isset($_POST['submit'])) {
+        include("dbConnect.php");
+
+        $eventName = $db->real_escape_string($_POST['eventName']);
+        $eventText = $db->real_escape_string($_POST['eventText']);
+        $startDate = $db->real_escape_string($_POST['startDate']);
+        $endDate = $db->real_escape_string($_POST['endDate']);
+
+        $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate','$endDate')";
+        if ($sql != true) {
+            $output = "There was a problem <br/>";
+            $output .= $db->error;
+        } else {
+            $output = "Your article has been submitted";
+        }
+
+        $result = $db->query($sql);
+
+    }
+
+}
 
 ?>
 
@@ -120,27 +141,6 @@ if(isset($_SESSION['username'])){
 
     <?php
 
-            if (isset($_POST['submit'])) {
-            include("dbConnect.php");
-
-            $eventName = $db->real_escape_string($_POST['eventName']);
-            $eventText = $db->real_escape_string($_POST['eventText']);
-            $startDate = $db->real_escape_string($_POST['startDate']);
-            $endDate = $db->real_escape_string($_POST['endDate']);
-
-            $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate','$endDate')";
-            if ($sql != true) {
-                $output = "There was a problem <br/>";
-                $output .= $db->error;
-            } else {
-                $output = "Your article has been submitted";
-            }
-
-            $result = $db->query($sql);
-
-        }
-
-    }
 
     ?>
 
