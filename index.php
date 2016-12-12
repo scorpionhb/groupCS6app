@@ -149,7 +149,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
-                                    echo "<div class='input-group' style='display: inline'><p  id='welcomeText' style='display: inline; padding-right: 2%'>Welcome, " . $username . "!</p>";
+                                    echo "<div class='input-group' style='display: inline'><p  id='welcomeText' style='display: inline'>Welcome, " . $username . "!</p>";
 
                                     echo "<input  type='submit' value='Logout' class='btn btn-info'  /></div>";
 
@@ -199,7 +199,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >2222</p>
+            <p >21111112</p>
 
 
             <?php
