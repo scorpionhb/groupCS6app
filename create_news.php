@@ -55,6 +55,7 @@
     </main>
 <?php
     $output = null;
+include ("dbConnect.php");
 
 if(isset($_POST['submit'])) {
     $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
@@ -70,6 +71,8 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
+
+
 
         <?PHP
         echo $output;
