@@ -164,6 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         <div class="row content">
             <p>ZAREDI </p>
 
+
             <?php
                 $photo;
                 $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
