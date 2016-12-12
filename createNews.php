@@ -9,7 +9,7 @@
 $output = null;
 include("dbConnect.php");
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-//if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) {
 
 
     $articleName = $db->real_escape_string($_POST['articleName']);
@@ -25,7 +25,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     $result = $db->query($insert);
 
-//}
+}
 
 ?>
 <!DOCTYPE html>
@@ -104,7 +104,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>De</p>
+            <p>Dee</p>
             <div class="col-sm-3 text-left"></div>
 
             <div class="col-sm-6 text-center ">
