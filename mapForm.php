@@ -17,10 +17,9 @@ $warning = null;
 
 if(empty($type) OR empty($name) OR empty($address) OR empty($desc) OR empty($lat) OR empty($lon)){
     $warning = "Please fill in all the required fields!";
-    
 }
-else if($type != "Viewpoint" OR $type != "Club" OR $type != "HistoricalLandmark" OR $type != "Route"){
-    $warning = "Please input any of the following types(Viewpoint,Club,HistoricalLandmark,Route";
+else if($type != "Viewpoint" || $type != "Club" || $type != "HistoricalLandmark" || $type != "Route"){
+    $warning = "Please input any of the following types(Viewpoint,Club,HistoricalLandmark,Route)";
 }
 else if(strlen($name > 50)){
     $warning = "Name cannot be longer than 50 characters.";
