@@ -144,7 +144,14 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                               if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
-                                    $typeOfUser = $_SESSION['type_of_user'];
+
+
+                                  $typeOfUser = null;
+                                  $sql1 ="SELECT * FROM users WHERE username='" . $username ." ' ";
+                                  $result1 = $db->query($sql1);
+                                  while($row = $result1->fetch_array()){
+                                      $typeOfUser = $row['type_of_user'];
+                                  }
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
@@ -191,7 +198,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >aaaaar</p>
+            <p >bbbbar</p>
 
 
             <?php
