@@ -21,7 +21,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <link rel="stylesheet" type="text/css" href="homeStyle.css">
     <script src="homeJS.js"></script>
 
-    <!-- JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
     <script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
@@ -197,7 +197,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >pssd4</p>
+            <p >asd</p>
 
 
             <?php
