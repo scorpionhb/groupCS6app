@@ -9,9 +9,6 @@
 session_start();
 if(isset($_SESSION['username'])){
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET'){
-
-
 ?>
 
 <!DOCTYPE html>
@@ -102,7 +99,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                 <main>
                     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                     <script>tinymce.init({selector: 'textarea'});</script>
-
+                    <?PHP
+                    echo $output;
+                    ?>
                     <form method="post">
                         <input type="text" name="eventName" placeholder="Name of Event"><br>
                         <p>Please enter start/end date in format YYYY-MM-DD HH:MM:SS</p>
@@ -120,8 +119,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     </div>
 
     <?php
-    } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['submit'])) {
+
+            if (isset($_POST['submit'])) {
             include("dbConnect.php");
 
             $eventName = $db->real_escape_string($_POST['eventName']);
@@ -140,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
             $result = $db->query($sql);
 
         }
-    }
+
     }
 
     ?>
