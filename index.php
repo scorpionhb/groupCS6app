@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 </head>
-<body>
+<body onload="cookieDiscalimer()">
 
 
 
