@@ -172,32 +172,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                                 if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
 
-                                echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
-                                echo "<div class='input-group'>";
-                                echo "<span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>";
-                                echo "<input id='username' type = 'text' class='form-control' name = 'username' value =''
-                                       placeholder = 'Username'>";
-                                echo "</div>";
+                                    echo "<form id='logout' class='navbar-form navbar-right' role='form' method='post' >";
 
-                                echo "<div class='input-group'>";
-                                echo "<span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>";
-                                echo "<input id='password' type = 'password' class='form-control' name = 'password' value =''
-                                       placeholder = 'Password'>";
-                                echo "</div>";
+                                    echo "<p id='welcomeText'>Welcome," . $username . "</p>";
 
-                                echo "<input type='submit' value='Login' class='btn btn-info' />";
+                                    echo "<input type='submit' value='Logout' class='btn btn-info'  />";
 
-                                echo "</form>";
-
+                                    echo "</form>";
                             } else {
 
-                                echo "<form id='logout' class='navbar-form navbar-right' role='form' method='post' >";
+                                    echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
+                                    echo "<div class='input-group'>";
+                                    echo "<span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>";
+                                    echo "<input id='username' type = 'text' class='form-control' name = 'username' value =''
+                                       placeholder = 'Username'>";
+                                    echo "</div>";
 
-                                echo "<p>Welcome," . $username . "</p>";
+                                    echo "<div class='input-group'>";
+                                    echo "<span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>";
+                                    echo "<input id='password' type = 'password' class='form-control' name = 'password' value =''
+                                       placeholder = 'Password'>";
+                                    echo "</div>";
 
-                                echo "<input type='submit' value='Logout' class='btn btn-info' />";
+                                    echo "<input type='submit' value='Login' class='btn btn-info' />";
 
-                                echo "</form>";
+                                    echo "</form>";
 
 
                             }
