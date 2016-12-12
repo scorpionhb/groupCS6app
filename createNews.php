@@ -16,7 +16,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $articleText =  $db->real_escape_string($_POST['articleText']);
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
 
-    if ($insert == true) {
+    if ($insert != true) {
         $output = "There was a problem <br/>";
         $output .= $db->error;
     } else {
@@ -120,26 +120,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                         <input type="submit">
                     </form>
                 </main>
-
-                <?php
-
-                include ("dbConnect.php");
-
-                if(isset($_POST['submit'])) {
-                    $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-
-                    $articleName = $mysqli->real_escape_string($_POST['articleName']);
-                    $articleText = $mysqli->real_escape_string($_POST['articleText']);
-                    $insert = $mysqli->query("INSERT INTO news(content,title) VALUES ('$articleText','$articleName')");
-                    if ($insert != true) {
-                        $output = "There was a problem :@ <br/>";
-                        $output .= $mysqli->error;
-                    } else {
-                        $output = "Your news has been successfully added!";
-                    }
-                }
-
-                ?>
 
 
             </div>
