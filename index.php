@@ -151,7 +151,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
-                                    echo "<p id='welcomeText'>Welcome, " . $username . "!</p>";
+                                    echo "<p onload='logIn()' id='welcomeText'>Welcome, " . $username . "!</p>";
 
                                     echo "<input  type='submit' value='Logout' class='btn btn-info'  />";
 
@@ -171,7 +171,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                        placeholder = 'Password'>
                                     </div>
 
-                                    <input onclick="logIn()" type='submit' value='Login' class='btn btn-info' />
+                                    <input  type='submit' value='Login' class='btn btn-info' />
 
                                     </form>
 
@@ -197,7 +197,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >asasdd</p>
+            <p >aa</p>
 
 
             <?php
