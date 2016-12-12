@@ -26,6 +26,7 @@ else if(strlen($address) > 100){
 }
 else{
     $sql = "INSERT INTO locations(type,name,address,description,history,geological,imgURL,latitude,longitude) VALUES('$type','$name','$address','$desc','$history','$geological','$image','$lat','$lon')";
+    $db->query($sql);
     if(mysql_query($db, $sql)){
     }
     else{
