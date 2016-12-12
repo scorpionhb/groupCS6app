@@ -99,9 +99,7 @@ $clubID = $_GET['clubID'];
                         while($row = $res->fetch_array()){
                         $photo = $row['url'];
                         }
-                    ?>
-                    <!--<img class="img-responsive" src=$photo alt=""> -->
-                    <?php
+
                         $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
                         $result = $mysqli->query($sql_query);
                         while($row = $result->fetch_array()){
