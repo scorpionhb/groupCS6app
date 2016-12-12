@@ -6,7 +6,7 @@
  * Time: 19:56
  */
 
-include(dbConnect.php);
+include("dbConnect.php");
 $title = $_POST["title"];
 $info = $_POST["info"];
 
