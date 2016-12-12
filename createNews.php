@@ -99,17 +99,18 @@ if(isset($_POST['submit'])) {
 
     <div class="container-fluid text-center">
         <div class="row content">
+            <p>DUma</p>
 
             <div class="col-sm-3 text-left"></div>
 
             <div class="col-sm-6 text-center ">
-                <?PHP
-                echo $output;
-                ?>
                 <main>
                     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                     <script>tinymce.init({selector: 'textarea'});</script>
-                    <form action="createNews.php" method="post">
+                    <?PHP
+                    echo $output;
+                    ?>
+                    <form method="post">
                         <input type="text" name="articleName" placeholder="Name of Article">
                         <textarea name="articleText"></textarea>
                         <input type="submit">
