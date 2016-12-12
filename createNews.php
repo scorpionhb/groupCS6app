@@ -8,6 +8,7 @@
 
 $output = null;
 
+
 if(isset($_POST['submit'])) {
     include("dbConnect.php");
     $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');

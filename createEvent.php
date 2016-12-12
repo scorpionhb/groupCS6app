@@ -12,6 +12,7 @@ if(isset($_SESSION['username'])){
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -96,16 +97,24 @@ if(isset($_SESSION['username'])){
 
     <div class="container-fluid text-center">
         <div class="row content">
+            <div class="col-sm-3 text-left"></div>
+
+            <div class="col-sm-6 text-center ">
+                <main>
+                    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                    <script>tinymce.init({selector: 'textarea'});</script>
+
+                    <form method="post">
+                        <input type="text" name="eventName" placeholder="Name of Event">
+                        <input type="datetime" name="startDate">
+                        <input type="datetime" name="endDate">
+                        <textarea name="eventText"></textarea>
+                        <input  name="submit" type="submit">
+                    </form>
+                </main>
 
 
-
-
-
-
-
-
-
-
+            </div>
 
         </div>
     </div>
