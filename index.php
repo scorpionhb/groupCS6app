@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     if (checkLogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
+        header("Refresh: 10", 'Location: ' . $_SERVER['HTTP_REFERER'], true, 303);
 
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
