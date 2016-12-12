@@ -64,6 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             //     $test.val( "hello world" );
             // $("#loginFields1").val("Hello ");
+            echo "<div>";
+            echo "<p>" .$row['$username'] . " </p>";
             return true;
 
         }
