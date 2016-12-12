@@ -5,7 +5,7 @@
  * Date: 12/12/2016
  * Time: 18:05
  */
-$output = null;
+
 session_start();
 if(isset($_SESSION['username'])){
     if (isset($_POST['submit'])) {
