@@ -72,6 +72,7 @@ footer,
 .input-group{
     width: 130px;
     margin-right: 3px;
+    display: inline-block;
 }
 
 
@@ -90,6 +91,8 @@ footer,
 #welcomeText{
     color: red;
 }
+
+
 
 
 
