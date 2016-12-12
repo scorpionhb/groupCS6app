@@ -145,6 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                 </ul>
 
 
+
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
                         <form id="signin" class="navbar-form navbar-right" role="form" method="post">
