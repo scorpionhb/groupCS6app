@@ -7,10 +7,10 @@
  */
 
 $output = null;
-include("dbConnect.php");
-$mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-if(isset($_POST['submit'])) {
 
+if(isset($_POST['submit'])) {
+    include("dbConnect.php");
+    $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
     $articleName = $db->real_escape_string($_POST['articleName']);
     $articleText =  $db->real_escape_string($_POST['articleText']);
@@ -117,7 +117,7 @@ if(isset($_POST['submit'])) {
                     <form method="post">
                         <input type="text" name="articleName" placeholder="Name of Article">
                         <textarea name="articleText"></textarea>
-                        <input type="submit">
+                        <input  name="submit" type="submit">
                     </form>
                 </main>
 
