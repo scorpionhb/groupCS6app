@@ -142,6 +142,11 @@ input[type=checkbox] {
     margin-left: 34%;
 }
 
+.btn-primary{
+    width: 6%;
+    margin-left: 34%;
+}
+
 @media screen and (max-width: 1010px){
     #mapControls {
         width: 23%;
