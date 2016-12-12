@@ -108,6 +108,7 @@ function addMarks() {
                 var description = markers[i].getAttribute("description");
                 var geological = markers[i].getAttribute("geological");
                 var history = markers[i].getAttribute("history");
+                var s;
                 if(history == null){
                     history = "";
                 }
