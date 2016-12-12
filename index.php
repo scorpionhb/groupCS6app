@@ -167,9 +167,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                             <?php
 
-                            //if ($_SESSION['username'] == $username) {
+                            if ($_SESSION['username'] == $username) {
 
-                               if(isset($_SESSION['username'])){
+                             // if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
 
                                     echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' method='post' >";
@@ -222,7 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>aboti</p>
+            <p>raboti</p>
 
 
             <?php
