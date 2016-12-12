@@ -162,6 +162,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
 
             <?php
+                $photo;
+                $new_sql = "SELECT * FROM club_photos WHERE caption = 'placeholder'";
+                $res = $mysqli->query($new_sql);
+                while($row = $res->fetch_array()){
+                    $photo = $row['url'];
+                }
+
 
                 $sql_query = "SELECT * FROM clubs";
                 $result = $mysqli->query($sql_query);
@@ -169,8 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                     $clubName = $row['clubName'];
                     echo "<div class='col-sm-12 text-left' >";
                     echo "<div class='textCont'>";
-                    echo "<img src='http://placehold.it/350x150'
-                        alt='' >";
+                    echo "<img src=$photo alt='' >";
                     echo "<a href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=$clubName'>" . $row['clubName'] . "</a>";
                     echo "<p>" . $row['description'] . "</p>";
                     echo "<hr>";
