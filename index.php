@@ -7,13 +7,16 @@
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
-if($_SESSION['username'] == $username){
-
-    echo "<div class='textCont'>";
-    echo "<p>" .$row['$username'] . " </p>";
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    echo "<div>";
+    echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
     echo "</div>";
-
+} else {
+    echo "<div>";
+    echo "Please log in first to see this page.";
+    echo "</div>";
 }
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
@@ -68,11 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            //$test =( "#loginFields1" ); // Get the value of a form input.
-
-            //     $test.val( "hello world" );
-            // $("#loginFields1").val("Hello ");
-
+            if (match_found_in_database()) {
+                $_SESSION['loggedin'] = true;
+                $_SESSION['username'] = $username; // $username coming from the form, such as $_POST['username']
+                // something like this is optional, of course
+            }
             return true;
 
         }
@@ -172,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p> 1sec </p>
+            <p>PA NZ  </p>
 
 
             <?php
