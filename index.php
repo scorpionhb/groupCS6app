@@ -6,7 +6,7 @@
  * Time: 14:07
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-
+/*
 if ($_SESSION['username'] == $username) {
 
     echo "<div class='textCont'>";
@@ -18,7 +18,7 @@ if ($_SESSION['username'] == $username) {
     echo "Please log in first to see this page.";
     echo "</div>";
 }
-
+*/
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 //-------------------------------------LOGIN REQUEST
 
 } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+/*
     include("dbConnect.php");
 
     $username = $_POST["username"];
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     } else {
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
     }
-
+*/
 
 } else {
     print('whoops');
@@ -167,12 +167,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                             <?php
 
-                            if ($_SESSION['username'] == $username) {
+                            //if ($_SESSION['username'] == $username) {
 
-                               // if(isset($_SESSION['username'])){
+                               if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
 
-                                    echo "<form id='logout' class='navbar-form navbar-right' role='form' method='post' >";
+                                    echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' method='post' >";
 
                                     echo "<p id='welcomeText'>Welcome," . $username . "</p>";
 
@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                                     echo "</form>";
                             } else {
 
-                                    echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
+                                    echo "<form action='checkLogin.php' id='signin' class='navbar-form navbar-right' role='form' method='post' >";
                                     echo "<div class='input-group'>";
                                     echo "<span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>";
                                     echo "<input id='username' type = 'text' class='form-control' name = 'username' value =''
@@ -222,7 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>ijo ebe</p>
+            <p>ai raboti veche beeee</p>
 
 
             <?php
