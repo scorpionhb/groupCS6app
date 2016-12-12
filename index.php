@@ -138,8 +138,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                             </div >
                             <input type = "submit" value = "Login" class="btn btn-info" />
 
-
-
                         -->
 
                             <?php
