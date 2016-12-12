@@ -63,7 +63,7 @@ else{
             <input type="text" class="form-control" id="inputAddress" name="address">
         </div>
         <div class="form-group">
-            <label for="inputDescription">Descriptiona*</label>
+            <label for="inputDescription">Description*</label>
             <textarea class="form-control" id="inputDescription" rows="3" name="description"></textarea>
         </div>
         <div class="form-group">
