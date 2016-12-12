@@ -102,10 +102,10 @@ function startTimer(duration) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
       //  display.textContent = minutes + ":" + seconds;
-    alertify.alert("test");
+
         if (--timer < 0) {
                 location.reload();
-        }else if(timer == 595 ){
+        }else if(timer == 595 ){ alertify.alert("test");
             timeout();
 
 
