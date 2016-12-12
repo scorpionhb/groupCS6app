@@ -51,7 +51,7 @@ function logIn() {
 
      // var  display = document.querySelector('#test');
 
-    }*/ alertify.success("EPA ");
+    }*/
     startTimer(600);
 };
 
@@ -102,7 +102,7 @@ function startTimer(duration) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
       //  display.textContent = minutes + ":" + seconds;
-
+    alertify.alert("test");
         if (--timer < 0) {
                 location.reload();
         }else if(timer == 595 ){
