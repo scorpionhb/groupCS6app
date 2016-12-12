@@ -10,11 +10,13 @@ include ("dbConnect.php");
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
 $username = $_POST["username"];
 $password = $_POST["password"];
+$typeOfUser = null;
 //MYSQL INJECTION PROTECTION
 //$username = mysqli_real_escape_string($username);
 //$password = mysqli_real_escape_string($password);
 //FIND THE USER IN THE DATABASE
 $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
+$sql1 ="SELECT * FROM users WHERE username='" . $username ." ' ";
 //RUN THE QUERY
 $result = $db->query($sql);
 $loginSuccessful = 0;
