@@ -199,6 +199,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
             ?>
 
 
+
             <?php
                 $photo;
                 $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
