@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ACER
- * Date: 04/12/2016
- * Time: 14:07
- */
+
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
 ?>
@@ -256,6 +251,10 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
             "position": "bottom-right"
         })});
 </script>
+
+    <div class="col-sm-12 text-center">
+        <a href="createEvent.php" type="button" class="btn btn-default">Submit Event</a>
+    </div>
 
 </body>
 </html>
