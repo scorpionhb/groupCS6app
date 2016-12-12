@@ -22,6 +22,8 @@ if (isset($_POST['submit'])) {
         $output = "That User Name already taken!";
     } elseif ($rpassword != $password) {
         $output = "Your passwords does not match!";
+    }elseif (strlen($password) < 8){
+         $output = "Your password is too short!";
     }else {
         //Encrypt the password
         $password = md5($password);
