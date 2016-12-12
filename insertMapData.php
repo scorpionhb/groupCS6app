@@ -18,10 +18,10 @@ else if($type != "Viewpoint" OR $type != "Club" OR $type != "HistoricalLandmark"
     echo("Please input any of the following types(Viewpoint,Club,HistoricalLandmark,Route");
 }
 else if(strlen($name > 50)){
-    echo("Name cannot be longer than 50 characters");
+    echo("Name cannot be longer than 50 characters.");
 }
 else if(strlen($address) > 100){
-    echo("Address cannot be longer than 100 characters");
+    echo("Address cannot be longer than 100 characters.");
 }
 else if($imageCheck != jpg OR $imageCheck != "png"){
     echo("Invalid url format");
