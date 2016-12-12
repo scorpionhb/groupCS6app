@@ -14,12 +14,9 @@ echo $output= null;
 <h1>User List</h1>
 <p>The following users are registered on the site:</p>
 <ul>
-    <form method="post">
 
 
-        <input class="deletebtn" type="submit" value="Delete User">
 
-    </form>
 
     <table>
         <tr>
