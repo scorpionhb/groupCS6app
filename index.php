@@ -236,7 +236,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
 </div>
 <div class="col-sm-12 text-center">
-    <a href="createEvent.php" type="button" class="btn btn-default">Submit Event</a>
+    <a href="clubform.php" type="button" class="btn btn-default">Create New Club</a>
 </div>
 
 <footer class="container-fluid text-center">
