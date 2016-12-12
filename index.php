@@ -148,20 +148,63 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                 <ul id="loginFields" class="nav navbar-nav navbar-right">
                     <li>
                         <form id="signin" class="navbar-form navbar-right" role="form" method="post">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="username" type="text" class="form-control" name="username" value=""
-                                       placeholder="Username">
-                            </div>
 
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                <input id="password" type="password" class="form-control" name="password"
-                                       value="" placeholder="Password">
-                            </div>
-                            <input type="submit" value="Login" class="btn btn-info"/>
+                            <?php
+
+                            if ($_SESSION['username'] == $username) {
+                            /*
+                                <div class="input-group" >
+                                <span class="input-group-addon" ><i class="glyphicon glyphicon-user" ></i ></span >
+                                <input id = "username" type = "text" class="form-control" name = "username" value = ""
+                                       placeholder = "Username" >
+                            </div >
+
+                            <div class="input-group" >
+                                <span class="input-group-addon" ><i class="glyphicon glyphicon-lock" ></i ></span >
+                                <input id = "password" type = "password" class="form-control" name = "password"
+                                       value = "" placeholder = "Password" >
+                            </div >
+                            <input type = "submit" value = "Login" class="btn btn-info" />
+
+                            */
+
+                                echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
+                                echo "<div class='input-group'>";
+                                echo "<span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>";
+                                echo "<input id='username' type = 'text' class='form-control' name = 'username' value =''
+                                       placeholder = 'Username'>";
+                                echo "</div>";
+
+                                echo "<div class='input-group'>";
+                                echo "<span class='input-group-addon'><i class='glyphicon glyphicon-lock'></i></span>";
+                                echo "<input id='password' type = 'password' class='form-control' name = 'password' value =''
+                                       placeholder = 'Password'>";
+                                echo "</div>";
+
+                                echo "<input type='submit' value='Login' class='btn btn-info' />";
+
+                                echo "</form>";
+
+                            } else {
+
+                                echo "<form id='logout' class='navbar-form navbar-right' role='form' method='post' >";
+
+                                echo "<p>Welcome," . $username . "</p>";
+
+                                echo "<input type='submit' value='Logout' class='btn btn-info' />";
+
+                                echo "</form>";
+
+
+                            }
+
+
+                            ?>
+
+
+                         <!--
                         </form>
-
+                        -->
                     </li>
 
                     <li><a id="regButton" href="http://cs6testapp.azurewebsites.net/testRegisterForm.php"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
@@ -176,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PAs</p>
+            <p>PAsghg</p>
 
 
             <?php
