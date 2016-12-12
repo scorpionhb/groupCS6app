@@ -151,7 +151,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                   echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $typeOfUser . "!</p>";
 
-                                  echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
+                                  echo "<input type='submit' value='Logout' class='btn btn-info'  /></div>";
 
                                     echo "</form>";
                               } else {
