@@ -4,6 +4,7 @@
 
 //log in button
 function logIn() {
+    alertify.alert("ALOOOO");
     var i = 0;
 
     if (i == 0) {

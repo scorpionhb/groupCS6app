@@ -171,7 +171,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                        placeholder = 'Password'>
                                     </div>
 
-                                    <input onclick="logIn()" type='submit' value='Login' class='btn btn-info' />
+                                    <input  type='submit' value='Login' class='btn btn-info' />
 
                                     </form>
 
@@ -199,7 +199,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >phps</p>
+            <p >phps232</p>
 
 
             <?php
