@@ -107,6 +107,7 @@
         </div>
         <p onload="geoLocation()" id="test">Testvai Tovaa</p>
         <button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>
+        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Submit</button></a>
     </div>
     <div id = "map"></div>
 
