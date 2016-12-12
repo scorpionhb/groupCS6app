@@ -17,7 +17,7 @@
     </script>
     <style>
         .btn-primary{
-            margin-left: 4%;
+            margin-left: 30%;
             width: 16%;
         }
     </style>
@@ -92,28 +92,26 @@
         <div id="filter">
             <p class="checkboxText"><b>Clubs</b></p>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="clubs" name="check"/>
+                <input type="checkbox" value="None" id="clubs" name="check" onclick="addMarks()"/>
                 <label for="clubs"></label>
             </div>
             <p class="checkboxText"><b>Viewpoints</b></p>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="viewpoints" name="check1"/>
+                <input type="checkbox" value="None" id="viewpoints" name="check1" onclick="addMarks()"/>
                 <label for="viewpoints"></label>
             </div>
             <p class="checkboxText"><b>Routes</b></p>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="routes" name="check2"/>
+                <input type="checkbox" value="None" id="routes" name="check2" onclick="addMarks()"/>
                 <label for="routes"></label>
             </div>
             <p class="checkboxText"><b>Landmarks</b></p>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="landmarks" name="check3"/>
+                <input type="checkbox" value="None" id="landmarks" name="check3" onclick="addMarks()"/>
                 <label for="landmarks"></label>
             </div>
         </div>
-        <p onload="geoLocation()" id="test">Testvai Tovaa</p>
-        <button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>
-        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Submit</button></a>
+        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Add</button></a>
     </div>
     <div id = "map"></div>
 
