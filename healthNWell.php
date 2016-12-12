@@ -123,8 +123,8 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         <div class="row content">
             <?php
             if ($typeOfUser == 'Site Administrator') {
-                echo "<a href='createNews.php.php' type='button' class='btn btn-primary' style='float: left; margin-right: 15%; margin-top: 2%'>Create News</a>";
-                echo "<a href='createEvent.php.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
+                echo "<a href='createNews.php' type='button' class='btn btn-primary' style='float: left; margin-right: 15%; margin-top: 2%'>Create News</a>";
+                echo "<a href='createEvent.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
             }
 
             ?>
