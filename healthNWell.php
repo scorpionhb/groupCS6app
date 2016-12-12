@@ -159,9 +159,6 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                 ?>
 
-                <div class="col-sm-12 text-center">
-                    <a href="createNews.php" type="button" class="btn btn-default">Submit News</a>
-                </div>
 
             </div>
 
@@ -190,9 +187,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                 ?>
 
-                <div class="col-sm-12 text-center">
-                    <a href="createEvent.php" type="button" class="btn btn-default">Submit Event</a>
-                </div>
+
 
                 </div>
 
