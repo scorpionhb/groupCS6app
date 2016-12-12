@@ -15,11 +15,11 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $articleName = $db->real_escape_string($_POST['articleName']);
     $articleText =  $db->real_escape_string($_POST['articleText']);
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
-    if ($insert != true) {
+    if ($insert == false) {
         $output = "There was a problem <br/>";
         $output .= $db->error;
     } else {
-        $output = "You have been registered!";
+        $output = "Your article has been submitted";
     }
 
 
@@ -105,7 +105,7 @@ $result = $db->query($insert);
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>DUma</p>
+            <p>DU</p>
             <div class="col-sm-3 text-left"></div>
 
             <div class="col-sm-6 text-center ">
