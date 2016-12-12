@@ -105,9 +105,10 @@ if(isset($_SESSION['username'])){
                     <script>tinymce.init({selector: 'textarea'});</script>
 
                     <form method="post">
-                        <input type="text" name="eventName" placeholder="Name of Event">
-                        <input type="datetime" name="startDate">
-                        <input type="datetime" name="endDate">
+                        <input type="text" name="eventName" placeholder="Name of Event"><br>
+                        <p>Please enter start/end date in format YYYY-MM-DD HH:MM:SS</p>
+                        <input type="datetime" name="startDate" placeholder="Enter start date"><br>
+                        <input type="datetime" name="endDate" placeholder="Enter end date(if applicable)">
                         <textarea name="eventText"></textarea>
                         <input  name="submit" type="submit">
                     </form>
