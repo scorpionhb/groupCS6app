@@ -13,3 +13,5 @@ $info = $_POST["info"];
 $sql = "INSERT INTO news(content,title) VALUES ('$info', '$title')";
 
 $result = $db->query($sql);
+
+?>
