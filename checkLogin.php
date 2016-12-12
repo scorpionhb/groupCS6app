@@ -26,7 +26,7 @@ if($loginSuccessful==1){
 // Register $myusername, $mypassword and redirect to file "index.php"
     session_start();
     $_SESSION['username'] = $username;
-    header("location:index.php");
+    header("location:https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2F");
 }
 else {
     echo "Wrong Username or Password";
