@@ -15,8 +15,12 @@ if(isset($_SESSION['username'])){
         $eventText = $db->real_escape_string($_POST['eventText']);
         $startDate = $db->real_escape_string($_POST['startDate']);
         $endDate = $db->real_escape_string($_POST['endDate']);
-
-        $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate','$endDate')";
+        if($endDate.is_null()){
+            $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate',NULL)";
+        }
+        else {
+            $sql = "INSERT INTO events(content,title,start_date,end_date) VALUES ('$eventText','$eventName','$startDate','$endDate')";
+        }
         if ($sql != true) {
             $output = "There was a problem <br/>";
             $output .= $db->error;
