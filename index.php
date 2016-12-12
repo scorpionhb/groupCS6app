@@ -157,9 +157,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                   echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $typeOfUser . "!</p>";
 
                                   echo "<input style='margin-left: 2%' type='submit' value='Logout' class='btn btn-info'  /></div>";
-                                  if ($typeOfUser == 'Site') {
-                                      echo "<a href='adminPanel.php' type='button' class='btn btn-default'>Admin Panel</a>";
-                                  }
+
                                     echo "</form>";
                               } else {
                                   ?>
@@ -199,7 +197,12 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p >bbbbar</p>
+            <?php
+            if ($typeOfUser == 'Site') {
+                echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%'>Admin Panel</a>";
+            }
+            ?>
+            <p >bbbsadasdasfsadfsadr</p>
 
 
             <?php
