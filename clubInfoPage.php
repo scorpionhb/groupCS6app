@@ -92,11 +92,20 @@ $clubID = $_GET['clubID'];
 
             <div class="col-sm-3 text-left">
                 <div class="textCont">
-                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=120&txt=768x768&w=768&h=768" alt="">
+                    <?php
+                        $photo;
+                        $new_sql = "SELECT * FROM club_photos WHERE caption = 'placeholder'";
+                        $res = $mysqli->query($new_sql);
+                        while($row = $res->fetch_array()){
+                        $photo = $row['url'];
+                        }
+                    ?>
+                    <!--<img class="img-responsive" src=$photo alt=""> -->
                     <?php
                         $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
                         $result = $mysqli->query($sql_query);
                         while($row = $result->fetch_array()){
+                            echo "<img class='img-responsive' src=$photo alt=''>";
                             echo "<a class='button' href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=$clubID'>Information</a>";
                             echo "<a class='button' href='http://cs6testapp.azurewebsites.net/clubPhotosPage.php?clubID=$clubID'>Photos</a>";
                         }
