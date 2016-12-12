@@ -5,6 +5,8 @@
  * Date: 07/12/2016
  * Time: 01:13
  */
+$mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
+$clubID = $_GET['clubID'];
 ?>
 
 <!DOCTYPE html>
@@ -90,19 +92,32 @@
 
             <div class="col-sm-3 text-left">
                 <div class="textCont">
-                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Volkswagen_Logo.png/769px-Volkswagen_Logo.png" alt="">
-                    <a class="button" href="http://cs6testapp.azurewebsites.net/clubInfoPage.php">Information</a>
-                    <a class="button" href="http://cs6testapp.azurewebsites.net/clubPhotosPage.php">Photos</a>
+                    <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=768x768&w=768&h=768" alt="">
+                    <?php
+                    $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
+                    $result = $mysqli->query($sql_query);
+                    while($row = $result->fetch_array()){
+                        echo "<a class='button' href='http://cs6testapp.azurewebsites.net/clubInfoPage.php?clubID=$clubID'>Information</a>";
+                        echo "<a class='button' href='http://cs6testapp.azurewebsites.net/clubPhotosPage.php?clubID=$clubID'>Photos</a>";
+                    }
+                    ?>
                 </div>
             </div>
 
             <div class="col-sm-9 text-left">
-                <div class="textCont">
-                    <h1>Volkswagen Club</h1>
-                </div>
-                <div>
-                    <h2>Photos</h2>
-                </div>
+                <?php
+                $sql_query = "SELECT * FROM clubs WHERE clubName = '$clubID'";
+                $result = $mysqli->query($sql_query);
+                while($row = $result->fetch_array()){
+                    echo "<div class='textCont' >";
+                    echo "<h1>" . $row['clubName'] . "</h1>";
+                    echo "</div>";
+                    echo "<div>";
+                    echo "<h2>Photos</h2>";
+                    echo "</div>";
+                }
+
+                ?>
             </div>
 
 
