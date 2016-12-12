@@ -170,6 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                             /*if ($_SESSION['username'] == $username) {*/
 
                                 if(isset($_SESSION['username'])){
+                                    $username = $_SESSION['username'];
 
                                 echo "<form id='signin' class='navbar-form navbar-right' role='form' method='post' >";
                                 echo "<div class='input-group'>";
@@ -222,7 +223,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>bgbgbgbgbg</p>
+            <p>ijo beibe</p>
 
 
             <?php
