@@ -191,18 +191,4 @@ function addMarks() {
 }
 
 
-
-function geoLocation() {
-    var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({'address': address}, function (results, status) {
-
-        if (status == google.maps.GeocoderStatus.OK) {
-            var latitude = parseFloat(results[0].geometry.location.lat());
-            var longitude = parseFloat(results[0].geometry.location.lng());
-            console.log(latitude, longitude);
-            var latitudeString = latitude;
-        }
-        document.getElementById("test").innerHTML = latitude;
-    });
-}
     

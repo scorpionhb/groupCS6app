@@ -111,8 +111,6 @@
                 <label for="landmarks"></label>
             </div>
         </div>
-        <p onload="geoLocation()" id="test">Testvai Tova</p>
-        <!--<button onclick="addMarks()" type="button" class="filterButton"><b>Filter</b></button>-->
         <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Add</button></a>
     </div>
     <div id = "map"></div>
