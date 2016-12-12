@@ -164,7 +164,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
                     $photo = $row['url'];
                 }
 
-
                 $sql_query = "SELECT * FROM clubs";
                 $result = $mysqli->query($sql_query);
                 while ($row = $result->fetch_array()){
