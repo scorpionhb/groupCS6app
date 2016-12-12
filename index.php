@@ -175,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PA N </p>
+            <p>PA</p>
 
 
             <?php
