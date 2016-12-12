@@ -104,7 +104,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <p>DU</p>
+            <p>D</p>
             <div class="col-sm-3 text-left"></div>
 
             <div class="col-sm-6 text-center ">
