@@ -83,8 +83,10 @@ function addMarks() {
                 var name = markers[i].getAttribute("name");
                 var address = markers[i].getAttribute("address");
                 var description = markers[i].getAttribute("description");
+                var img = markers[i].getAttribute("imgURL");
                 var icon = customIcons[type] || {};
-                var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p>";
+                var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p>" + "<img id='wtf'>";
+                document.getElementById("wtf").src = img;
                 var marker = new google.maps.Marker({
                     map: allMap,
                     position: point,
@@ -108,6 +110,12 @@ function addMarks() {
                 var description = markers[i].getAttribute("description");
                 var geological = markers[i].getAttribute("geological");
                 var history = markers[i].getAttribute("history");
+                if(history == null){
+                    history = "";
+                }
+                if(geological == null){
+                    geological = "";
+                }
                 var icon = customIcons[type] || {};
                 var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p><p><b>" + "Geological Data:" + "</b></p><p>" + geological + "</p><p><b>" + "History:" + "</b></p><p>" + history + "</p>";
                 var marker = new google.maps.Marker({
@@ -133,6 +141,12 @@ function addMarks() {
                 var description = markers[i].getAttribute("description");
                 var geological = markers[i].getAttribute("geological");
                 var history = markers[i].getAttribute("history");
+                if(history == null){
+                    history = "";
+                }
+                if(geological == null){
+                    geological = "";
+                }
                 var icon = customIcons[type] || {};
                 var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p><p><b>" + "Geological Data:" + "</b></p><p>" + geological + "</p><p><b>" + "History:" + "</b></p><p>" + history + "</p>";
                 var marker = new google.maps.Marker({
@@ -158,6 +172,12 @@ function addMarks() {
                 var description = markers[i].getAttribute("description");
                 var geological = markers[i].getAttribute("geological");
                 var history = markers[i].getAttribute("history");
+                if(history == null){
+                    history = "";
+                }
+                if(geological == null){
+                    geological = "";
+                }
                 var icon = customIcons[type] || {};
                 var html = "<b>" + name + "</b> <br/> <p><b>" + "Address:" + "</b></p><p>" + address + "</p> <p><b>" + "Description:" + "</b></p><p>" + description + "</p><p><b>" + "Geological Data:" + "</b></p><p>" + geological + "</p><p><b>" + "History:" + "</b></p><p>" + history + "</p>";
                 var marker = new google.maps.Marker({
@@ -186,3 +206,4 @@ function geoLocation() {
         document.getElementById("test").innerHTML = latitude;
     });
 }
+    

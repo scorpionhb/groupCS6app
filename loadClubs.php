@@ -1,8 +1,9 @@
 <?php
-$db =  NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net','b20897870d42e6','f2fdd194','cs6app_db');
+include("DBCONNECT.php");
 $dom = new DOMDOcument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
+
 $query = "SELECT * FROM locations WHERE type = 'Club'";
 $result = $db->query($query);
 if(!$result){
@@ -17,6 +18,7 @@ while($row = $result->fetch_array()){
     $newnode->setAttribute("address", $row['address']);
     $newnode->setAttribute("description", $row['description']);
     $newnode->setAttribute("imgURL", $row['imgURL']);
+    $newnode->setAttribute("history", $row['history']);
     $newnode->setAttribute("latitude", $row['latitude']);
     $newnode->setAttribute("longitude", $row['longitude']);
 }
