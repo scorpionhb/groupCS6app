@@ -6,22 +6,6 @@
  * Time: 14:07
  */
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
-/*
-if ($_SESSION['username'] == $username) {
-
-    echo "<div class='textCont'>";
-    echo "Welcome to the member's area, " . $username . "!";
-    echo "</div>";
-
-} else {
-    echo "<div>";
-    echo "Please log in first to see this page.";
-    echo "</div>";
-}
-*/
-
-if ($_SERVER['REQUEST_METHOD'] === 'GET'){
-
 
 ?>
 
@@ -55,17 +39,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
 
 
-<?php
+<?
 
 
 //-------------------------------------LOGIN REQUEST
-
-} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
     include("dbConnect.php");
-
-    $username = $_POST["username"];
-    $password = $_POST["password"];
 
 /*
     function checkLogin($username, $password, $db)
@@ -94,9 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     }
 */
 
-} else {
-    print('whoops');
-}
+
 
 
 ?>
@@ -165,14 +142,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
                         -->
 
-                            <?php
+                            <?
 
-                            if ($_SESSION['username'] == $username) {
+                            //if ($_SESSION['username'] == $username) {
 
-                             // if(isset($_SESSION['username'])){
+                              if(isset($_SESSION['username'])){
                                     $username = $_SESSION['username'];
 
-                                    echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' method='post' >";
+                                    echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
                                     echo "<p id='welcomeText'>Welcome," . $username . "</p>";
 
@@ -222,10 +199,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>raboti</p>
+            <p>rabotiiiii</p>
 
 
-            <?php
+            <?
                 $photo;
                 $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
                 $res = $mysqli->query($new_sql);
