@@ -12,8 +12,8 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 //if(isset($_POST['submit'])) {
 
 
-    $articleName = $_POST['articleName'];
-    $articleText = $_POST['articleText'];
+    $articleName = $mysqli-> $_POST['articleName'];
+    $articleText = $mysqli-> $_POST['articleText'];
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
     if ($insert != true) {
         $output = "There was a problem :@ <br/>";
