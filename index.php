@@ -82,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     if (checkLogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        header("/");
 
 
        // header("Refresh: 10; url=http://cs6testapp.azurewebsites.net/index.php", true, 303);
