@@ -8,9 +8,11 @@
 $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e6', 'f2fdd194', 'cs6app_db');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+
     echo "<div>";
     echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
     echo "</div>";
+
 } else {
     echo "<div>";
     echo "Please log in first to see this page.";
@@ -71,11 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         $sql = "SELECT * FROM users WHERE username='" . $username . "' and password='" . md5($password) . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
-            if (match_found_in_database()) {
-                $_SESSION['loggedin'] = true;
-                $_SESSION['username'] = $username; // $username coming from the form, such as $_POST['username']
-                // something like this is optional, of course
-            }
+
             return true;
 
         }
@@ -85,6 +83,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     if (checkLogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
+        $_SESSION['loggedin'] = true;
+
         header("location: http://cs6testapp.azurewebsites.net/index.php");
 
 
@@ -175,8 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>PA NZ
-            </p>
+            <p>PA N </p>
 
 
             <?php
