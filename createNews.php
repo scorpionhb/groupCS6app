@@ -15,7 +15,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     $articleName = $db->real_escape_string($_POST['articleName']);
     $articleText =  $db->real_escape_string($_POST['articleText']);
     $insert = "INSERT INTO news(content,title) VALUES ('$articleText','$articleName')";
-    $result = $db->query($insert);
+
     if ($insert == true) {
         $output = "There was a problem <br/>";
         $output .= $db->error;
@@ -23,7 +23,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         $output = "Your article has been submitted";
     }
 
-
+    $result = $db->query($insert);
 
 //}
 
