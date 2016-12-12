@@ -222,7 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <div class="container-fluid text-center">
 
         <div class="row content">
-            <p>ai raboti veche</p>
+            <p>ai raboti</p>
 
 
             <?php
