@@ -15,8 +15,7 @@ echo $output= null;
 <p>The following users are registered on the site:</p>
 <ul>
     <form method="post">
-        <label class="username"><b>Enter the name of the user that you want to delete:</b></label>
-        <input  type="text" placeholder="username:" name="name" required>
+
 
         <input class="deletebtn" type="submit" value="Delete User">
 
@@ -30,7 +29,7 @@ echo $output= null;
             <th>User Email</th>
             <th>User Access Approval</th>
         </tr>
-    <?php
+    <?
 
 
 
