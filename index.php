@@ -30,11 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
-
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-
-
 </head>
 <body>
 
@@ -71,13 +66,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     }
 
     if (checkLogin($username, $password, $db)) {
-      //  session_start();
-      //  $_SESSION['username'] = $username;
+        session_start();
+        $_SESSION['username'] = $username;
         header("location: http://cs6testapp.azurewebsites.net/index.php ");
 
-
     } else {
-
         header("location: http://cs6testapp.azurewebsites.net/healthNWell.php");
     }
 
@@ -165,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
             <?php
                 $photo;
-                $new_sql = "SELECT * FROM club_photos WHERE caption = 'placeholder'";
+                $new_sql = "SELECT * FROM club_photos WHERE caption = '150place'";
                 $res = $mysqli->query($new_sql);
                 while($row = $res->fetch_array()){
                     $photo = $row['url'];
