@@ -109,7 +109,7 @@ if(isset($_POST['submit'])) {
                 <main>
                     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                     <script>tinymce.init({selector: 'textarea'});</script>
-                    <form action="createarticle" method="post">
+                    <form action="createNews.php" method="post">
                         <input type="text" name="articleName" placeholder="Name of Article">
                         <textarea name="articleText"></textarea>
                         <input type="submit">
