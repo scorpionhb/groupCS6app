@@ -141,6 +141,14 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                                   $username = $_SESSION['username'];
 
                                   $typeOfUser = null;
+                                  $accessLvl = null;
+                                  $sql = "SELECT * FROM type_of_user WHERE username='" . $username . "'";
+                                  $result = $db->query($sql);
+                                  while($row = $result->fetch_array()){
+                                      $accessLvl = $row['access_level'];
+                                  }
+
+
                                   $sql1 = "SELECT * FROM users WHERE username='" . $username . " ' ";
                                   $result1 = $db->query($sql1);
                                   while ($row = $result1->fetch_array()) {
@@ -193,7 +201,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         <div class="row content">
 
             <?php
-            if ($typeOfUser == 'Site Administrator') {
+            if ($typeOfUser == 'Site Administrator' && $accessLvl == 1) {
                 echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Admin Panel</a>";
             }
 
