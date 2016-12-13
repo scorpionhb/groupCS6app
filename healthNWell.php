@@ -130,19 +130,29 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         <div class="row content">
             <?php
             if ($typeOfUser == 'Site' && $accessLvl == 1) {
-                echo "<a href='createNews.php' type='button' class='btn btn-primary' style='float: left; margin-left: 15%; margin-top: 2%'>Create News</a>";
-                echo "<a href='createEvent.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
-            }
+
+
+
+
+
+
 
             ?>
 
 
             <div class="col-sm-6 text-center">
                 <h1>News</h1>
+                <?php
+                echo "<a href='createNews.php' type='button' class='btn btn-primary' style='float: left; margin-left: 15%; margin-top: 2%'>Create News</a>";
+                ?>
             </div>
 
             <div class="col-sm-6 text-center">
                 <h1>Upcoming Events</h1>
+                <?php
+                echo "<a href='createEvent.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
+                }
+                ?>
             </div>
 
             <div class="col-sm-6 text-center" id="newsDiv">
