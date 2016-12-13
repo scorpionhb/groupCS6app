@@ -13,6 +13,7 @@ echo $output= null;
 <body>
 <h1>User List</h1>
 <p>The following users are registered on the site:</p>
+<a href="index.php" type="button" class="btn btn-default">Exit Panel</a>
 <ul>
 
 
