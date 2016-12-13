@@ -94,6 +94,13 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                             $username = $_SESSION['username'];
 
                             $typeOfUser = null;
+                            $accessLvl = null;
+                            $sql = "SELECT * FROM type_of_user WHERE username='" . $username . "'";
+                            $result = $mysqli->query($sql);
+                            while($row = $result->fetch_array()){
+                                $accessLvl = $row['access_level'];
+                            }
+
                             $sql1 = "SELECT * FROM users WHERE username='" . $username . " ' ";
                             $result1 = $mysqli->query($sql1);
                             while ($row = $result1->fetch_array()) {
@@ -122,7 +129,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
     <div class="container-fluid text-center">
         <div class="row content">
             <?php
-            if ($typeOfUser == 'Site Administrator') {
+            if ($typeOfUser == 'Site' && $accessLvl == 1) {
                 echo "<a href='createNews.php' type='button' class='btn btn-primary' style='float: left; margin-left: 15%; margin-top: 2%'>Create News</a>";
                 echo "<a href='createEvent.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Create Event</a>";
             }
