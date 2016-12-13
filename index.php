@@ -205,7 +205,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
                 echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Admin Panel</a>";
             }
 
-            if ($typeOfUser == 'Club Administrator') {
+            if ($typeOfUser == 'Club' && $accessLvl == 1) {
                 echo "<a href='clubform.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>New Club</a>";
             }
 
