@@ -201,7 +201,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
         <div class="row content">
 
             <?php
-            if ($typeOfUser == 'Site Administrator' && $accessLvl == 1) {
+            if ($typeOfUser == 'Site' && $accessLvl == 1) {
                 echo "<a href='adminPanel.php' type='button' class='btn btn-primary' style='float: right; margin-right: 15%; margin-top: 2%'>Admin Panel</a>";
             }
 
