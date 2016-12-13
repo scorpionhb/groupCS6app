@@ -150,7 +150,7 @@
             </div>
         </div>
         <?php
-        if ($typeOfUser == 'Site' && $accessLvl == 1) {
+        if ($typeOfUser == 'NKPAG' && $accessLvl == 1) {
             echo "<a href='mapForm.php' type='submit' class='btn btn-primary'>Add</a>";
         }
         ?>
