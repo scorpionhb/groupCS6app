@@ -157,7 +157,7 @@ $mysqli = NEW MySQLi('us-cdbr-azure-southcentral-f.cloudapp.net', 'b20897870d42e
 
                                   echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
-                                  echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $typeOfUser . "!</p>";
+                                  echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $username . "!</p>";
 
                                   echo "<input type='submit' value='Logout' class='btn btn-info'  /></div>";
 
