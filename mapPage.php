@@ -26,6 +26,7 @@
 <body onload ="load()">
 <?php
     session_start();
+    include ("dbConnect.php");
 ?>
 
 <div id="wrapper">
@@ -89,6 +90,23 @@
                         if(isset($_SESSION['username'])){
                             $username = $_SESSION['username'];
 
+
+                            $typeOfUser = null;
+                            $accessLvl = null;
+                            $sql = "SELECT * FROM type_of_user WHERE username='" . $username . "'";
+                            $result = $db->query($sql);
+                            while($row = $result->fetch_array()){
+                                $accessLvl = $row['access_level'];
+                            }
+
+
+                            $sql1 = "SELECT * FROM users WHERE username='" . $username . " ' ";
+                            $result1 = $db->query($sql1);
+                            while ($row = $result1->fetch_array()) {
+                                $typeOfUser = $row['type_of_user'];
+                            }
+
+
                             echo "<form action='logout.php' id='logout' class='navbar-form navbar-right' role='form' >";
 
                             echo "<div class='input-group' style='display: inline'><p style='display: inline; color:white'>Welcome, " . $username . "!</p>";
@@ -131,7 +149,12 @@
                 <label for="landmarks"></label>
             </div>
         </div>
-        <a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Add</button></a>
+        <?php
+        if ($typeOfUser == 'Site' && $accessLvl == 1) {
+            echo "<a href='mapForm.php' type='submit' class='btn btn-primary'>Add</a>";
+        }
+        ?>
+        <!--<a href="mapForm.php"><button type="submit" class="btn btn-primary" onclick>Add</button></a>-->
     </div>
     <div id = "map"></div>
 
